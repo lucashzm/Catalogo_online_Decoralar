@@ -67,7 +67,8 @@ h1 span:last-child {
   font-family: "Lora", Georgia, serif;
 }
 
-.destaques div {
+.destaques div,
+.destaques a {
   display: inline-flex;
   align-items: center;
   gap: 10px;
@@ -76,6 +77,8 @@ h1 span:last-child {
   border-radius: 20px;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
   width: fit-content;
+  color: #222;
+  text-decoration: none;
 }
 
 .destaques div:hover {
