@@ -13,6 +13,7 @@ const modalWhatsapp = document.getElementById("modal-whatsapp");
 const modalMiniaturas = document.getElementById("modal-miniaturas");
 
 const NUMERO_WHATSAPP = "5521983531564";
+const destaqueWhatsapp = document.getElementById("destaque-whatsapp");
 
 const PRODUTOS_POR_PAGINA = 30;
 
@@ -269,5 +270,12 @@ campoBusca.addEventListener("input", function() {
   mostrarProdutos(categoriaAtual, 1);
 });
 
+const mensagemWhatsapp = 
+  "Olá! Gostaria de mais informações sobre os produtos.";
+
+const mensagemCodificada = encodeURIComponent(mensagemWhatsapp);
+
+destaqueWhatsapp.href =
+  `https://wa.me/${NUMERO_WHATSAPP}?text=${mensagemCodificada}`;
 
 mostrarProdutos("Todos", 1);
