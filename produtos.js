@@ -703,7 +703,7 @@ const produtos = [
     {
     nome: "Cozinha Duda 120 5 Portas 1 Gaveta Damasco Ripado/ Off White",
     categoria: "Cozinhas",
-    imagem: "imagens/cozinhas/",
+    imagem: "imagens/cozinhas/cozinha duda damasco ripado.jpg",
     descricao: "Cozinha Duda 120 5 Portas 1 Gaveta, Damasco Ripado/ Off White ",
     detalhes: "Kit Cozinha Duda 120, da Poquema, cor Damasco Ripado (efeito 3D)/Off White. Medidas: Alt. 1,72 m, Larg. 1,20 m, Prof. 0,35 m. Estrutura 100% em MDP. 3 portas de bater com dobradiças metálicas, 2 portas de correr e 1 gaveta com corrediça metálica. 2 prateleiras externas, puxadores plásticos metalizados prata e pés plásticos rígidos.",
     preco: "R$ 749,99"
