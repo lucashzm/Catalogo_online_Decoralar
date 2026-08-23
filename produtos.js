@@ -1450,9 +1450,9 @@ const produtos = [
   {
     nome: "Roupeiro NT 6020 2 Portas 3 Gavetas Branco ",
     categoria: "Roupeiros",
-    imagem: "imagens/roupeiros/ROUPA_NT_6020_BRANCO_NEW_ROSA_FLEX NOVO.jpg",
+    imagem: "imagens/roupeiros/roupeiro nt 6020 branco.jpg",
     descricao: "Roupeiro NT 2 Portas, 3 Gavetas, Branco",
-    detalhes: "Roupeiro NT 6020, cor Branco New ou Branco New/Rosa (Flex), da Notável Móveis. Medidas: Alt. 1,87 m, Larg. 1,08 m, Prof. 0,395 m. Peso: 43,3 kg. Estrutura 100% MDP 12 mm. Possui 2 portas de bater, 1 prateleira interna, 1 cabideiro, 3 gavetas externas com corrediças metálicas, nicho penteadeira com espelho e prateleira para objetos pessoais. Puxadores em MDF e pés plásticos. Acabamento em pintura UV brilho.",
+    detalhes: "Roupeiro NT 6020, cor Branco, da Notável Móveis. Medidas: Alt. 1,87 m, Larg. 1,08 m, Prof. 0,395 m. Peso: 43,3 kg. Estrutura 100% MDP 12 mm. Possui 2 portas de bater, 1 prateleira interna, 1 cabideiro, 3 gavetas externas com corrediças metálicas, nicho penteadeira com espelho e prateleira para objetos pessoais. Puxadores em MDF e pés plásticos. Acabamento em pintura UV brilho.",
     preco: "R$ 799,99"
   },
 
