@@ -556,7 +556,7 @@ const produtos = [
     nome: "Cozinha Compacta Malu 9 Portas 2 Gavetas com Balcao Cinamomo Grafite",
     categoria: "Cozinhas",
     imagem: "imagens/cozinhas/Cozinha Compacta Completa Malu 9P2G com Balcao Cinamomo Grafite.jpg",
-    imagens: [ "cozinha malu cinamomo grafite.jpg"
+    imagens: [ "imagens/cozinhas/cozinha malu cinamomo grafite.jpg"
               ],
     descricao: "Cozinha Compacta Malu 9 Portas, 2 Gavetas com balcão Cinamomo/ Grafite",
     detalhes: "Cozinha Compacta Completa Malu 9 Portas, 2 Gavetas com Balcão – Fellicci. Cor Cinamomo/Grafite. Estrutura 100% MDP (caixas 12 mm e portas/frentes de gavetas 15 mm), com dupla opção de montagem. Possui 9 portas com dobradiças metálicas, 2 gavetas com corrediças metálicas e 3 nichos externos: 2 para potes e temperos e 1 para micro-ondas. Torre quente com prateleira interna e amplo espaço no balcão para eletrodomésticos. Puxadores e pés reguláveis em PVC. Acabamento em pintura UV brilho. Medidas: Altura 1,98 m | Largura 2,40 m | Profundidade 0,39 m | Peso 65,85 kg.",
@@ -568,7 +568,7 @@ const produtos = [
     nome: "Cozinha Compacta Malu 9 Portas 2 Gavetas com Balcao Cinamomo Off White",
     categoria: "Cozinhas",
     imagem: "imagens/cozinhas/Cozinha Compacta Completa Malu 9P2G com Balcao Cinamomo Off White.jpg",
-    imagens: [ "Fellicci-Malu-CL16-CI-OF-ABERTO.jpg"
+    imagens: [ "imagens/cozinhas/cozinha Malu Cinamomo Off White.jpg"
               ],
     descricao: "Cozinha Compacta Malu 9 Portas, 2 Gavetas com balcão Cinamomo/ Off White",
     detalhes: "Cozinha Compacta Completa Malu 9 Portas, 2 Gavetas com Balcão, da Fellicci, cor Cinamomo/Off White. Medidas: Alt. 1,98 m, Larg. 2,40 m, Prof. 0,39 m. Peso: 65,85 kg. Estrutura 100% em MDP, com caixas em MDP 12 mm e portas e frentes de gavetas em MDP 15 mm. Dupla opção de montagem. 9 portas com dobradiças metálicas, 2 gavetas com corrediças metálicas e 3 nichos externos: 2 para potes e temperos e 1 para micro-ondas (50 x 58 x 39 cm). 1 prateleira interna na torre quente e amplo espaço sobre o balcão para eletrodomésticos e utensílios. Puxadores e pés reguláveis em PVC. Acabamento em pintura UV brilho.",
