@@ -733,7 +733,7 @@ const produtos = [
   {
     nome: "Cozinha Malaga 6 Portas 2 Gavetas Cinamomo/ Off White",
     categoria: "Cozinhas",
-    imagem: "imagens/cozinhas/",
+    imagem: "imagens/cozinhas/cozinha malaga cinamomo offwhite.jpg",
     imagens: [ "imagens/cozinhas/cozinha malaga cinamomo off interno.jpg"
               ],
     descricao: "Cozinha Malaga 6 Portas 2 Gavetas ",
@@ -973,7 +973,7 @@ const produtos = [
   {
     nome: "Bancada Suspensa Lana 1.8 Titânio Carvalho",
     categoria: "Painéis/Racks",
-    imagem: "imagens/home/",
+    imagem: "imagens/home/bancada Lana Carvalho.jpg",
     descricao: "Bancada Suspensa Lana 1.8, Titânio/ Carvalho ",
     detalhes: "Bancada Suspensa Lana 1.8, da Madetec, cor Titânio/Carvalho. Medidas: Alt. 1,56 m, Larg. 1,82 m, Prof. 0,34 m. Estrutura 100% MDP em chapas de 15, 25 e 40 mm. Possui portas basculantes com dobradiças metálicas, prateleira, iluminação LED e sistema de fixação Girofix. Suporta TVs de até 60 polegadas.",
     preco: "R$ 949,99"
@@ -1313,7 +1313,7 @@ const produtos = [
   
     nome: "Roupeiro Colibri 6 Portas Branco",
     categoria: "Roupeiros",
-    imagem: "imagens/roupeiros/",
+    imagem: "imagens/roupeiros/roupeiro colibri 6p branco.jpg",
     descricao: "Roupeiro Colibri 6 Portas, Branco ",
     detalhes: "Roupeiro Colibri 6 portas, cor Branco, da D'Doro. Medidas: Alt. 2,18 m, Larg. 2,06 m, Prof. 0,48 m. Estrutura mista MDF/MDP 15 mm, com portas e moldura em MDF. Possui 6 portas de bater, 6 gavetas com corrediças telescópicas e abertura total, puxadores de madeira, 4 cabideiros metálicos, 2 sapateiras e 3 nichos superiores para roupas e objetos pessoais. Acabamento em pintura UV alto brilho.",
     preco: "R$ 1.599,99"
@@ -1450,7 +1450,7 @@ const produtos = [
   {
     nome: "Roupeiro NT 6020 2 Portas 3 Gavetas Branco ",
     categoria: "Roupeiros",
-    imagem: "imagens/roupeiros/",
+    imagem: "imagens/roupeiros/ROUPA_NT_6020_BRANCO_NEW_ROSA_FLEX NOVO.jpg",
     descricao: "Roupeiro NT 2 Portas, 3 Gavetas, Branco",
     detalhes: "Roupeiro NT 6020, cor Branco New ou Branco New/Rosa (Flex), da Notável Móveis. Medidas: Alt. 1,87 m, Larg. 1,08 m, Prof. 0,395 m. Peso: 43,3 kg. Estrutura 100% MDP 12 mm. Possui 2 portas de bater, 1 prateleira interna, 1 cabideiro, 3 gavetas externas com corrediças metálicas, nicho penteadeira com espelho e prateleira para objetos pessoais. Puxadores em MDF e pés plásticos. Acabamento em pintura UV brilho.",
     preco: "R$ 799,99"
@@ -1636,8 +1636,8 @@ const produtos = [
   {
     nome: "Comoda Mary 5 Gavetas 1 Porta Branco/ Brilho",
     categoria: "Cômodas",
-    imagem: "imagens/comodas/Comoda Mary 5G1P Branco/ Brilho.jpg",
-    imagens: [ "imagens/comodas/comoda Mary branco interno.jpg"
+    imagem: "imagens/comodas/ComodaMary-Branco.jpg",
+    imagens: [ "imagens/comodas/InternaMary-Branco.jpg"
               ],
     descricao: "Comoda Mary 5 Gavetas, 1 Porta, Branco Brilho",
     detalhes: "Cômoda Mary 5 gavetas e 1 porta, cor Branco, da Rud Rack. Medidas: Alt. 1,00 m, Larg. 0,99 m, Prof. 0,43 m. Estrutura 100% MDP 12 e 15 mm. Possui 5 gavetas com corrediças telescópicas, 1 porta de giro com detalhe ripado, 1 prateleira interna removível, puxadores em MDF e pés plásticos de PVC. Acabamento em pintura UV brilho.",
