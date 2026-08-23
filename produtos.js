@@ -445,7 +445,7 @@ const produtos = [
   },
 
   {
-    nome: "Cômoda Miami 5Gavetas 1 Porta Cinamomo Off White",
+    nome: "Cômoda Miami 5 Gavetas 1 Porta Cinamomo Off White",
     categoria: "Cômodas",
     imagem: "imagens/comodas/Comoda Miami 5Gavetas 1Porta Cinamomo Off White.jpg",
     imagens: [ "imagens/comodas/Comoda Miami Cinamomo Off White.jpg"
@@ -456,7 +456,7 @@ const produtos = [
   },
 
   {
-    nome: "Cômoda Miami 5Gavetas 1 Porta Branco",
+    nome: "Cômoda Miami 5 Gavetas 1 Porta Branco",
     categoria: "Cômodas",
     imagem: "imagens/comodas/Comoda Miami 5G1P Branco.jpg",
     imagens: [ "imagens/comodas/comoda miami branco.jpg"
@@ -467,7 +467,7 @@ const produtos = [
   },
 
   {
-    nome: "Cômoda Miami 5Gavetas 1 Porta Preto",
+    nome: "Cômoda Miami 5 Gavetas 1 Porta Preto",
     categoria: "Cômodas",
     imagem: "imagens/comodas/Comoda Miami 5G1P Preto.jpg",
     imagens: [ "imagens/comodas/Comoda miami preto.jpg"
