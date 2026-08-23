@@ -625,16 +625,16 @@ const produtos = [
   {
     nome: "Cozinha New Topazio 6 Portas 2 Gavetas Branco/ Cinamomo Off ",
     categoria: "Cozinhas",
-    imagem: "imagens/cozinhas/",
+    imagem: "imagens/cozinhas/Kit-Cozinha-New-Topazio-Branco-Cina.jpg",
     descricao: "Cozinha New Topazio 6 Portas 2 Gavetas, Branco/ Cinamomo",
     detalhes: "Kit Cozinha New Topázio, da Salleto, cor Branco/Cinamomo. Medidas: Alt. 2,01 m, Larg. 1,65 m, Prof. 0,45 m. Peso: 76,7 kg. Estrutura 100% em MDP. 6 portas de bater com dobradiças metálicas e 2 gavetas com corrediças telescópicas, sendo 1 com divisor de talheres. Prateleiras internas, garrafeiros, adega e nichos para fornos, eletrodomésticos e utensílios. Puxadores de MDF e pés plásticos com regulagem de altura.",
     preco: "R$ 1.199,00"
   },
 
   {
-    nome: "Cozinha New Topazio 6Portas 2Gavetas Jequitibá/ Granizo",
+    nome: "Cozinha New Topazio 6 Portas 2 Gavetas Jequitibá/ Granizo",
     categoria: "Cozinhas",
-    imagem: "imagens/cozinhas/",
+    imagem: "imagens/cozinhas/Kit-Cozinha-New-Topazio-Jqtb-Grnz.jpg",
     descricao: "Cozinha New Topazio 6 Portas 2 Gavetas, Jequitibá/ Granizo",
     detalhes: "Kit Cozinha New Topázio, da Salleto, cor Jequitibá/Granizo. Medidas: Alt. 2,01 m, Larg. 1,65 m, Prof. 0,45 m. Peso: 76,7 kg. Estrutura 100% em MDP. 6 portas de bater com dobradiças metálicas e 2 gavetas com corrediças telescópicas, sendo 1 com divisor de talheres. Prateleiras internas, garrafeiros, adega e nichos para fornos, eletrodomésticos e utensílios. Puxadores de MDF e pés plásticos com regulagem de altura.",
     preco: "R$ 1.199,00"
@@ -662,7 +662,7 @@ const produtos = [
   {
      nome: "Cozinha Siena Premium 6 Portas 1 Gaveta Jequitibá/ Granizo",
     categoria: "Cozinhas",
-    imagem: "imagens/cozinhas/",
+    imagem: "imagens/cozinhas/Kit-copzinha-siena-Jqtb-Grnz.jpg",
     descricao: "Cozinha Siena Premium 6 Portas 1 Gaveta Jequitibá/ Granizo",
     detalhes: "Kit Cozinha New Siena Premium, da Sallêto Móveis, cor Jequitibá/Granizo/Cinamomo/Preto. Medidas: Alt. 2,00 m, Larg. 1,40 m, Prof. 0,40 m. Peso: 70,1 kg. Estrutura 100% em MDP 15 mm. 6 portas de bater com dobradiças metálicas, sendo 1 basculante, e 1 gaveta com corrediças telescópicas metálicas. Tampo com bordas frisadas, nicho para forno e utensílios, puxadores de MDF e pés com regulagem de altura (15,5 cm). Acabamento em pintura UV semibrilho.",
     preco: "R$ 1.099,99"
@@ -693,7 +693,7 @@ const produtos = [
     nome: "Cozinha Duda 120 5 Portas 1 Gavetas Cinamomo Off White",
     categoria: "Cozinhas",
     imagem: "imagens/cozinhas/Cozinha Duda 120 5P1G Cinamomo.Cinamomo Off White.jpg",
-    imagens: [ "imagens/cozinha/cozinha duda 120 interno.jpg"
+    imagens: [ "imagens/cozinhas/cozinha duda 120 interno.jpg"
               ],
     descricao: "Cozinha Duda 120 5 Portas 1 Gaveta Cinamomo Off White",
     detalhes: "Kit Cozinha Duda 120, da Poquema, cor Cinamomo/Cinamomo Off White. Medidas: Alt. 1,72 m, Larg. 1,20 m, Prof. 0,35 m. Estrutura 100% em MDP. 3 portas de bater com dobradiças metálicas, 2 portas de correr e 1 gaveta com corrediça metálica. 2 prateleiras externas, puxadores plásticos metalizados prata e pés plásticos rígidos.",
@@ -704,19 +704,15 @@ const produtos = [
     nome: "Cozinha Duda 120 5 Portas 1 Gaveta Damasco Ripado/ Off White",
     categoria: "Cozinhas",
     imagem: "imagens/cozinhas/",
-    imagens: [ "imagens/cozinha/"
-              ],
     descricao: "Cozinha Duda 120 5 Portas 1 Gaveta, Damasco Ripado/ Off White ",
     detalhes: "Kit Cozinha Duda 120, da Poquema, cor Damasco Ripado (efeito 3D)/Off White. Medidas: Alt. 1,72 m, Larg. 1,20 m, Prof. 0,35 m. Estrutura 100% em MDP. 3 portas de bater com dobradiças metálicas, 2 portas de correr e 1 gaveta com corrediça metálica. 2 prateleiras externas, puxadores plásticos metalizados prata e pés plásticos rígidos.",
     preco: "R$ 749,99"
   },
 
     {
-    nome: "Cozinha Duda 120 5 Portas 1Gaveta Damasco/ Off White",
+    nome: "Cozinha Duda 120 5 Portas 1 Gaveta Damasco/ Off White",
     categoria: "Cozinhas",
-    imagem: "imagens/cozinhas/",
-    imagens: [ "imagens/cozinha/"
-              ],
+    imagem: "imagens/cozinhas/cozinha duda damasco offwhite.jpg",  
     descricao: "Cozinha Duda 120 5 Portas 1 Gaveta Damasco/ Off White",
       detalhes: "Kit Cozinha Duda 120, da Poquema, cor Damasco/Off White. Medidas: Alt. 1,72 m, Larg. 1,20 m, Prof. 0,35 m. Estrutura 100% em MDP. 3 portas de bater com dobradiças metálicas, 2 portas de correr e 1 gaveta com corrediça metálica. 2 prateleiras externas, puxadores plásticos metalizados prata e pés plásticos rígidos.",
     preco: "R$ 749,99"
