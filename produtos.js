@@ -388,7 +388,7 @@ const produtos = [
   },
 
   {
-    nome: "Sala Magic 120 Mel Blonde com 4 Cadeiras Sol Mel Cinza Veludo Grafite",
+    nome: "Sala Magic 120 Mel Blonde com 4 Cadeiras Sol Cinza Veludo Grafite",
     categoria: "Mesas",
     imagem: "imagens/mesas/Sala Magic 120 Mel.Blonde com 4 Cadeiras Sol Mel Cinza Veludo Grafite.jpg",
     descricao: "Conjunto Mesa Sala Magic 120 Mel Blonde com 4 Cadeiras Sol Me Cinza Veludo Grafite",
@@ -548,7 +548,7 @@ const produtos = [
   },
 
   
- /* COZINHA MALU, VEFICIAR QUANTIDADE DE GAVETAS PARA CADASTRAR DETALHES CERTOS
+
  
  
  
@@ -559,7 +559,7 @@ const produtos = [
     imagens: [ "cozinha malu cinamomo grafite.jpg"
               ],
     descricao: "Cozinha Compacta Malu 9 Portas, 2 Gavetas com balcão Cinamomo/ Grafite",
-    detalhes: "Cozinha Compacta Completa Malu 9P6G com Balcão, da Fellicci, cor Cinamomo/Off White. Medidas: Alt. 1,98 m, Larg. 2,40 m, Prof. 0,39 m. Peso: 65,85 kg. Estrutura 100% em MDP, com caixas em MDP 12 mm e portas e frentes de gavetas em MDP 15 mm. Dupla opção de montagem. 9 portas com dobradiças metálicas, 2 gavetas com corrediças metálicas e 3 nichos externos: 2 para potes e temperos e 1 para micro-ondas (50 x 58 x 39 cm). 1 prateleira interna na torre quente e amplo espaço sobre o balcão para eletrodomésticos e utensílios. Puxadores e pés reguláveis em PVC. Acabamento em pintura UV brilho.",
+    detalhes: "Cozinha Compacta Completa Malu 9 Portas, 2 Gavetas com Balcão – Fellicci. Cor Cinamomo/Grafite. Estrutura 100% MDP (caixas 12 mm e portas/frentes de gavetas 15 mm), com dupla opção de montagem. Possui 9 portas com dobradiças metálicas, 2 gavetas com corrediças metálicas e 3 nichos externos: 2 para potes e temperos e 1 para micro-ondas. Torre quente com prateleira interna e amplo espaço no balcão para eletrodomésticos. Puxadores e pés reguláveis em PVC. Acabamento em pintura UV brilho. Medidas: Altura 1,98 m | Largura 2,40 m | Profundidade 0,39 m | Peso 65,85 kg.",
     preco: "R$ 999,99"
   },
 
@@ -571,11 +571,11 @@ const produtos = [
     imagens: [ "cozinha Malu Cinamomo Off White.jpg"
               ],
     descricao: "Cozinha Compacta Malu 9 Portas, 2 Gavetas com balcão Cinamomo/ Off White",
-    detalhes: "Cozinha Compacta Completa Malu 9P6G com Balcão, da Fellicci, cor Cinamomo/Off White. Medidas: Alt. 1,98 m, Larg. 2,40 m, Prof. 0,39 m. Peso: 65,85 kg. Estrutura 100% em MDP, com caixas em MDP 12 mm e portas e frentes de gavetas em MDP 15 mm. Dupla opção de montagem. 9 portas com dobradiças metálicas, 2 gavetas com corrediças metálicas e 3 nichos externos: 2 para potes e temperos e 1 para micro-ondas (50 x 58 x 39 cm). 1 prateleira interna na torre quente e amplo espaço sobre o balcão para eletrodomésticos e utensílios. Puxadores e pés reguláveis em PVC. Acabamento em pintura UV brilho.",
+    detalhes: "Cozinha Compacta Completa Malu 9 Portas, 2 Gavetas com Balcão, da Fellicci, cor Cinamomo/Off White. Medidas: Alt. 1,98 m, Larg. 2,40 m, Prof. 0,39 m. Peso: 65,85 kg. Estrutura 100% em MDP, com caixas em MDP 12 mm e portas e frentes de gavetas em MDP 15 mm. Dupla opção de montagem. 9 portas com dobradiças metálicas, 2 gavetas com corrediças metálicas e 3 nichos externos: 2 para potes e temperos e 1 para micro-ondas (50 x 58 x 39 cm). 1 prateleira interna na torre quente e amplo espaço sobre o balcão para eletrodomésticos e utensílios. Puxadores e pés reguláveis em PVC. Acabamento em pintura UV brilho.",
     preco: "R$ 999,99"
   },
   
-    */
+   
   
   {
     nome: "Kit Cozinha Catar 6 Portas 2 Gavetas Jequitiba Granizo",
