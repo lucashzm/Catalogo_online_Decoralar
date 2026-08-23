@@ -1680,6 +1680,7 @@ const produtos = [
     categoria: "Sofás",
     imagem: "imagens/sofas/Estofado Retratil e Reclinavel Royal 200 2x100 Veludo Grafite.jpg",
     descricao: "Sofá Retrátil e Reclinável Royal 2 Módulos, 2.00m, Veludo Grafite",
+    detalhes: "Estofado Retrátil e Reclinável Royal 200 – Viero. Tecido Veludo Grafite. 4 lugares. Estrutura 100% madeira maciça de eucalipto. Assentos retráteis com tubos de aço, espuma D23, percintas elásticas e molas Bonnel. Encosto reclinável 45° com fibra siliconizada 100% poliéster e braços estofados com fibra siliconizada. Possui 4 pés fixos em PVC e 4 rodízios de silicone. Suporta até 90 kg por assento. Medidas: Altura 1,00 m | Largura 2,00 m (assento 0,80 m + braço 0,20 m) | Profundidade fechado 1,00 m | Aberto 1,40 m.",
     preco: "R$ 1.199,99"
   },
 
@@ -1688,6 +1689,7 @@ const produtos = [
     categoria: "Sofás",
     imagem: "imagens/sofas/Estofado Retratil e Reclinavel Royal 200 2x100 Veludo Perola.jpg",
     descricao: "Sofá Retrátil e Reclinável Royal 2 Módulos, 2.00m, Veludo Pérola",
+    detalhes: "Estofado Retrátil e Reclinável Royal 200 – Viero. Tecido Veludo Pérola. 4 lugares. Estrutura 100% madeira maciça de eucalipto. Assentos retráteis com tubos de aço, espuma D23, percintas elásticas e molas Bonnel. Encosto reclinável 45° com fibra siliconizada 100% poliéster e braços estofados com fibra siliconizada. Possui 4 pés fixos em PVC e 4 rodízios de silicone. Suporta até 90 kg por assento. Medidas: Altura 1,00 m | Largura 2,00 m (assento 0,80 m + braço 0,20 m) | Profundidade fechado 1,00 m | Aberto 1,40 m.",
     preco: "R$ 1.199,99"
   },
 
@@ -1696,6 +1698,7 @@ const produtos = [
     categoria: "Sofás",
     imagem: "imagens/sofas/Estofado Retr Recl Ouro Preto 250 2x100 Capuccino.jpeg",
     descricao: "Sofá Retrátil e Reclinável Ouro Preto, 2 Módulos, 2.50, Cappuccino",
+    detalhes: "Estofado Retrátil e Reclinável Ouro Preto – Idealle. Tecido Veludo Jolie Capuccino. 2 módulos. Estrutura em madeira com blindagem nos rodapés, caixa traseira e parte superior. Assento com percintas elásticas e molas, estofamento em espuma selada de 18 cm. Encosto, pillow dos braços e rineiras em fibra siliconada 100%. Medidas: Altura 1,20 m | Largura 1,00 m por módulo | Profundidade fechado 1,20 m | Aberto 1,80 m | Braço 0,25 m.",
     preco: "R$ 2.599,99"
   },
 
@@ -1704,6 +1707,7 @@ const produtos = [
     categoria: "Sofás",
     imagem: "imagens/sofas/Estofado Retratil e Reclinavel Royal 200 2x100 Veludo Grafite.jpg",
     descricao: "Sofá Retrátil e Reclinável Ouro Preto, 2 Módulos, 2.50, Grafite",
+    detalhes: "Estofado Retrátil e Reclinável Ouro Preto – Idealle. Tecido Veludo Jolie Grafite. 2 módulos. Estrutura em madeira com blindagem nos rodapés, caixa traseira e parte superior. Assento com percintas elásticas e molas, estofamento em espuma selada de 18 cm. Encosto, pillow dos braços e rineiras em fibra siliconada 100%. Medidas: Altura 1,20 m | Largura 1,00 m por módulo | Profundidade fechado 1,20 m | Aberto 1,80 m | Braço 0,25 m.",
     preco: "R$ 2.599,99"
   },
 
@@ -1712,22 +1716,26 @@ const produtos = [
     categoria: "Sofás",
     imagem: "imagens/sofas/Retr Recl Ouro Preto 250 2x100 Preto.jpeg",
     descricao: "Sofá Retrátil e Reclinável Ouro Preto, 2 Módulos, 2.50, Preto",
+    detalhes: "Estofado Retrátil e Reclinável Ouro Preto – Idealle. Tecido Veludo Jolie Preto. 2 módulos. Estrutura em madeira com blindagem nos rodapés, caixa traseira e parte superior. Assento com percintas elásticas e molas, estofamento em espuma selada de 18 cm. Encosto, pillow dos braços e rineiras em fibra siliconada 100%. Medidas: Altura 1,20 m | Largura 1,00 m por módulo | Profundidade fechado 1,20 m | Aberto 1,80 m | Braço 0,25 m.",
     preco: "R$ 2.599,99"
   },
 
+
+  /*          ESGOTADO
   {
     nome: "Sofá Retrátil e Reclinável Atlas 2.30 Veludo Inca Grafite",
     categoria: "Sofás",
     imagem: "imagens/sofas/Estofado Retratil Reclinavel Atlas 230 2x90 + Braco 25cm Veludo Inca Grafite.jpeg",
     descricao: "Sofá Retrátil e Reclinável Atlas, 2 Módulos, 2.30m Veludo Inca Grafite",
     preco: "R$ 2.099,99"
-  },
+  }, */
 
   {
     nome: "Sofá Retrátil e Reclinável Atlas 2.30 Linho Bege",
     categoria: "Sofás",
     imagem: "imagens/sofas/Estofado Retratil Reclinavel Atlas 230 2x90 + Braco 25cm Linho Bege 01 Idealle.jpg",
     descricao: "Sofá Retrátil e Reclinável Atlas, 2 Módulos, 2.30m Linho Bege 01",
+    detalhes: "Estofado Retrátil e Reclinável Atlas 230 – Idealle. Tecido Linho Bege Claro 01. Estrutura 100% madeira maciça de eucalipto, com junções reforçadas por grampos e parafusos galvanizados. Assentos com espuma D28, molas Bonnel e percintas elásticas. Encosto reclinável em 4 estágios com catraca blindada de encaixe e fibras 100% siliconadas. Possui rodízios de PVC e pés plásticos. Medidas: Altura 0,90 m | Largura 2,00 m (assento 0,90 m + braço 0,20 m) | Profundidade fechado 1,10 m | Aberto 1,60 m.",
     preco: "R$ 2.099,99"
   },
 
@@ -1736,6 +1744,7 @@ const produtos = [
     categoria: "Sofás",
     imagem: "imagens/sofas/Estofado Retratil Reclinavel Atlas 230 2x90 + Braco 25cm Linho Gelo Idealle.jpg",
     descricao: "Sofá Retrátil e Reclinável Atlas, 2 Módulos, 2.30m Linho Gelo",
+    detalhes: "Estofado Retrátil e Reclinável Atlas 230 – Idealle. Tecido Linho Gelo. Estrutura 100% madeira maciça de eucalipto, com junções reforçadas por grampos e parafusos galvanizados. Assentos com espuma D28, molas Bonnel e percintas elásticas. Encosto reclinável em 4 estágios com catraca blindada de encaixe e fibras 100% siliconadas. Possui rodízios de PVC e pés de madeira. Medidas: Altura 0,90 m | Largura 2,00 m (assento 0,90 m + braço 0,20 m) | Profundidade fechado 1,10 m | Aberto 1,60 m.",
     preco: "R$ 2.099,99"
   },
 
@@ -1744,6 +1753,7 @@ const produtos = [
     categoria: "Sofás",
     imagem: "imagens/sofas/Estofado Retratil Reclinavel Atlas 230 2x90 + Braco 25cm Veludo Inca Bege Claro 02.jpg",
     descricao: "Sofá Retrátil e Reclinável Atlas, 2 Módulos, 2.30m Veludo Bege Claro 02",
+    detalhes: "Estofado Retrátil e Reclinável Atlas 230 – Idealle. Tecido Veludo Inca Bege Claro 02. Estrutura 100% madeira maciça de eucalipto, com junções reforçadas por grampos e parafusos galvanizados. Assentos com espuma D28, molas Bonnel e percintas elásticas. Encosto reclinável em 4 estágios com catraca blindada de encaixe e fibras 100% siliconadas. Possui rodízios de PVC e pés de madeira. Medidas: Altura 0,90 m | Largura 2,00 m (assento 0,90 m + braço 0,20 m) | Profundidade fechado 1,10 m | Aberto 1,60 m.",
     preco: "R$ 2.099,99"
   },
 
@@ -1752,6 +1762,7 @@ const produtos = [
     categoria: "Sofás",
     imagem: "imagens/sofas/Estofado Retratil Reclinavel Atlas 230 2x90 + Braco 25cm Veludo Inca Marrom 17 Idealle.jpg",
     descricao: "Sofá Retrátil e Reclinável Atlas, 2 Módulos, 2.30m Veludo Inca Marrom",
+    detalhes: "Estofado Retrátil e Reclinável Atlas 230 – Idealle. Tecido Veludo Inca Marrom 17. Estrutura 100% madeira maciça de eucalipto, com junções reforçadas por grampos e parafusos galvanizados. Assentos com espuma D28, molas Bonnel e percintas elásticas. Encosto reclinável em 4 estágios com catraca blindada de encaixe e fibras 100% siliconadas. Possui rodízios de PVC e pés plásticos. Medidas: Altura 0,90 m | Largura 2,00 m (assento 0,90 m + braço 0,20 m) | Profundidade fechado 1,10 m | Aberto 1,60 m.",
     preco: "R$ 2.099,99"
   },
 
@@ -1760,6 +1771,7 @@ const produtos = [
     categoria: "Sofás",
     imagem: "imagens/sofas/Estofado Retratil Reclinavel Atlas 290 2x120 + Braço 25cm Linho Bege 01 Idealle.jpg",
     descricao: "Sofá Retrátil e Reclinável Atlas, 2 Módulos, 2.90m Veludo Linho Bege 01",
+    detalhes: "Estofado Retrátil e Reclinável Atlas 290 – Idealle. Tecido Linho Bege 01. Estrutura 100% madeira maciça de eucalipto, com junções reforçadas por grampos e parafusos galvanizados. Assentos com espuma D28 Hiper Soft, Pillow de 16 cm, molas Bonnel e percintas elásticas. Encosto reclinável em 4 estágios com catraca blindada de encaixe e fibras 100% siliconadas. Possui rodízios de PVC e pés de madeira. Medidas: Altura 0,90 m | Largura 2,00 m (assento 1,20 m + braço 0,25 m) | Profundidade fechado 1,10 m | Aberto 1,60 m.",
     preco: "R$ 2.499,99"
 
   },
@@ -1769,6 +1781,7 @@ const produtos = [
     categoria: "Sofás",
     imagem: "imagens/sofas/Estofado Retratil Reclinavel Atlas 290 2x120 + Braço 25cm Veludo Inca Grafite 10 Idealle.jpg",
     descricao: "Sofá Retrátil e Reclinável Atlas, 2 Módulos, 2.90m Veludo Inca Grafite",
+    detalhes: "Estofado Retrátil e Reclinável Atlas 290 – Idealle. Tecido Veludo Inca Grafite 10. Estrutura 100% madeira maciça de eucalipto, com junções reforçadas por grampos e parafusos galvanizados. Assentos com espuma D28 Hiper Soft, Pillow de 16 cm, molas Bonnel e percintas elásticas. Encosto reclinável em 4 estágios com catraca blindada de encaixe e fibras 100% siliconadas. Possui rodízios de PVC e pés de madeira. Medidas: Altura 0,90 m | Largura 2,00 m (assento 1,20 m + braço 0,25 m) | Profundidade fechado 1,10 m | Aberto 1,60 m.",
     preco: "R$ 2.499,99"
   },
 
@@ -1777,6 +1790,7 @@ const produtos = [
     categoria: "Sofás",
     imagem: "imagens/sofas/Estofado Retratil Reclinavel Atlas 230 2x90 + Braco 25cm Veludo Inca Marrom 17 Idealle.jpg",
     descricao: "Sofá Retrátil e Reclinável Atlas, 2 Módulos, 2.90m Veludo Inca Marrom",
+    detalhes: "Estofado Retrátil e Reclinável Atlas 290 – Idealle. Tecido Veludo Inca Marrom 17. Estrutura 100% madeira maciça de eucalipto, com junções reforçadas por grampos e parafusos galvanizados. Assentos com espuma D28 Hiper Soft, Pillow de 16 cm, molas Bonnel e percintas elásticas. Encosto reclinável em 4 estágios com catraca blindada de encaixe e fibras 100% siliconadas. Possui rodízios de PVC e pés de madeira. Medidas: Altura 0,90 m | Largura 2,00 m (assento 1,20 m + braço 0,25 m) | Profundidade fechado 1,10 m | Aberto 1,60 m.",
     preco: "R$ 2.499,99"
   },
 
@@ -1785,6 +1799,16 @@ const produtos = [
     categoria: "Sofás",
     imagem: "imagens/sofas/Estofado Retratil Reclinavel Atlas 290 2x120 + Braco 25cm Velulo Inca Bege Claro 02 Idealle.jpg",
     descricao: "Sofá Retrátil e Reclinável Atlas, 2 Módulos, 2.90m Linho Bege Claro 02",
+    detalhes: "Estofado Retrátil e Reclinável Atlas 290 – Idealle. Tecido Veludo Inca Bege Claro 02. Estrutura 100% madeira maciça de eucalipto, com junções reforçadas por grampos e parafusos galvanizados. Assentos com espuma D28 Hiper Soft, Pillow de 16 cm, molas Bonnel e percintas elásticas. Encosto reclinável em 4 estágios com catraca blindada de encaixe e fibras 100% siliconadas. Possui rodízios de PVC e pés de madeira. Medidas: Altura 0,90 m | Largura 2,00 m (assento 1,20 m + braço 0,25 m) | Profundidade fechado 1,10 m | Aberto 1,60 m.",
+    preco: "R$ 2.499,99"
+  },
+
+    {
+    nome: "Sofá Retrátil e Reclinável Atlas 2.90 Linho Gelo",
+    categoria: "Sofás",
+    imagem: "imagens/sofas/Estofado-Atlas290-Linho-Gelo.jpg",
+    descricao: "Sofá Retrátil e Reclinável Atlas, 2 Módulos, 2.90m Linho Gelo",
+      detalhes: "Estofado Retrátil e Reclinável Atlas 290 – Idealle. Tecido Linho Gelo. Estrutura 100% madeira maciça de eucalipto, com junções reforçadas por grampos e parafusos galvanizados. Assentos com espuma D28 Hiper Soft, Pillow de 15 cm, molas Bonnel e percintas elásticas. Encosto reclinável em 4 estágios com catraca blindada de encaixe e fibras 100% siliconadas. Possui rodízios de PVC e pés de madeira. Medidas: Altura 0,90 m | Largura 2,00 m (assento 1,20 m + braço 0,25 m) | Profundidade fechado 1,10 m | Aberto 1,60 m.",
     preco: "R$ 2.499,99"
   },
 
@@ -1793,6 +1817,7 @@ const produtos = [
     categoria: "Sofás",
     imagem: "imagens/sofas/Estofado Retratil Reclinavel Atlas 320 3x90 Linho Bege 01 Idealle.jpg",
     descricao: "Sofá Retrátil e Reclinável Atlas, 3 Lugares, 3.20m, Linho Bege",
+    detalhes: "Estofado Retrátil e Reclinável Atlas 320 – Idealle. Tecido Linho Bege 01. Estrutura 100% madeira maciça de eucalipto, com junções reforçadas por grampos e parafusos galvanizados. Sistema retrátil em aço carbono. Assentos com espuma D28 Hiper Soft, Pillow de 16 cm, molas ensacadas individuais e percintas elásticas. Encosto reclinável em 4 estágios com catraca blindada de encaixe e fibras 100% siliconadas. Possui rodízios de PVC e pés de madeira. Medidas: Altura 0,90 m | Largura 3 módulos (laterais 0,90 m + braço 0,25 m e central 0,90 m) | Profundidade fechado 1,00 m | Aberto 1,60 m.",
     preco: "R$ 2.899,99"
   },
 
@@ -1801,9 +1826,11 @@ const produtos = [
     categoria: "Sofás",
     imagem: "imagens/sofas/Estofado Retratil Reclinavel Atlas 320 3x90 Linho Gelo.jpg",
     descricao: "Sofá Retrátil e Reclinável Atlas, 3 Lugares, 3.20m, Linho Gelo",
+    detalhes: "Estofado Retrátil e Reclinável Atlas 320 – Idealle. Tecido Linho Gelo. Estrutura 100% madeira maciça de eucalipto, com junções reforçadas por grampos e parafusos galvanizados. Sistema retrátil em aço carbono. Assentos com espuma D28 Hiper Soft, Pillow de 16 cm, molas ensacadas individuais e percintas elásticas. Encosto reclinável em 4 estágios com catraca blindada de encaixe e fibras 100% siliconadas. Possui rodízios de PVC e pés de madeira. Medidas: Altura 0,90 m | Largura 3 módulos (laterais 0,90 m + braço 0,25 m e central 0,90 m) | Profundidade fechado 1,00 m | Aberto 1,60 m.",
     preco: "R$ 2.899,99"
   },
 
+  /*
   {
     nome: "Sofá Retrátil e Reclinável Atlas 3 Lugares 320 Linho Bege Claro",
     categoria: "Sofás",
@@ -1811,12 +1838,14 @@ const produtos = [
     descricao: "Sofá Retrátil e Reclinável Atlas, 3 Lugares, 3.20m, Linho Bege Claro",
     preco: "R$ 2.899,99"
   },
+*/
 
   {
     nome: "Sofá Retrátil e Reclinável Atlas 3 Lugares 320 Veludo Inca Marrom",
     categoria: "Sofás",
     imagem: "imagens/sofas/Estofado Retratil Reclinavel Atlas 320 3x90 Veludo Inca Marrom 17 Idealle.jpg",
     descricao: "Sofá Retrátil e Reclinável Atlas, 3 Lugares, 3.20m, Veludo Inca Marrom",
+    detalhes: "Estofado Retrátil e Reclinável Atlas 320 – Idealle. Tecido Veludo Inca Marrom 17. Estrutura 100% madeira maciça de eucalipto, com junções reforçadas por grampos e parafusos galvanizados. Sistema retrátil em aço carbono. Assentos com espuma D28 Hiper Soft, Pillow de 16 cm, molas ensacadas individuais e percintas elásticas. Encosto reclinável em 4 estágios com catraca blindada de encaixe e fibras 100% siliconadas. Possui rodízios de PVC e pés de madeira. Medidas: Altura 0,90 m | Largura 3 módulos (laterais 0,90 m + braço 0,25 m e central 0,90 m) | Profundidade fechado 1,00 m | Aberto 1,60 m.",
     preco: "R$ 2.899,99"
   },
 
@@ -1825,6 +1854,7 @@ const produtos = [
     categoria: "Sofás",
     imagem: "imagens/sofas/Estofado Retratil Reclinavel Buzios 250 2x100 Brc 25cm Veludo Inca Grafite 10 Idealle.jpg",
     descricao: "Sofá Retrátil e Reclinável Buzios, 2 Módulos, 2.50m, Veludo Inca Grafite",
+    detalhes: "Estofado Retrátil e Reclinável Búzios 250 – Idealle. Tecido Veludo Inca Grafite 10. Estrutura 100% madeira maciça de eucalipto, com junções reforçadas por parafusos e porcas galvanizados. Sistema retrátil em aço. Assentos com espuma D28 Hiper Soft, Pillow de 30 cm, molas espirais de aço e percintas elásticas fixadas mecanicamente. Encosto reclinável em 4 estágios com catracas blindadas de encaixe. Almofadas com fibras de silicone e pés de madeira com acabamento em verniz acetinado. Medidas: Altura 1,18 m | Largura 2 módulos (1,00 m + braço 0,25 m) | Profundidade fechado 1,23 m | Aberto 1,80 m.",
     preco: "R$ 2.299,99"
   },
 
@@ -1833,14 +1863,28 @@ const produtos = [
     categoria: "Sofás",
     imagem: "imagens/sofas/Estofado Retratil Reclinavel Buzios 250 2x100 Brc 25cm Veludo Inca Marrom 17 Idealle.jpg",
     descricao: "Sofá Retrátil e Reclinável Buzios, 2 Módulos, 2.50m, Veludo Inca Marrom",
+    detalhes: "Estofado Retrátil e Reclinável Búzios 250 – Idealle. Tecido Veludo Inca Marrom 17. Estrutura 100% madeira maciça de eucalipto, com junções reforçadas por parafusos e porcas galvanizados. Sistema retrátil em aço. Assentos com espuma D28 Hiper Soft, Pillow de 30 cm, molas espirais de aço e percintas elásticas fixadas mecanicamente. Encosto reclinável em 4 estágios com catracas blindadas de encaixe. Almofadas com fibras de silicone e pés de madeira com acabamento em verniz acetinado. Medidas: Altura 1,18 m | Largura 2 módulos (1,00 m + braço 0,25 m) | Profundidade fechado 1,23 m | Aberto 1,80 m.",
     preco: "R$ 2.299,99"
   },
 
+    {
+    nome: "Sofá Retrátil Reclinável Buzios 250 Veludo Inca Azul",
+    categoria: "Sofás",
+    imagem: "imagens/sofas/Buzios-250-Azul-24 NOVO.jpg",
+    descricao: "Sofá Retrátil e Reclinável Buzios, 2 Módulos, 2.50m, Veludo Inca Azul",
+    detalhes: "Estofado Retrátil e Reclinável Búzios 250 – Idealle. Tecido Veludo Inca Azul 24. Estrutura 100% madeira maciça de eucalipto, com junções reforçadas por parafusos e porcas galvanizados. Sistema retrátil em aço. Assentos com espuma D28 Hiper Soft, Pillow de 30 cm, molas espirais de aço e percintas elásticas fixadas mecanicamente. Encosto reclinável em 4 estágios com catracas blindadas de encaixe. Almofadas com fibras de silicone e pés de madeira com acabamento em verniz acetinado. Medidas: Altura 1,18 m | Largura 2 módulos (1,00 m + braço 0,25 m) | Profundidade fechado 1,23 m | Aberto 1,80 m.",
+    preco: "R$ 2.299,99"
+  },
+
+
+
+  
   {
-    nome: "Sofá Retrátil Reclinável Buzios 290 Veludo Inca Bege",
+    nome: "Sofá Retrátil Reclinável Buzios 290 Veludo Inca Bege Claro",
     categoria: "Sofás",
     imagem: "imagens/sofas/Estofado Retratil Reclinavel Buzios 290 2x120 Brc 25cm Veludo Inca Bege Claro 02 Idealle.jpg",
-    descricao: "Sofá Retrátil e Reclinável Buzios, 2 Módulos, 2.90m, Veludo Inca Bege",
+    descricao: "Sofá Retrátil e Reclinável Buzios, 2 Módulos, 2.90m, Veludo Inca Bege Claro",
+    detalhes: "Estofado Retrátil e Reclinável Búzios 290 – Idealle. Tecido Veludo Inca Bege Claro 02. Estrutura 100% madeira maciça de eucalipto, com junções reforçadas por parafusos e porcas galvanizados. Sistema retrátil em aço. Assentos com espuma D28 Hiper Soft, Pillow de 30 cm, molas espirais de aço e percintas elásticas fixadas mecanicamente. Encosto reclinável em 4 estágios com catracas blindadas de encaixe. Almofadas com fibras de silicone e pés de madeira com acabamento em verniz acetinado. Medidas: Altura 1,18 m | Largura 2 módulos (1,20 m + braço 0,25 m) | Profundidade fechado 1,23 m | Aberto 1,80 m.",
     preco: "R$ 2.899,99"
   },
 
@@ -1849,6 +1893,7 @@ const produtos = [
     categoria: "Sofás",
     imagem: "imagens/sofas/Estofado Retratil Reclinavel Buzios 290 2x120 Brc 25cm Veludo Inca Azul 24 Idealle.jpg",
     descricao: "Sofá Retrátil e Reclinável Buzios, 2 Módulos, 2.90m, Veludo Inca Azul",
+    detalhes: "Estofado Retrátil e Reclinável Búzios 290 – Idealle. Tecido Veludo Inca Azul 24. Estrutura 100% madeira maciça de eucalipto, com junções reforçadas por parafusos e porcas galvanizados. Sistema retrátil em aço. Assentos com espuma D28 Hiper Soft, Pillow de 30 cm, molas espirais de aço e percintas elásticas fixadas mecanicamente. Encosto reclinável em 4 estágios com catracas blindadas de encaixe. Almofadas com fibras de silicone e pés de madeira com acabamento em verniz acetinado. Medidas: Altura 1,18 m | Largura 2 módulos (1,20 m + braço 0,25 m) | Profundidade fechado 1,23 m | Aberto 1,80 m.",
     preco: "R$ 2.899,99"
   },
 
@@ -1857,6 +1902,7 @@ const produtos = [
     categoria: "Sofás",
     imagem: "imagens/sofas/Estofado Retratil Reclinavel Geriba 250 2x100 Brc 25cm Veludo Inca Grafite 10 Idealle.jpg",
     descricao: "Sofá Retrátil e Reclinável Geriba, 2 Módulos, 250m, Veludo Inca Grafite",
+    detalhes: "Estofado Retrátil e Reclinável Geribá 250 – Idealle. Tecido Veludo Inca Grafite 10. Estrutura 100% madeira maciça de eucalipto, com junções reforçadas por parafusos e porcas galvanizados. Sistema retrátil em aço. Assentos com espuma D28 Hiper Soft, Pillow de 30 cm, molas espirais de aço e percintas elásticas fixadas mecanicamente. Encosto reclinável em 4 estágios com catracas blindadas de encaixe. Almofadas com fibras de silicone, braço com braçadeira em corino, almofadas decorativas e pés de madeira com acabamento em verniz acetinado. Medidas: Altura 1,18 m | Largura 2 módulos (1,00 m + braço 0,25 m) | Profundidade fechado 1,23 m | Aberto 1,80 m.",
     preco: "R$ 2.399,99"
   },
 
@@ -1865,6 +1911,7 @@ const produtos = [
     categoria: "Sofás",
     imagem: "imagens/sofas/Estofado Retratil Reclinavel Geriba 250 2x100 Brc 25cm Linho Bege 01 Idealle.jpg",
     descricao: "Sofá Retrátil e Reclinável Geriba, 2 Módulos, 250m, Linho Bege",
+    detalhes: "Estofado Retrátil e Reclinável Geribá 250 – Idealle. Tecido Linho Bege 01. Estrutura 100% madeira maciça de eucalipto, com junções reforçadas por parafusos e porcas galvanizados. Sistema retrátil em aço. Assentos com espuma D28 Hiper Soft, Pillow de 30 cm, molas espirais de aço e percintas elásticas fixadas mecanicamente. Encosto reclinável em 4 estágios com catracas blindadas de encaixe. Almofadas com fibras de silicone, braço com braçadeira em corino, almofadas decorativas e pés de madeira com acabamento em verniz acetinado. Medidas: Altura 1,18 m | Largura 2 módulos (1,00 m + braço 0,25 m) | Profundidade fechado 1,23 m | Aberto 1,80 m.",
     preco: "R$ 2.399,99"
   },
 
@@ -1873,6 +1920,7 @@ const produtos = [
     categoria: "Sofás",
     imagem: "imagens/sofas/Estofado Retratil Reclinavel Geriba 250 2x100 Brc 25cm Veludo Inca Preto 13 Idealle.jpg",
     descricao: "Sofá Retrátil e Reclinável Geriba, 2 Módulos, 250m, Veludo Inca Preto",
+    detalhes: "Estofado Retrátil e Reclinável Geribá 250 – Idealle. Tecido Linho Preto 13. Estrutura 100% madeira maciça de eucalipto, com junções reforçadas por parafusos e porcas galvanizados. Sistema retrátil em aço. Assentos com espuma D28 Hiper Soft, Pillow de 30 cm, molas espirais de aço e percintas elásticas fixadas mecanicamente. Encosto reclinável em 4 estágios com catracas blindadas de encaixe. Almofadas com fibras de silicone, braço com braçadeira em corino, almofadas decorativas e pés de madeira com acabamento em verniz acetinado. Medidas: Altura 1,18 m | Largura 2 módulos (1,00 m + braço 0,25 m) | Profundidade fechado 1,23 m | Aberto 1,80 m.",
     preco: "R$ 2.399,99"
   },
 
@@ -1882,6 +1930,7 @@ const produtos = [
     categoria: "Sofás",
     imagem: "imagens/sofas/Estofado Retratil Reclinavel Geriba 290 2x120 + Braco 25cm Veludo Inca Bege Claro 02 Idealle.jpg",
     descricao: "Sofá Retrátil e Reclinável Geriba, 2 Módulos, 290m, Veludo Inca Bege Claro",
+    detalhes: "Estofado Retrátil e Reclinável Geribá 290 – Idealle. Tecido Veludo Inca Bege Claro 02. Estrutura 100% madeira maciça de eucalipto, com junções reforçadas por parafusos e porcas galvanizados. Sistema retrátil em aço. Assentos com espuma D28 Hiper Soft, Pillow de 30 cm, molas espirais de aço e percintas elásticas fixadas mecanicamente. Encosto reclinável em 4 estágios com catracas blindadas de encaixe. Almofadas com fibras de silicone, braço com braçadeira em corino, almofadas decorativas e pés de madeira com acabamento em verniz acetinado. Medidas: Altura 1,18 m | Largura 2 módulos (1,20 m + braço 0,25 m) | Profundidade fechado 1,23 m | Aberto 1,80 m.",
     preco: "R$ 2.699,99"
   },
 
@@ -1890,7 +1939,18 @@ const produtos = [
     categoria: "Sofás",
     imagem: "imagens/sofas/Estofado Retratil Reclinavel Geriba 290 2x120 + Braco 25cm Veludo Inca Marrom 17 Idealle.jpg",
     descricao: "Sofá Retrátil e Reclinável Geriba, 2 Módulos, 290m, Veludo Inca Marrom",
+    detalhes: "Estofado Retrátil e Reclinável Geribá 290 – Idealle. Tecido Veludo Inca Marrom. Estrutura 100% madeira maciça de eucalipto, com junções reforçadas por parafusos e porcas galvanizados. Sistema retrátil em aço. Assentos com espuma D28 Hiper Soft, Pillow de 30 cm, molas espirais de aço e percintas elásticas fixadas mecanicamente. Encosto reclinável em 4 estágios com catracas blindadas de encaixe. Almofadas com fibras de silicone, braço com braçadeira em corino, almofadas decorativas e pés de madeira com acabamento em verniz acetinado. Medidas: Altura 1,18 m | Largura 2 módulos (1,20 m + braço 0,25 m) | Profundidade fechado 1,23 m | Aberto 1,80 m.",
     preco: "R$ 2.699,99"
+  },
+
+  {
+    nome: "Sofá Retrátil Reclinável Geriba 290 Linho Cinza 2665",
+    categoria: "Sofás",
+    imagem: "imagens/sofas/Geriba-290-Linho-Cinza-2665.jpg",
+    descricao: "Sofá Retrátil e Reclinável Geriba, 2 Módulos, 290m, Veludo Linho Cinza 2665",
+    detalhes: "Estofado Retrátil e Reclinável Geribá 290 – Idealle. Tecido Linho Cinza 2665. Estrutura 100% madeira maciça de eucalipto, com junções reforçadas por parafusos e porcas galvanizados. Sistema retrátil em aço. Assentos com espuma D28 Hiper Soft, Pillow de 30 cm, molas espirais de aço e percintas elásticas fixadas mecanicamente. Encosto reclinável em 4 estágios com catracas blindadas de encaixe. Almofadas com fibras de silicone, braço com braçadeira em corino, almofadas decorativas e pés de madeira com acabamento em verniz acetinado. Medidas: Altura 1,18 m | Largura 2 módulos (1,20 m + braço 0,25 m) | Profundidade fechado 1,23 m | Aberto 1,80 m.",
+    preco: "R$ 2.699,99"
+    
   },
 
   {
@@ -1898,6 +1958,7 @@ const produtos = [
     categoria: "Sofás",
     imagem: "imagens/sofas/Estofado Retratil Reclinavel Geriba 320 3x90 com Braco 25cm Linho Gelo Idealle.jpeg",
     descricao: "Sofá Retrátil e Reclinável Geriba, 2 Módulos, 320m, Linho Gelo",
+    detalhes: "Estofado Retrátil e Reclinável Geribá 320 – Idealle. Tecido Linho Gelo. Estrutura 100% madeira maciça de eucalipto, com junções reforçadas por parafusos e porcas galvanizados. Sistema retrátil em aço. Assentos com espuma D28 Hiper Soft, Pillow de 30 cm, molas espirais de aço e percintas elásticas fixadas mecanicamente. Encosto reclinável em 4 estágios com catracas blindadas de encaixe. Almofadas com fibras de silicone, braço com braçadeira em corino, almofadas decorativas e pés de madeira com acabamento em verniz acetinado. Medidas: Altura 1,18 m | Largura 3 módulos (0,90 m + braço 0,25 m) | Profundidade fechado 1,23 m | Aberto 1,80 m.",
     preco: "R$ 2.999,99"
   },
 
@@ -1906,6 +1967,7 @@ const produtos = [
     categoria: "Sofás",
     imagem: "imagens/sofas/Estofado Retratil Reclinavel Geriba 320 3x90 com Braco 25cm Veludo Inca Azul 24 Idealle.jpg",
     descricao: "Sofá Retrátil e Reclinável Geriba, 2 Módulos, 320m, Veludo Inca Azul",
+    detalhes: "Estofado Retrátil e Reclinável Geribá 320 – Idealle. Tecido Veludo Inca Azull. Estrutura 100% madeira maciça de eucalipto, com junções reforçadas por parafusos e porcas galvanizados. Sistema retrátil em aço. Assentos com espuma D28 Hiper Soft, Pillow de 30 cm, molas espirais de aço e percintas elásticas fixadas mecanicamente. Encosto reclinável em 4 estágios com catracas blindadas de encaixe. Almofadas com fibras de silicone, braço com braçadeira em corino, almofadas decorativas e pés de madeira com acabamento em verniz acetinado. Medidas: Altura 1,18 m | Largura 3 módulos (0,90 m + braço 0,25 m) | Profundidade fechado 1,23 m | Aberto 1,80 m.",
     preco: "R$ 2.999,99"
   },
 
@@ -1914,6 +1976,7 @@ const produtos = [
     categoria: "Sofás",
     imagem: "imagens/sofas/Estofado Retratil Reclinavel Geriba 320 3x90 com Braco 25cm Veludo Inca Marrom 17 Idealle.jpeg",
     descricao: "Sofá Retrátil e Reclinável Geriba, 2 Módulos, 320m, Veludo Inca Marrom",
+    detalhes: "Estofado Retrátil e Reclinável Geribá 320 – Idealle. Tecido Veludo Inca Marrom 17. Estrutura 100% madeira maciça de eucalipto, com junções reforçadas por parafusos e porcas galvanizados. Sistema retrátil em aço. Assentos com espuma D28 Hiper Soft, Pillow de 30 cm, molas espirais de aço e percintas elásticas fixadas mecanicamente. Encosto reclinável em 4 estágios com catracas blindadas de encaixe. Almofadas com fibras de silicone, braço com braçadeira em corino, almofadas decorativas e pés de madeira com acabamento em verniz acetinado. Medidas: Altura 1,18 m | Largura 3 módulos (0,90 m + braço 0,25 m) | Profundidade fechado 1,23 m | Aberto 1,80 m.",
     preco: "R$ 2.999,99"
   },
 
@@ -1922,6 +1985,7 @@ const produtos = [
     categoria: "Sofás",
     imagem: "imagens/sofas/Estorado Retratil Reclinavel Barcelona 250 2x100 com Braco 25cm Linho Gelo.jpg",
     descricao: "Sofá Retrátil e Reclinável Barcelona, 2 Módulos, 2.50m, Linho Gelo",
+    detalhes: "Estofado Retrátil e Reclinável Barcelona 250 – Idealle. Tecido Linho Gelo. Estrutura 100% madeira maciça de eucalipto, com junções reforçadas por parafusos e porcas galvanizados. Sistema retrátil em aço. Assentos com espuma D28 Hiper Soft, Pillow de 30 cm, molas espirais de aço e percintas elásticas fixadas mecanicamente. Encosto reclinável em 4 estágios com catracas blindadas de encaixe. Almofadas com fibras de silicone, braços com almofadas e pés de madeira com acabamento em verniz acetinado. Medidas: Altura 1,14 m | Largura 2 módulos (1,00 m + braço 0,25 m) | Profundidade fechado 1,23 m | Aberto 1,80 m.",
     preco: "R$ 2.299,99"
   },
 
@@ -1930,6 +1994,7 @@ const produtos = [
     categoria: "Sofás",
     imagem: "imagens/sofas/Estofado Retratil Reclinavel Barcelona 250 2x100 mais Braco 25cm Linho Bege 01 Idealle.jpg",
     descricao: "Sofá Retrátil e Reclinável Barcelona, 2 Módulos, 2.50m, Linho Bege",
+    detalhes: "Estofado Retrátil e Reclinável Barcelona 250 – Idealle. Tecido Linho Bege 01. Estrutura 100% madeira maciça de eucalipto, com junções reforçadas por parafusos e porcas galvanizados. Sistema retrátil em aço. Assentos com espuma D28 Hiper Soft, Pillow de 30 cm, molas espirais de aço e percintas elásticas fixadas mecanicamente. Encosto reclinável em 4 estágios com catracas blindadas de encaixe. Almofadas com fibras de silicone, braços com almofadas e pés de madeira com acabamento em verniz acetinado. Medidas: Altura 1,14 m | Largura 2 módulos (1,00 m + braço 0,25 m) | Profundidade fechado 1,23 m | Aberto 1,80 m.",
     preco: "R$ 2.299,99"
   },
 
@@ -1938,6 +2003,7 @@ const produtos = [
     categoria: "Sofás",
     imagem: "imagens/sofas/Estofado Retratil Reclinavel Barcelona 250 2x100 mais Braco 25cm Veludo Inca Azul 24 Idealle.jpg",
     descricao: "Sofá Retrátil e Reclinável Barcelona, 2 Módulos, 2.50m, Veludo Inca Azul",
+    detalhes: "Estofado Retrátil e Reclinável Barcelona 250 – Idealle. Tecido Veludo Inca Azul 24. Estrutura 100% madeira maciça de eucalipto, com junções reforçadas por parafusos e porcas galvanizados. Sistema retrátil em aço. Assentos com espuma D28 Hiper Soft, Pillow de 30 cm, molas espirais de aço e percintas elásticas fixadas mecanicamente. Encosto reclinável em 4 estágios com catracas blindadas de encaixe. Almofadas com fibras de silicone, braços com almofadas e pés de madeira com acabamento em verniz acetinado. Medidas: Altura 1,14 m | Largura 2 módulos (1,00 m + braço 0,25 m) | Profundidade fechado 1,23 m | Aberto 1,80 m.",
     preco: "R$ 2.299,99"
   },
 
@@ -1946,6 +2012,7 @@ const produtos = [
     categoria: "Sofás",
     imagem: "imagens/sofas/Estofado Retratil Reclinavel Barcelona 250 2x100 mais Braco 25cm Veludo Inca Grafite 10 Idealle.jpg",
     descricao: "Sofá Retrátil e Reclinável Barcelona, 2 Módulos, 2.50m, Veludo Inca Grafite",
+    detalhes: "Estofado Retrátil e Reclinável Barcelona 250 – Idealle. Tecido Veludo Inca Grafite 10. Estrutura 100% madeira maciça de eucalipto, com junções reforçadas por parafusos e porcas galvanizados. Sistema retrátil em aço. Assentos com espuma D28 Hiper Soft, Pillow de 30 cm, molas espirais de aço e percintas elásticas fixadas mecanicamente. Encosto reclinável em 4 estágios com catracas blindadas de encaixe. Almofadas com fibras de silicone, braços com almofadas e pés de madeira com acabamento em verniz acetinado. Medidas: Altura 1,14 m | Largura 2 módulos (1,00 m + braço 0,25 m) | Profundidade fechado 1,23 m | Aberto 1,80 m.",
     preco: "R$ 2.299,99"
   },
 
@@ -1954,6 +2021,7 @@ const produtos = [
     categoria: "Sofás",
     imagem: "imagens/sofas/Sofá Canto M-146 5 Lugares 300x210 - Tecido Acqua Block Cor B-484 Caqui Martins Estofados.jpg",
     descricao: "Sofá de Canto M-146 5 Lugares, Tecido Acqua Block, Caqui",
+    detalhes: "Sofá Canto MM-146 5 Lugares – Martins Estofados. Tecido Acqua Block Caqui B-484. Estrutura em madeira maciça de eucalipto. Assentos com espuma certificada D28, molas Bonnel, percintas elásticas e Pillow Top de 7 cm. Encosto fixo com almofadas soltas em fibras siliconadas de poliéster. Braços estofados com espuma D28. Revestimento Acqua Block impermeável, ideal para áreas internas e externas. Possui pés plásticos de PVC. Medidas: Altura 0,95 m | Largura total 3,00 m | Profundidade total 2,10 m | Profundidade do assento 0,87 m.",
     preco: "R$ 2.999,99"
   },
 
@@ -1962,6 +2030,7 @@ const produtos = [
     categoria: "Sofás",
     imagem: "imagens/sofas/Sofa Living Organic M204 3 Lugares 2,00m Tecido Boucle Bege Claro B473.jpg",
     descricao: "Sofá Living Organic M-204 3 Lugares, Tecido Boucle Bege Claro",
+    detalhes: "Sofá Living Organic M-204 – Martins Estofados. Tecido Bouclê Bege Claro B473. Estrutura 100% madeira maciça de eucalipto. Assento com Pillow Top de 14 cm, espuma certificada D28, molas Bonnel entrelaçadas e percintas elásticas fixadas mecanicamente. Encosto fixo com almofadas soltas em fibras siliconadas de poliéster. Revestimento Bouclê com tratamento Acqua Block impermeável. Possui pés de madeira maciça com acabamento em verniz acetinado. Medidas: Altura 0,85 m | Largura 2,00 m | Profundidade total 0,80 m | Profundidade do assento 0,80 m.",
     preco: "R$ 2.499,99"
   },
 
@@ -1970,6 +2039,7 @@ const produtos = [
     categoria: "Sofás",
     imagem: "imagens/sofas/Sofa Living Organic M204 3 Lugares 2,00m Tecido Boucle Cinza.jpeg",
     descricao: "Sofá Living Organic M-204 3 Lugares, Tecido Boucle Cinza",
+    detalhes: "Sofá Living Organic M-204 – Martins Estofados. Tecido Bouclê Cinza Esverdeado B-475. Estrutura 100% madeira maciça de eucalipto. Assento com Pillow Top de 14 cm, espuma certificada D28, molas Bonnel entrelaçadas e percintas elásticas fixadas mecanicamente. Encosto fixo com almofadas soltas em fibras siliconadas de poliéster. Revestimento Bouclê com tratamento Acqua Block impermeável. Possui pés de madeira maciça com acabamento em verniz acetinado. Medidas: Altura 0,85 m | Largura 2,00 m | Profundidade total 0,80 m | Profundidade do assento 0,80 m.",
     preco: "R$ 2.499,99"
   },
 
@@ -1978,6 +2048,7 @@ const produtos = [
     categoria: "Sofás",
     imagem: "imagens/sofas/Sofa Living Organic M204 3 Lugares 2,00m Tecido Sarja Verde B485 Martins Estofados.jpg",
     descricao: "Sofá Living Organic M-204 3 Lugares, Tecido Boucle Sarja Verde",
+    detalhes: "Sofá Living Organic M-204 – Martins Estofados. Tecido Sarja Verde B-485. Estrutura 100% madeira maciça de eucalipto. Assento com Pillow Top de 14 cm, espuma certificada D28, molas Bonnel entrelaçadas e percintas elásticas fixadas mecanicamente. Encosto fixo com almofadas soltas em fibras siliconadas de poliéster. Revestimento em Sarja com tratamento Acqua Block impermeável. Possui pés de madeira maciça com acabamento em verniz acetinado. Medidas: Altura 0,85 m | Largura 2,00 m | Profundidade total 0,80 m | Profundidade do assento 0,80 m.",
     preco: "R$ 2.499,99"
   },
 
@@ -1986,6 +2057,7 @@ const produtos = [
     categoria: "Sofás",
     imagem: "imagens/sofas/Sofa Living Organic M204 3 Lugares 2,00m Tecido Boucle Côr Bege B474 Martins Estofados.jpg",
     descricao: "Sofá Living Organic M-204 3 Lugares, Tecido Boucle Bege",
+    detalhes: "Sofá Living Organic M-204 – Martins Estofados. Tecido Bouclê Bege B-474. Estrutura 100% madeira maciça de eucalipto. Assento com Pillow Top de 14 cm, espuma certificada D28, molas Bonnel entrelaçadas e percintas elásticas fixadas mecanicamente. Encosto fixo com almofadas soltas em fibras siliconadas de poliéster. Revestimento Bouclê com tratamento Acqua Block impermeável. Possui pés de madeira maciça com acabamento em verniz acetinado. Medidas: Altura 0,85 m | Largura 2,00 m | Profundidade total 0,80 m | Profundidade do assento 0,80 m.",
     preco: "R$ 2.499,99"
   },
 
@@ -1994,6 +2066,7 @@ const produtos = [
     categoria: "Sofás",
     imagem: "imagens/sofas/Sofa Living M203 3 Lugares 2,00m  Tecido Linho Cinza B463 Martins Estofados.jpg",
     descricao: "Sofá Living M-203 3 Lugares, Tecido Linho Cinza",
+    detalhes: "Sofá Living M-203 3 Lugares – Martins Estofados. Tecido Linho Acqua Block Cinza B-463. Estrutura em madeira maciça de eucalipto. Estofamento em espuma certificada D28 Soft. Encosto fixo com almofadas soltas em fibras siliconadas de poliéster. Assento em capitonê quadrangular, almofadas e braços com bordas debruadas. Detalhes em courino nos braços. Base e pés retrô de madeira maciça com acabamento em verniz acetinado. Medidas: Altura 0,95 m | Largura 2,20 m (assento 2,00 m + braços 0,10 m cada) | Profundidade 0,96 m.",
     preco: "R$ 1.999,99"
   },
 
@@ -2002,6 +2075,7 @@ const produtos = [
     categoria: "Sofás",
     imagem: "imagens/sofas/Sofa Living M203 3 Lugares 2,00m Tecido Linho Bege B452 Martins Estofado.jpg",
     descricao: "Sofá Living M-203 3 Lugares, TecidoL Linho Bege",
+    detalhes: "Sofá Living M-203 3 Lugares – Martins Estofados. Tecido Linho Acqua Block Bege B-452. Estrutura em madeira maciça de eucalipto. Estofamento em espuma certificada D28 Soft. Encosto fixo com almofadas soltas em fibras siliconadas de poliéster. Assento em capitonê quadrangular, almofadas e braços com bordas debruadas. Detalhes em courino nos braços. Base e pés retrô de madeira maciça com acabamento em verniz acetinado. Medidas: Altura 0,95 m | Largura 2,20 m (assento 2,00 m + braços 0,10 m cada) | Profundidade 0,96 m.",
     preco: "R$ 1.999,99"
   },
 
@@ -2010,6 +2084,7 @@ const produtos = [
     categoria: "Sofás",
     imagem: "imagens/sofas/Conj Estofado 175 2x3Lgs Veludo Joinvile Bege Rondomoveis.jpg",
     descricao: "Conjunto Sofá Joinville 3 e 2 Lugares, Veludo Bege",
+    detalhes: "Conjunto Estofado 175 (2 e 3 Lugares) – Rondomóveis. Tecido Veludo Bege. Assentos com espuma selada D33 e molas S. Encosto e braços com flocos de espuma e fibra de poliéster siliconada. Possui pés de madeira maciça. Medidas: 2 lugares – Altura 0,96 m | Largura 1,50 m | Profundidade 0,80 m. 3 lugares – Altura 0,90 m | Largura 2,00 m | Profundidade 0,80 m.",
     preco: "R$ 2.499,99"
   },
 
@@ -2018,6 +2093,7 @@ const produtos = [
     categoria: "Sofás",
     imagem: "imagens/sofas/Conj Estofado 175 2x3Lgs Veludo Jurere Marrom Rondomoveis.jpg",
     descricao: "Conjunto Sofá Junere 3 e 2 Lugares, Veludo Marrom",
+    detalhes: "Conjunto Estofado 175 (2 e 3 Lugares) – Rondomóveis. Tecido Veludo Marrom. Assentos com espuma selada D33 e molas S. Encosto e braços com flocos de espuma e fibra de poliéster siliconada. Possui pés de madeira maciça. Medidas: 2 lugares – Altura 0,96 m | Largura 1,50 m | Profundidade 0,80 m. 3 lugares – Altura 0,90 m | Largura 2,00 m | Profundidade 0,80 m.",
     preco: "R$ 2.499,99"
   },
 
