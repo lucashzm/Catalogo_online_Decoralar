@@ -17,6 +17,7 @@ const VENDEDORES = [
   { nome: "Hazelmam", numero: "5521974690154" },
   { nome: "Teste", numero: "5521984525497" }
 ];
+
 const destaqueWhatsapp = document.getElementById("destaque-whatsapp");
 
 const PRODUTOS_POR_PAGINA = 30;
@@ -213,11 +214,11 @@ function abrirModal(produto) {
   const mensagem =
     `Olá! Tenho interesse no produto "${produto.nome}", no valor de ${produto.preco}.`;
 
-  const mensagemCodificada = encodeURIComponent(mensagem);
+  const vendedor =
+    VENDEDORES[Math.floor(Math.random() * VENDEDORES.length)];
 
-const vendedor = VENDEDORES[Math.floor(Math.random() * VENDEDORES.length)];
-
-modalWhatsapp.href = `https://wa.me/${vendedor.numero}?text=${encodeURIComponent(mensagem)}`;
+  modalWhatsapp.href =
+    `https://wa.me/${vendedor.numero}?text=${encodeURIComponent(mensagem)}`;
 
   modal.classList.add("aberto");
 }
@@ -275,6 +276,7 @@ campoBusca.addEventListener("input", function() {
   mostrarProdutos(categoriaAtual, 1);
 });
 
+
 destaqueWhatsapp.addEventListener("click", function(event) {
 
   const vendedor =
@@ -288,10 +290,5 @@ destaqueWhatsapp.addEventListener("click", function(event) {
 
 });
 
-const vendedorAtendimento =
-  VENDEDORES[Math.floor(Math.random() * VENDEDORES.length)];
-
-destaqueWhatsapp.href =
-  `https://wa.me/${vendedorAtendimento.numero}?text=${mensagemCodificada}`;
 
 mostrarProdutos("Todos", 1);
