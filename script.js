@@ -280,7 +280,10 @@ const mensagemWhatsapp =
 
 const mensagemCodificada = encodeURIComponent(mensagemWhatsapp);
 
+const vendedorAtendimento =
+  VENDEDORES[Math.floor(Math.random() * VENDEDORES.length)];
+
 destaqueWhatsapp.href =
-  `https://wa.me/${NUMERO_WHATSAPP}?text=${mensagemCodificada}`;
+  `https://wa.me/${vendedorAtendimento.numero}?text=${mensagemCodificada}`;
 
 mostrarProdutos("Todos", 1);
