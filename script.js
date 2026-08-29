@@ -275,10 +275,18 @@ campoBusca.addEventListener("input", function() {
   mostrarProdutos(categoriaAtual, 1);
 });
 
-const mensagemWhatsapp = 
-  "Olá! Gostaria de mais informações sobre os produtos.";
+destaqueWhatsapp.addEventListener("click", function(event) {
 
-const mensagemCodificada = encodeURIComponent(mensagemWhatsapp);
+  const vendedor =
+    VENDEDORES[Math.floor(Math.random() * VENDEDORES.length)];
+
+  const mensagem =
+    "Olá! Gostaria de mais informações sobre os produtos.";
+
+  destaqueWhatsapp.href =
+    `https://wa.me/${vendedor.numero}?text=${encodeURIComponent(mensagem)}`;
+
+});
 
 const vendedorAtendimento =
   VENDEDORES[Math.floor(Math.random() * VENDEDORES.length)];
