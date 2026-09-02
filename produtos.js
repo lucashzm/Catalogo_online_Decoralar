@@ -2092,7 +2092,17 @@ const produtos = [
     detalhes: "Conjunto Estofado 175 (2 e 3 Lugares) – Rondomóveis. Tecido Veludo Marrom. Assentos com espuma selada D33 e molas S. Encosto e braços com flocos de espuma e fibra de poliéster siliconada. Possui pés de madeira maciça. Medidas: 2 lugares – Altura 0,96 m | Largura 1,50 m | Profundidade 0,80 m. 3 lugares – Altura 0,90 m | Largura 2,00 m | Profundidade 0,80 m.",
     preco: "R$ 2.499,99"
   },
+  
+   {
+    nome: "Conjunto Estofado 175 3x2 Lugares Veludo Grafite",
+    categoria: "Sofás",
+    imagem: "imagens/sofas/Estofado175Cinza.jpeg",
+    descricao: "Conjunto Sofá Junere 3 e 2 Lugares, Veludo Grafite",
+    detalhes: "Conjunto Estofado 175 (2 e 3 Lugares) – Rondomóveis. Tecido Veludo Grafite. Assentos com espuma selada D33 e molas S. Encosto e braços com flocos de espuma e fibra de poliéster siliconada. Possui pés de madeira maciça. Medidas: 2 lugares – Altura 0,96 m | Largura 1,50 m | Profundidade 0,80 m. 3 lugares – Altura 0,90 m | Largura 2,00 m | Profundidade 0,80 m.",
+    preco: "R$ 2.499,99"
+  },
 
+  
   {
     nome: "Colchao Casal Falcon Firme 138x188x18",
     categoria: "Camas/Colchões/Box",
