@@ -1,6 +1,5 @@
 const produtos = [
   {
-    sku: "0001",
     nome: "Sofá Living Felicia 180 3 Lugares Linhão Nanquim",
     categoria: "Sofás",
     imagem: "imagens/sofas/Estofado Felicia_ Linhão Nanquim.jpg",
@@ -11,7 +10,6 @@ const produtos = [
   },
 
   {
-    sku: "0002",
     nome: "Sofá Living Felicia 180 3 Lugares Corino Chumbo",
     categoria: "Sofás",
     imagem: "imagens/sofas/Estofado Living Felicia 180 3 Lgs Corino Chumbo Viero.jpg",
@@ -22,7 +20,6 @@ const produtos = [
   },
 
   {
-    sku: "0003",
     nome: "Sofá Living Felicia 180 3 Lugares Corino Durango",
     categoria: "Sofás",
     imagem: "imagens/sofas/Estofado Living Felicia 180 3 Lgs Corino Durango Viero.jpg",
@@ -32,7 +29,6 @@ const produtos = [
   },
 
   {
-    sku: "0004",
     nome: "Sofá Living Felicia 180 3 Lugares Veludo Marfim",
     categoria: "Sofás",
     imagem: "imagens/sofas/Estofado Living Felicia 180 3 Lgs Veludo Marfim Viero.jpg",
@@ -42,7 +38,6 @@ const produtos = [
   },
 
   {
-    sku: "0005",
     nome: "Sofá Living Felicia 180 3 Lugares Oliva",
     categoria: "Sofás",
     imagem: "imagens/sofas/Estofado Living Felicia 180 3 Lgs Veludo Oliva Viero.jpg",
@@ -52,7 +47,6 @@ const produtos = [
   },
 
   {
-    sku: "0006",
     nome: "Sofá Living Felicia 180 3 Lugares Terracota",
     categoria: "Sofás",
     imagem: "imagens/sofas/Estofado Living Felicia 180 3 Lgs Veludo Terracota Viero.jpg",
@@ -63,7 +57,6 @@ const produtos = [
   
 
   {
-    sku: "0007",
     nome: "Roupeiro Star 2 Portas 6 Gavetas Cinamomo/Off White",
     categoria: "Roupeiros",
     imagem: "imagens/roupeiros/Roupeiro Star 2P6G Cinamomo Off White.jpg",
@@ -73,7 +66,6 @@ const produtos = [
   },
 
   {
-    sku: "0008",
     nome: "Roupeiro Star 2 Portas 6 Gavetas Branco",
     categoria: "Roupeiros",
     imagem: "imagens/roupeiros/Roupeiro Star 2P6G Branco.jpg",
@@ -83,7 +75,6 @@ const produtos = [
   },
 
   {
-    sku: "0009",
     nome: "Roupeiro Star 2 Portas 6 Gavetas Jequitibá/Granizo",
     categoria: "Roupeiros",
     imagem: "imagens/roupeiros/Roupeiro Star 2P6G JequitibaGranizo.jpg",
@@ -94,7 +85,6 @@ const produtos = [
     
 
   {
-    sku: "0010",
     nome: "Comoda Perola Fluence Plus 8 Gavetas Freijo",
     categoria: "Cômodas",
     imagem: "imagens/comodas/Comoda Perola Fluence Plus 8G Freijo.jpg",
@@ -104,7 +94,6 @@ const produtos = [
   },
 
   {
-    sku: "0011",
     nome: "Comoda Perola Fluence Plus 8 Gavetas Naturale Off White",
     categoria: "Cômodas",
     imagem: "imagens/comodas/Comoda Perola Fluence Plus 8G NaturaleOff White.jpg",
@@ -114,7 +103,6 @@ const produtos = [
   },
    
   {
-    sku: "0012",
     nome: "Roupeiro Vivacce 4 Portas 4 Gavetas Cinamomo Off White",
     categoria: "Roupeiros",
     imagem: "imagens/roupeiros/Roupeiro Vivacce 4P4G Cinamomo Off White 4V Albatroz.jpg",
@@ -155,7 +143,6 @@ const produtos = [
 
 */
   {
-    sku: "0013",
     nome: "Roupeiro Panama 3 Portas 4 Gavetas Cinamomo",
     categoria: "Roupeiros",
     imagem: "imagens/roupeiros/Roupeiro Panama 3P4G sem Espelho e sem Pes Cinamomo ou Cinamomo.jpg",
@@ -165,7 +152,6 @@ const produtos = [
   },
 
   {
-    sku: "0014",
     nome: "Roupeiro Panama 3 Portas 4G  avetas Branco",
     categoria: "Roupeiros",
     imagem: "imagens/roupeiros/Roupeiro Panama 3P4G sem Espelho e sem Pes Branco Salleto.jpg",
@@ -175,7 +161,6 @@ const produtos = [
   },
 
   {
-    sku: "0015",
     nome: "Roupeiro Panama 3 Portas 4 Gavetas Jequitibá",
     categoria: "Roupeiros",
     imagem: "imagens/roupeiros/Roupeiro Panama 3P4G sem Espelho e sem Pes Jequitiba ou Jequitiba.jpg",
@@ -185,7 +170,6 @@ const produtos = [
   },
   
   {
-    sku: "0016",
     nome:"Roupeiro Super Master 6 Portas 6 Gavetas Cinamomo Off White",
     categoria: "Roupeiros",
     imagem: "imagens/roupeiros/Roupeiro Super Master 6P6G Cinamomo Off White.jpg",
@@ -197,7 +181,6 @@ const produtos = [
   },
 
   {
-    sku: "0017",
     nome:"Roupeiro Super Master 6 Portas 6 Gavetas Cinamomo",
     categoria: "Roupeiros",
     imagem: "imagens/roupeiros/Roupeiro SuperMaster 6P6G Cinamomo.jpg",
@@ -209,7 +192,6 @@ const produtos = [
   },
 
   {
-    sku: "0018",
     nome:"Roupeiro Super Master 6 Portas 6 Gavetas Neve",
     categoria: "Roupeiros",
     imagem: "imagens/roupeiros/Roupeiro SuperMaster 6P6G Neve.jpg",
@@ -222,7 +204,6 @@ const produtos = [
     
 
   {
-    sku: "0019",
     nome: "Roupeiro Chicago 6Portas 6 Gavetas Cinamomo Off White",
     categoria: "Roupeiros",
     imagem: "imagens/roupeiros/Roupeiro Chicago 6P6G Cinamomo Off White.jpg",
@@ -232,7 +213,6 @@ const produtos = [
   },
 
   {
-    sku: "0020",
     nome: "Roupeiro Star 3 Portas 9 Gavetas Cinamomo/Off White",
     categoria: "Roupeiros",
     imagem: "imagens/roupeiros/Roupeiro Star 3P9G Cinamomo Off White.jpg",
@@ -242,7 +222,6 @@ const produtos = [
   },
 
   {
-    sku: "0021",
     nome: "Roupeiro Star 3 Portas 9 Gavetas Branco",
     categoria: "Roupeiros",
     imagem: "imagens/roupeiros/Roupeiro Star 3P9G Branco.jpg",
@@ -252,7 +231,6 @@ const produtos = [
   },
 
   {
-    sku: "0022",
     nome: "Roupeiro Itapema 3 Portas 9 Gavetas Cedro Areia",
     categoria: "Roupeiros",
     imagem: "imagens/roupeiros/Roupeiro Itapema II 3P9G Cedro Areia.jpg",
@@ -264,7 +242,6 @@ const produtos = [
   },
 
   {
-    sku: "0023",
      nome: "Roupeiro Itapema 3 Portas 9 Gavetas Branco Brilho",
     categoria: "Roupeiros",
     imagem: "imagens/roupeiros/Roupeiro Itapema II 3P9G Branco Brilho.jpg",
@@ -276,7 +253,6 @@ const produtos = [
   },
     
   {
-    sku: "0024",
     nome: "Comoda Vitoria Plus 5 Gavetas 1Porta Cedro",
     categoria: "Cômodas",
     imagem: "imagens/comodas/Comoda Vitoria Plus 5G1P Cedro.jpg",
@@ -286,7 +262,6 @@ const produtos = [
   },
 
   {
-    sku: "0025",
     nome: "Comoda Vitoria Plus 5 Gavetas 1 Porta Branco Brilho",
     categoria: "Cômodas",
     imagem: "imagens/comodas/Comoda Vitoria Plus 5G1P Branco Brilho.jpg",
@@ -296,7 +271,6 @@ const produtos = [
   },
 
   {
-    sku: "0026",
     nome: "Comoda Vitoria Plus 5 Gavetas 1 Porta Branco Cedro Areia",
     categoria: "Cômodas",
     imagem: "imagens/comodas/Comoda Vitoria Plus 5G1P CedroAreia.jpg",
@@ -324,7 +298,6 @@ const produtos = [
   },
 */
   {
-    sku: "0027",
     nome: "Conjunto Sala Jantar Sara Tampo 136 Mel com 6 Cadeiras Luana Mel Savana",
     categoria: "Mesas",
     imagem: "imagens/mesas/Conjunto Sala Jantar Sara Tmp Retangular 136 Mel com 6 Cds Luana Mel-Savana.jpg",
@@ -334,7 +307,6 @@ const produtos = [
   },
 
   {
-    sku: "0028",
     nome: "Conjunto Sala Wave Oasis 90 com 4 Cadeiras Sol Mel Linho Bronze",
     categoria: "Mesas",
     imagem: "imagens/mesas/Sala Wave Oasis 90x90 com 4 Cadeiras Sol Mel Linho Bronze.jpg",
@@ -344,7 +316,6 @@ const produtos = [
   },
 
   {
-    sku: "0029",
     nome: "Conjunto Sala Perla 110 Mel com 4 Cadeiras Brisa Mel Veludo Marfim",
     categoria: "Mesas",
     imagem: "imagens/mesas/Sala Perla 110x75 Mel com 4 Cadeiras Brisa Mel Veludo Marfim.jpg",
@@ -354,7 +325,6 @@ const produtos = [
   },
 
   {
-    sku: "0030",
     nome: "Conjunto Sala Aurea 180 com 6 Cadeiras Safira Mel Blonde Off White Veludo Marfim",
     categoria: "Mesas",
     imagem: "imagens/mesas/Sala Aurea 180x90 com 6 Cadeiras Safira Mel Blonde Off White Veludo Marfim.jpg",
@@ -364,7 +334,6 @@ const produtos = [
   },
 
   {
-    sku: "0031",
     nome: "Conjunto Sala Aurea 180 com 6 Cadeiras Safira Mel Grafite",
     categoria: "Mesas",
     imagem: "imagens/mesas/Sala Aurea 180x90 com 6 Cadeiras Safira Mel.Grafite Veludo Grafite.jpg",
@@ -374,7 +343,6 @@ const produtos = [
   },
     
   {
-    sku: "0032",
     nome: "Conjunto Sala Ibi 120 com 4 Cadeiras Safira Mel Blonde Off White Veludo Marfim",
     categoria: "Mesas",
     imagem: "imagens/mesas/Sala Ibi 120x90 com 4 Cadeiras Safira Mel Blonde Off White Veludo Marfim.jpg",
@@ -384,7 +352,6 @@ const produtos = [
   },
 
   {
-    sku: "0033",
     nome: "Conjunto Sala Amanda Tampo 110 Off White com 4 Cadeiras Delta Mel Savana",
     categoria: "Mesas",
     imagem: "imagens/mesas/Conjunto Sala Jantar Amanda Tmp Retangular 110 Off White com 4 Cadeiras Delta Mel Savana.jpg",
@@ -394,7 +361,6 @@ const produtos = [
   },
 
   {
-    sku: "0034",
     nome: "Conjunto Sala Jantar Luiza Tampo 110 Off White com 4 Cadeiras Delta Mel Savana",
     categoria: "Mesas",
     imagem: "imagens/mesas/Conjunto Sala Jantar Luiza Tmp Retangular 110 Off White com 4 Cds Delta Mel Savana.jpg",
@@ -404,7 +370,6 @@ const produtos = [
   },
 
   {
-    sku: "0035",
     nome: "Sala Deli Denali 160 Mel Grafite com 6 Cadeiras Safira Mel Veludo Grafite",
     categoria: "Mesas",
     imagem: "imagens/mesas/Sala Deli Denali 160 Mel Grafite com 6 Cadeiras Safira Mel Veludo Grafite.jpg",
@@ -414,7 +379,6 @@ const produtos = [
   },
 
   {
-    sku: "0036",
     nome: "Sala Daila Nicole 135 Mel Blonde Grafite com 6 Cadeiras Safira Mel Blonde Veludo Grafite",
     categoria: "Mesas",
     imagem: "imagens/mesas/Sala Daila Nicole 135 Mel Blonde Grafite com 6 Cadeiras Sarifa Mel Blonde Veludo Grafite.jpg",
@@ -424,7 +388,6 @@ const produtos = [
   },
 
   {
-    sku: "0037",
     nome: "Sala Magic 120 Mel Blonde com 4 Cadeiras Sol Cinza Veludo Grafite",
     categoria: "Mesas",
     imagem: "imagens/mesas/Sala Magic 120 Mel.Blonde com 4 Cadeiras Sol Mel Cinza Veludo Grafite.jpg",
@@ -434,7 +397,6 @@ const produtos = [
   },
 
   {
-    sku: "0038",
     nome: "Sala Melody 90 com 4 Cadeiras Bela Mel Blonde Off White Linho Bronze",
     categoria: "Mesas",
     imagem: "imagens/mesas/Sala Melody 90com 4 Cadira Bela Mel Blonde Off White Linho Bronze.jpg",
@@ -444,7 +406,6 @@ const produtos = [
   },
 
   {
-    sku: "0039",
     nome: "Sala Luar Luna 160 com 6 Cadeiras Sol Mel Linho Inox",
     categoria: "Mesas",
     imagem: "imagens/mesas/Sala Luar Luna 160 com 6 Cadeiras Sol Mel Linho Inox.jpg",
@@ -462,7 +423,6 @@ const produtos = [
   },
 */
   {
-    sku: "0040",
     nome: "Cômoda Aruba 5 Gavetas Cinamomo Off White",
     categoria: "Cômodas",
     imagem: "imagens/comodas/Comoda Aruba 5G Cinamomo Off White.jpg",
@@ -474,7 +434,6 @@ const produtos = [
   },
 
   {
-    sku: "0041",
     nome: "Cômoda Aruba 5 Gavetas Branco",
     categoria: "Cômodas",
     imagem: "imagens/comodas/Comoda Aruba 5Gavetas Branco.jpg",
@@ -486,7 +445,6 @@ const produtos = [
   },
 
   {
-    sku: "0042",
     nome: "Cômoda Miami 5 Gavetas 1 Porta Cinamomo Off White",
     categoria: "Cômodas",
     imagem: "imagens/comodas/Comoda Miami 5Gavetas 1Porta Cinamomo Off White.jpg",
@@ -498,7 +456,6 @@ const produtos = [
   },
 
   {
-    sku: "0043",
     nome: "Cômoda Miami 5 Gavetas 1 Porta Branco",
     categoria: "Cômodas",
     imagem: "imagens/comodas/Comoda Miami 5G1P Branco.jpg",
@@ -510,7 +467,6 @@ const produtos = [
   },
 
   {
-    sku: "0044",
     nome: "Cômoda Miami 5 Gavetas 1 Porta Preto",
     categoria: "Cômodas",
     imagem: "imagens/comodas/Comoda Miami 5G1P Preto.jpg",
@@ -522,7 +478,6 @@ const produtos = [
   },
 
   {
-    sku: "0045",
     nome: "Cômoda Caribe 10 Gavetas Cinamomo Off White",
     categoria: "Cômodas",
     imagem: "imagens/comodas/Comoda Caribe 10G Cinamomo Off White.jpg",
@@ -534,7 +489,6 @@ const produtos = [
   },
 
   {
-    sku: "0046",
     nome: "Cômoda Caribe 10 Gavetas Branco",
     categoria: "Cômodas",
     imagem: "imagens/comodas/Comoda Caribe 10G Branco.jpg",
@@ -546,7 +500,6 @@ const produtos = [
   },
 
   {
-    sku: "0047",
      nome: "Cômoda Caribe 10 Gavetas Preto",
     categoria: "Cômodas",
     imagem: "imagens/comodas/Comoda Caribe 10G Preto.jpg",
@@ -559,7 +512,6 @@ const produtos = [
     
 
   {
-    sku: "0048",
     nome: "Cômoda Aramoveis 8 Gavetas Atacama",
     categoria: "Cômodas",
     imagem: "imagens/comodas/Comoda Aramoveis 8G Atacama.jpg",
@@ -569,7 +521,6 @@ const produtos = [
   },
 
   {
-    sku: "0049",
     nome: "Cômoda Berlim Chicago 4 Gavetas 1Porta Cinamomo",
     categoria: "Cômodas",
     imagem: "imagens/comodas/Comoda Berlim Chicago 4Gavetas 1Porta Cinamomo.jpg",
@@ -579,7 +530,6 @@ const produtos = [
   },
 
   {
-    sku: "0050",
     nome: "Cômoda Berlim Chicago 4 Gavetas 1 Porta Cinamomo Off White",
     categoria: "Cômodas",
     imagem: "imagens/comodas/Comoda Berlim Chicago 4G1P Cinamomo Off White.jpg",
@@ -589,7 +539,6 @@ const produtos = [
   },
 
   {
-    sku: "0051",
     nome: "Cômoda Berlim Chicago 4 Gavetas 1 Porta Branco Neve",
     categoria: "Cômodas",
     imagem: "imagens/comodas/CÔMODA_CHICAGO_NEVE NOVO.jpg",
@@ -604,7 +553,6 @@ const produtos = [
  
  
  {
-    sku: "0052",
     nome: "Cozinha Compacta Malu 9 Portas 2 Gavetas com Balcao Cinamomo Grafite",
     categoria: "Cozinhas",
     imagem: "imagens/cozinhas/Cozinha Compacta Completa Malu 9P2G com Balcao Cinamomo Grafite.jpg",
@@ -617,7 +565,6 @@ const produtos = [
 
 
   {
-    sku: "0053",
     nome: "Cozinha Compacta Malu 9 Portas 2 Gavetas com Balcao Cinamomo Off White",
     categoria: "Cozinhas",
     imagem: "imagens/cozinhas/Cozinha Compacta Completa Malu 9P2G com Balcao Cinamomo Off White.jpg",
@@ -631,7 +578,6 @@ const produtos = [
    
   
   {
-    sku: "0054",
     nome: "Kit Cozinha Catar 6 Portas 2 Gavetas Jequitiba Granizo",
     categoria: "Cozinhas",
     imagem: "imagens/cozinhas/Kit Cozinha Catar 6Portas 2Gavetas JequitibaGranizo.jpg",
@@ -641,7 +587,6 @@ const produtos = [
   },
 
   {
-    sku: "0055",
     nome: "Kit Cozinha Catar 6 Portas 2 Gavetas Branco Cinamomo",
     categoria: "Cozinhas",
     imagem: "imagens/cozinhas/Kit Cozinha Catar 6P2G BrancoCinamomo.jpg",
@@ -651,7 +596,6 @@ const produtos = [
   },
 
   {
-    sku: "0056",
     nome: "Kit Cozinha Catar 6 Portas 2 Gavetas Cinamomo Off White",
     categoria: "Cozinhas",
     imagem: "imagens/cozinhas/Kit Cozinha Catar 6P2G CinamomoOff White.jpg",
@@ -661,7 +605,6 @@ const produtos = [
   },
 
   {
-    sku: "0057",
     nome: "Cozinha Lia 3 Portas 1 Gaveta Cinamomo Off White",
     categoria: "Cozinhas",
     imagem: "imagens/cozinhas/Cozinha Lia 3Portas 1Gaveta Cinamomo Off White.jpeg",
@@ -671,7 +614,6 @@ const produtos = [
   },
 
   {
-    sku: "0058",
     nome: "Cozinha New Topazio 6 Portas 2 Gavetas Cinamomo/ Off White",
     categoria: "Cozinhas",
     imagem: "imagens/cozinhas/Cozinha New Topazio 6Portas 2Gavetas Cinamomo Off White.jpg",
@@ -681,7 +623,6 @@ const produtos = [
   },
 
   {
-    sku: "0059",
     nome: "Cozinha New Topazio 6 Portas 2 Gavetas Branco/ Cinamomo Off ",
     categoria: "Cozinhas",
     imagem: "imagens/cozinhas/Kit-Cozinha-New-Topazio-Branco-Cina.jpg",
@@ -691,7 +632,6 @@ const produtos = [
   },
 
   {
-    sku: "0060",
     nome: "Cozinha New Topazio 6 Portas 2 Gavetas Jequitibá/ Granizo",
     categoria: "Cozinhas",
     imagem: "imagens/cozinhas/Kit-Cozinha-New-Topazio-Jqtb-Grnz.jpg",
@@ -702,7 +642,6 @@ const produtos = [
 
   
   {
-    sku: "0061",
     nome: "Cozinha Siena Premium 6 Portas 1 Gaveta Branco/ Cinamomo",
     categoria: "Cozinhas",
     imagem: "imagens/cozinhas/Cozinha Siena Premium 6Portas 1Gaveta Branco Cinamomo.jpg",
@@ -712,7 +651,6 @@ const produtos = [
   },
 
   {
-    sku: "0062",
     nome: "Cozinha Siena Premium 6 Portas 1 Gaveta Cinamomo/ Off White",
     categoria: "Cozinhas",
     imagem: "imagens/cozinhas/Cozinha Siena Premium 6P1G Cinamomo.Off White.jpg",
@@ -722,7 +660,6 @@ const produtos = [
   },
 
   {
-    sku: "0063",
      nome: "Cozinha Siena Premium 6 Portas 1 Gaveta Jequitibá/ Granizo",
     categoria: "Cozinhas",
     imagem: "imagens/cozinhas/Kit-copzinha-siena-Jqtb-Grnz.jpg",
@@ -733,7 +670,6 @@ const produtos = [
   
 
   {
-    sku: "0064",
     nome: "Kit Cozinha Veneza Pop Plus 9 Portas 1 Gaveta Freijó Off White",
     categoria: "Cozinhas",
     imagem: "imagens/cozinhas/Kit Cozinha Veneza Pop Plus 9P1G3N Freijó-Off White.jpg",
@@ -745,7 +681,6 @@ const produtos = [
   },
 
   {
-    sku: "0065",
     nome: "Cozinha Malu 7 Portas 2 Gavetas Damasco Ripado 3D Off White",
     categoria: "Cozinhas",
     imagem: "imagens/cozinhas/Cozinha Malu 7Portas 2Gavetas Damasco Ripado 3D Off White.jpg",
@@ -755,7 +690,6 @@ const produtos = [
   },
 
   {
-    sku: "0066",
     nome: "Cozinha Duda 120 5 Portas 1 Gavetas Cinamomo Off White",
     categoria: "Cozinhas",
     imagem: "imagens/cozinhas/Cozinha Duda 120 5P1G Cinamomo.Cinamomo Off White.jpg",
@@ -767,7 +701,6 @@ const produtos = [
   },
 
     {
-    sku: "0067",
     nome: "Cozinha Duda 120 5 Portas 1 Gaveta Damasco Ripado/ Off White",
     categoria: "Cozinhas",
     imagem: "imagens/cozinhas/cozinha duda damasco ripado.jpg",
@@ -777,7 +710,6 @@ const produtos = [
   },
 
     {
-    sku: "0068",
     nome: "Cozinha Duda 120 5 Portas 1 Gaveta Damasco/ Off White",
     categoria: "Cozinhas",
     imagem: "imagens/cozinhas/cozinha duda damasco offwhite.jpg",  
@@ -788,7 +720,6 @@ const produtos = [
 
   
   {
-    sku: "0069",
     nome: "Cozinha Malaga 6 Portas 2 Gavetas Cinamomo Grafite",
     categoria: "Cozinhas",
     imagem: "imagens/cozinhas/Cozinha Malaga 6P2G Cinamomo Grafite.jpg",
@@ -800,7 +731,6 @@ const produtos = [
   },
 
   {
-    sku: "0070",
     nome: "Cozinha Malaga 6 Portas 2 Gavetas Cinamomo/ Off White",
     categoria: "Cozinhas",
     imagem: "imagens/cozinhas/cozinha malaga cinamomo offwhite.jpg",
@@ -818,7 +748,6 @@ const produtos = [
 
   
   {
-    sku: "0071",
     nome: "Cozinha Modena 7 Portas 3 Gavetas Cinamomo Off White",
     categoria: "Cozinhas",
     imagem: "imagens/cozinhas/Cozinha Modena 7P3G Cinamomo Off White.jpg",
@@ -838,7 +767,6 @@ const produtos = [
 
   
   {
-    sku: "0072",
     nome: "Cozinha Modena 7 Portas 3 Gavetas Cinamomo Grafite",
     categoria: "Cozinhas",
     imagem: "imagens/cozinhas/cozinha Modena 7P3G Cinamomo Grafite.jpg",
@@ -850,7 +778,6 @@ const produtos = [
   },
   
   {
-    sku: "0073",
     nome: "Cozinha Alexia BPW 6 Portas 2 Gavetas com Espelho Arenas",
     categoria: "Cozinhas",
     imagem: "imagens/cozinhas/Cozinha Alexia BPW 6P2G com Espelho Arenas.jpg",
@@ -863,7 +790,6 @@ const produtos = [
 
   
   {
-    sku: "0074",
     nome: "Cozinha Alexia BPW 6 Portas 2 Gavetas com Espelho Cinamomo BPW Arenas",
     categoria: "Cozinhas",
     imagem: "imagens/cozinhas/Cozinha Alexia BPW 6P2G com Espelho Cinamomo BPW Arenas.jpg",
@@ -875,7 +801,6 @@ const produtos = [
   },
 
   {
-    sku: "0075",
     nome: "Cozinha Alexia BPW 6 Portas 2 Gavetas com Espelho Cinamomo BPW Grafite",
     categoria: "Cozinhas",
     imagem: "imagens/cozinhas/Cozinha Alexia BPW 6P2G com Espelho Cinamomo BPW Grafite.jpeg",
@@ -900,7 +825,6 @@ const produtos = [
 
   
   {
-    sku: "0076",
     nome: "Cozinha Intense 10 Portas 2 Gavetas Freijo Nero",
     categoria: "Cozinhas",
     imagem: "imagens/cozinhas/Cozinha Intense 10P2G Freijo.Nero.jpg",
@@ -912,7 +836,6 @@ const produtos = [
 
   
   {
-    sku: "0077",
     nome: "Cozinha Intense 10 Portas 2 Gavetas Freijo Vanilla",
     categoria: "Cozinhas",
     imagem: "imagens/cozinhas/Cozinha Intense 10P2G Freijo.Vanilla.jpg",
@@ -925,7 +848,6 @@ const produtos = [
 
   
   {
-    sku: "0078",
     nome: "Cozinha Lara BPM 6 Portas 2 Gavetas Arenas",
     categoria: "Cozinhas",
     imagem: "imagens/cozinhas/Cozinha Lara BPM 6P2G Arenas.jpg",
@@ -940,7 +862,6 @@ const produtos = [
 
   
   {
-    sku: "0079",
     nome: "Cozinha Lara BPW 6 Portas 2 Gavetas Cinamomo Arenas",
     categoria: "Cozinhas",
     imagem: "imagens/cozinhas/Cozinha Lara BPW 6P2G Cinamomo Arenas Cinamomo.jpg",
@@ -956,7 +877,6 @@ const produtos = [
 
   
   {
-    sku: "0080",
     nome: "Cozinha Mega 9 Portas 2 Gavetas Cinamomo Branco Texturizado",
     categoria: "Cozinhas",
     imagem: "imagens/cozinhas/Cozinha Mega 9P2G Cinamomo Branco texturizado.jpg",
@@ -969,7 +889,6 @@ const produtos = [
 
   
   {
-    sku: "0081",
     nome: "Cozinha Mega 9 Portas 2 Gavetas Cinamomo Grafite",
     categoria: "Cozinhas",
     imagem: "imagens/cozinhas/Cozinha Mega 9P2G Cinamomo.Grafite.jpg",
@@ -980,7 +899,6 @@ const produtos = [
 
 
   {
-    sku: "0082",
     nome: "Home Suspenso Ripado Munique Nature",
     categoria: "Painéis/Racks",
     imagem: "imagens/home/Home Suspenso Ripado Munique Nature.jpg",
@@ -992,7 +910,6 @@ const produtos = [
   },
 
   {
-    sku: "0083",
     nome: "Home Petropolis 1.8 Grigio Fosco Canela",
     categoria: "Painéis/Racks",
     imagem: "imagens/home/Home Petropolis 1.8 Grigio Fosco Canela.jpg",
@@ -1009,7 +926,6 @@ const produtos = [
   
   
   {
-    sku: "0084",
     nome: "Conjunto Show 106 Painel e Rack Freijo Trende Preto Texturizado",
     categoria: "Painéis/Racks",
     imagem: "imagens/home/Conjunto Show 106 Painel mais Rack Freijo Trende.Preto Tx.jpg",
@@ -1021,7 +937,6 @@ const produtos = [
 
   
   {
-    sku: "0085",
     nome: "Conjunto Show 106 Painel e Rack Freijo Trend Off White Texturizado",
     categoria: "Painéis/Racks",
     imagem: "imagens/home/Conjunto Show 106 Painel mais Rack Freijo Trend.Off White Tx.jpg",
@@ -1036,7 +951,6 @@ const produtos = [
 
   
   {
-    sku: "0086",
     nome: "Home Eldorado 2.0 Nature Off White",
     categoria: "Painéis/Racks",
     imagem: "imagens/home/Home Eldorado 2.0 Nature.Off White.jpg",
@@ -1048,7 +962,6 @@ const produtos = [
 
   
   {
-    sku: "0087",
     nome: "Bancada Suspensa Lana 1.8 Savana",
     categoria: "Painéis/Racks",
     imagem: "imagens/home/Bancada Suspensa Lana 1.8 Savana.jpg",
@@ -1058,7 +971,6 @@ const produtos = [
   },
 
   {
-    sku: "0088",
     nome: "Bancada Suspensa Lana 1.8 Titânio Carvalho",
     categoria: "Painéis/Racks",
     imagem: "imagens/home/bancada Lana Carvalho.jpg",
@@ -1070,7 +982,6 @@ const produtos = [
 
 
   {
-    sku: "0089",
     nome: "Home Theater Trinus 1.8 Cinamomo Off White",
     categoria: "Painéis/Racks",
     imagem: "imagens/home/Home Theater Trinus 1.8 Cinamomo Off White.jpg",
@@ -1093,7 +1004,6 @@ const produtos = [
 
   
   {
-    sku: "0090",
     nome: "Home Brilhare Off White Nature",
     categoria: "Painéis/Racks",
     imagem: "imagens/home/Home Brilhare Off White Nature Bechara.jpg",
@@ -1105,7 +1015,6 @@ const produtos = [
   },
 
   {
-    sku: "0091",
     nome: "Painel Impetus 182 com Nicho e LED Cascata Naturale Off White",
     categoria: "Painéis/Racks",
     imagem: "imagens/home/Painel Impetus 182 com Nicho e LED Cascata Naturale Off White.jpg",
@@ -1123,7 +1032,6 @@ const produtos = [
 
   
   {
-    sku: "0092",
     nome: "Roupeiro Recife 6 Portas 2 Gavetas Cinamomo",
     categoria: "Roupeiros",
     imagem: "imagens/roupeiros/Roupeiro Recife 6P2G Cinamomo.jpg",
@@ -1135,7 +1043,6 @@ const produtos = [
 
   
   {
-    sku: "0093",
     nome: "Roupeiro Recife 6 Portas 2 Gavetas Branco",
     categoria: "Roupeiros",
     imagem: "imagens/roupeiros/Roupeiro Recife 6P2G Branco.jpg",
@@ -1147,7 +1054,6 @@ const produtos = [
 
   
   {
-    sku: "0094",
     nome: "Roupeiro Recife 6 Portas 2 Gavetas Cinamomo Off White",
     categoria: "Roupeiros",
     imagem: "imagens/roupeiros/Roupeiro Recife 6P2G Cinamomo Off White.jpg",
@@ -1159,7 +1065,6 @@ const produtos = [
 
   
   {
-    sku: "0095",
     nome: "Roupeiro Recife 6 Portas 2 Gavetas Jequitibá Granizo",
     categoria: "Roupeiros",
     imagem: "imagens/roupeiros/Roupeiro Recife 6P2G Jequitiba Granizo.jpg",
@@ -1175,7 +1080,6 @@ const produtos = [
 
   
   {
-    sku: "0096",
     nome: "Roupeiro Orion Premium 6 Portas 6 Gavetas Cinamomo",
     categoria: "Roupeiros",
     imagem: "imagens/roupeiros/Roupeiro Orion Premium 6P6G.jpg",
@@ -1187,7 +1091,6 @@ const produtos = [
 
   
   {
-    sku: "0097",
     nome: "Roupeiro Orion Premium 6 Portas 6 Gavetas Cinamomo Off White",
     categoria: "Roupeiros",
     imagem: "imagens/roupeiros/Roupeiro Orion Premium 6P6G Cinamomo.Off White.jpg",
@@ -1202,7 +1105,6 @@ const produtos = [
 
   
   {
-    sku: "0098",
     nome: "Roupeiro Recife 8 Portas 4 Gavetas Branco",
     categoria: "Roupeiros",
     imagem: "imagens/roupeiros/Roupeiro Recife 8P4G Branco.jpg",
@@ -1222,7 +1124,6 @@ const produtos = [
   },
 */
   {
-    sku: "0099",
     nome: "Roupeiro Recife 8 Portas 4 Gavetas Jequitibá Granizo",
     categoria: "Roupeiros",
     imagem: "imagens/roupeiros/Roupeiro Recife 8P4G JequitibaGranizo.jpg",
@@ -1238,7 +1139,6 @@ const produtos = [
   
 
   {
-    sku: "0100",
     nome: "Roupeiro Texas 6 Portas 4 Gavetas Branco",
     categoria: "Roupeiros",
     imagem: "imagens/roupeiros/Roupeiro-Texas-Branco NOVO.jpg",
@@ -1249,7 +1149,6 @@ const produtos = [
 
     
   {
-    sku: "0101",
     nome: "Roupeiro Texas 6 Portas 4 Gavetas Cinamomo",
     categoria: "Roupeiros",
     imagem: "imagens/roupeiros/Roupeiro Texas 6P4G Cinamomo.jpg",
@@ -1260,7 +1159,6 @@ const produtos = [
 
   
   {
-    sku: "0102",
     nome: "Roupeiro Texas 6 Portas 4 Gavetas Cinamomo Off White",
     categoria: "Roupeiros",
     imagem: "imagens/roupeiros/Roupeiro Texas 6P4G Cinamomo.Off White.jpg",
@@ -1271,7 +1169,6 @@ const produtos = [
 
   
   {
-    sku: "0103",
     nome: "Roupeiro Texas 6 Portas 4 Gavetas Jequitibá Granizo",
     categoria: "Roupeiros",
     imagem: "imagens/roupeiros/Roupeiro Texas 6P4G JequitibaGranizo.jpg",
@@ -1286,7 +1183,6 @@ const produtos = [
 
   
   {
-    sku: "0104",
     nome: "Roupeiro Vision 6 Portas Cinamomo",
     categoria: "Roupeiros",
     imagem: "imagens/roupeiros/Roupeiro Vision 6P sendo 2P Vidro Fume com LED Cinamomo.jpg",
@@ -1298,7 +1194,6 @@ const produtos = [
   },
 
   {
-    sku: "0105",
     nome: "Roupeiro Vision 6 Portas Cinamomo Off White",
     categoria: "Roupeiros",
     imagem: "imagens/roupeiros/Roupeiro Vision 6P sendo 2P Vidro Fume com LED CinamomoOff White.jpg",
@@ -1310,7 +1205,6 @@ const produtos = [
   },
 
   {
-    sku: "0106",
     nome: "Roupeiro Vision 6 Portas Jequitibá Granizo",
     categoria: "Roupeiros",
     imagem: "imagens/roupeiros/Roupeiro Vision 6P sendo 2P Vidro Fume com LED JequitibaGranizo.jpg",
@@ -1327,7 +1221,6 @@ const produtos = [
 
   
   {
-    sku: "0107",
     nome: "Roupeiro Andorra Joinville 6 Portas 4 Gavetas Branco Neve",
     categoria: "Roupeiros",
     imagem: "imagens/roupeiros/Roupeiro Andorra Joinville 6P4G Branco Neve.jpg",
@@ -1337,7 +1230,6 @@ const produtos = [
   },
 
   {
-    sku: "0108",
     nome: "Roupeiro Andorra Joinville 6 Portas 4 Gavetas Cinamomo",
     categoria: "Roupeiros",
     imagem: "imagens/roupeiros/Roupeiro Andorra.Joinville 6P4G Cinamomo.jpg",
@@ -1347,7 +1239,6 @@ const produtos = [
   },
 
   {
-    sku: "0109",
     nome: "Roupeiro Andorra Joinville 6 Portas 4 Gavetas Cinamomo Off White",
     categoria: "Roupeiros",
     imagem: "imagens/roupeiros/Roupeiro Andorra.Joinville 6P4G Cinamomo.Off White.jpg",
@@ -1361,7 +1252,6 @@ const produtos = [
 
   
   {
-    sku: "0110",
     nome: "Roupeiro Aracena Sevilla 6 Portas 8 Gavetas Branco Neve",
     categoria: "Roupeiros",
     imagem: "imagens/roupeiros/Roupeiro Aracena.Sevilla 6P8G Branco Neve.jpg",
@@ -1371,7 +1261,6 @@ const produtos = [
   },
 
   {
-    sku: "0111",
     nome: "Roupeiro Aracena Sevilla 6 Portas 8 Gavetas Cinamomo",
     categoria: "Roupeiros",
     imagem: "imagens/roupeiros/Roupeiro Aracena.Sevilla 6P8G Cinamomo.jpg",
@@ -1381,7 +1270,6 @@ const produtos = [
   },
 
   {
-    sku: "0112",
     nome: "Roupeiro Aracena Sevilla 6 Portas 8 Gavetas Cinamomo Off White",
     categoria: "Roupeiros",
     imagem: "imagens/roupeiros/Roupeiro Aracena.Sevilla 6P8G Cinamomo.Off White.jpg",
@@ -1395,7 +1283,6 @@ const produtos = [
 
   
   {
-    sku: "0113",
     nome: "Roupeiro Colibri 6 Portas Cinamomo Off White",
     categoria: "Roupeiros",
     imagem: "imagens/roupeiros/Roupeiro Colibri 6P Cinamomo.Off White.jpg",
@@ -1405,7 +1292,6 @@ const produtos = [
   },
 
   {
-    sku: "0114",
     nome: "Roupeiro Colibri 6 Portas Castanho",
     categoria: "Roupeiros",
     imagem: "imagens/roupeiros/Roupeiro Colibri 6P Castanho.jpg",
@@ -1415,7 +1301,6 @@ const produtos = [
   },
 
   {
-    sku: "0115",
     nome: "Roupeiro Colibri 6 Portas Castanho Off White",
     categoria: "Roupeiros",
     imagem: "imagens/roupeiros/Roupeiro Colibri 6P Castanho.Off White.jpg",
@@ -1425,7 +1310,6 @@ const produtos = [
   },
   
   {
-    sku: "0116",
   
     nome: "Roupeiro Colibri 6 Portas Branco",
     categoria: "Roupeiros",
@@ -1442,7 +1326,6 @@ const produtos = [
 
   
   {
-    sku: "0117",
     nome: "Roupeiro Esplendor Realeza 6 Portas 6 Gavetas Cinamomo",
     categoria: "Roupeiros",
     imagem: "imagens/roupeiros/Roupeiro Esplendor.Realeza 6P6G Cinamomo.jpg",
@@ -1452,7 +1335,6 @@ const produtos = [
   },
 
   {
-    sku: "0118",
     nome: "Roupeiro Esplendor.Realeza 6 Portas 6 Gavetas Cinamomo Off White",
     categoria: "Roupeiros",
     imagem: "imagens/roupeiros/Roupeiro Esplendor.Realeza 6P6G Cinamomo.Off White.jpg",
@@ -1467,7 +1349,6 @@ const produtos = [
 
   
   {
-    sku: "0119",
     nome: "Roupeiro Imperio com Espelho, 4 Portas 6 Gavetas Cinamomo",
     categoria: "Roupeiros",
     imagem: "imagens/roupeiros/Roupeiro Imperio 4P6G com Espelhos Cinamomo.Cinamomo.jpg",
@@ -1477,7 +1358,6 @@ const produtos = [
   },
 
   {
-    sku: "0120",
     nome: "Roupeiro Imperio com Espelho, 4 Portas 6 Gavetas Branco",
     categoria: "Roupeiros",
     imagem: "imagens/roupeiros/Roupeiro Imperio 4P6G com Espelhos Branco.jpg",
@@ -1487,7 +1367,6 @@ const produtos = [
   },
 
   {
-    sku: "0121",
     nome: "Roupeiro Imperio com Espelho, 4 Portas 6 Gavetas Cinamomo Off White",
     categoria: "Roupeiros",
     imagem: "imagens/roupeiros/Roupeiro Imperio 4P6G com Espelhos Cinamomo.Off White.jpg",
@@ -1502,7 +1381,6 @@ const produtos = [
 
   
   {
-    sku: "0122",
     nome: "Roupeiro Itaperuna Celta 6 Portas 4 Gavetas Cinamomo Ripado Off White",
     categoria: "Roupeiros",
     imagem: "imagens/roupeiros/Roupeiro Itaperuna.Celta 6P4G Cinamomo Ripado.Off White.jpg",
@@ -1515,7 +1393,6 @@ const produtos = [
 
   
   {
-    sku: "0123",
     nome: "Roupeiro Laconia Esparta 6 Portas 9 Gavetas Cinamomo",
     categoria: "Roupeiros",
     imagem: "imagens/roupeiros/Roupeiro LaconiaEsparta 6P9G Cinamomo.jpg",
@@ -1527,7 +1404,6 @@ const produtos = [
   },
 
   {
-    sku: "0124",
     nome: "Roupeiro Laconia Esparta 6 Portas 9 Gavetas Cinamomo Off White",
     categoria: "Roupeiros",
     imagem: "imagens/roupeiros/Roupeiro LaconiaEsparta 6P9G CinamomoOff White.jpg",
@@ -1541,7 +1417,6 @@ const produtos = [
 
   
   {
-    sku: "0125",
     nome: "Roupeiro Master Top 8 Portas 2 Gavetas Cinamomo",
     categoria: "Roupeiros",
     imagem: "imagens/roupeiros/Roupeiro Master Top 8P2G Cinamomo.jpeg",
@@ -1551,7 +1426,6 @@ const produtos = [
   },
 
   {
-    sku: "0126",
     nome: "Roupeiro Master Top 8 Portas 2 Gavetas Cinamomo BPW Arenas",
     categoria: "Roupeiros",
     imagem: "imagens/roupeiros/Roupeiro Master BPW 8P2G Cinamomo BPWArenas.jpg",
@@ -1574,7 +1448,6 @@ const produtos = [
 
   
   {
-    sku: "0127",
     nome: "Roupeiro NT 6020 2 Portas 3 Gavetas Branco ",
     categoria: "Roupeiros",
     imagem: "imagens/roupeiros/roupeiro nt 6020 branco.jpg",
@@ -1584,7 +1457,6 @@ const produtos = [
   },
 
   {
-    sku: "0128",
     nome: "Roupeiro NT 6020 2 Portas 3 Gavetas Freijó Trend",
     categoria: "Roupeiros",
     imagem: "imagens/roupeiros/Roupeiro NT 6020 2P3G Freijo Trend.Freijo.jpg",
@@ -1594,7 +1466,6 @@ const produtos = [
   },
 
   {
-    sku: "0129",
     nome: "Roupeiro NT 6020 2 Portas 3 Gavetas Freijó Trend Off White",
     categoria: "Roupeiros",
     imagem: "imagens/roupeiros/Roupeiro NT 6020 2P3G Freijo Trend.Off White.jpg",
@@ -1610,7 +1481,6 @@ const produtos = [
 
   
   {
-    sku: "0130",
     nome: "Roupeiro Padova Veneza 6 Portas 4 Gavetas Branco Neve",
     categoria: "Roupeiros",
     imagem: "imagens/roupeiros/Roupeiro Padova.Veneza 6P4G Branco Neve.jpg",
@@ -1620,7 +1490,6 @@ const produtos = [
   },
 
   {
-    sku: "0131",
     nome: "Roupeiro Padova Veneza 6 Portas 4 Gavetas Cinamomo",
     categoria: "Roupeiros",
     imagem: "imagens/roupeiros/Roupeiro Padova.Veneza 6P4G Cinamomo.jpg",
@@ -1631,7 +1500,6 @@ const produtos = [
 
   
   {
-    sku: "0132",
     nome: "Roupeiro Padova Veneza 6 Portas 4 Gavetas Cinamomo Off White",
     categoria: "Roupeiros",
     imagem: "imagens/roupeiros/Roupeiro Padova.Veneza 6P4G Cinamomo.Off White.jpg",
@@ -1645,7 +1513,6 @@ const produtos = [
 
   
   {
-    sku: "0133",
     nome: "Roupeiro Atenas Plus 3 Portas 4 Gavetas Cinamomo",
     categoria: "Roupeiros",
     imagem: "imagens/roupeiros/Roupeiro Atenas Plus 3P4G Cinamomo.jpg",
@@ -1657,7 +1524,6 @@ const produtos = [
 
   
   {
-    sku: "0134",
     nome: "Roupeiro Verona Plus com Espelho, 2 Portas Peroba Off White Peroba",
     categoria: "Roupeiros",
     imagem: "imagens/roupeiros/Roupeiro Verona Plus 2P, sendo 1 Porta Espelhada Peroba Off White Peroba.jpg",
@@ -1669,7 +1535,6 @@ const produtos = [
   },
 
   {
-    sku: "0135",
     nome: "Roupeiro Verona Plus com Espelho, 2 Portas Branco Acetinado",
     categoria: "Roupeiros",
     imagem: "imagens/roupeiros/Roupeiro Verona Plus 2P, sendo 1 Porta Espelhada Branco Acetinado.jpg",
@@ -1685,7 +1550,6 @@ const produtos = [
 
   
   {
-    sku: "0136",
     nome: "Roupeiro Las Vegas com Espelho, 2 Portas 6 Gavetas Cinamomo",
     categoria: "Roupeiros",
     imagem: "imagens/roupeiros/Roupeiro Las Vegas 2P6G com Espelhos Cinamomo.jpg",
@@ -1695,7 +1559,6 @@ const produtos = [
   },
 
   {
-    sku: "0137",
     nome: "Roupeiro Las Vegas com Espelho, 2 Portas 6 Gavetas Branco",
     categoria: "Roupeiros",
     imagem: "imagens/roupeiros/Roupeiro Las Vegas 2P6G com Espelhos Branco.jpg",
@@ -1710,7 +1573,6 @@ const produtos = [
 
   
   {
-    sku: "0138",
     nome: "Roupeiro Samara 2 Portas Flutuantes Vidro Reflecta Off White",
     categoria: "Roupeiros",
     imagem: "imagens/roupeiros/Roupeiro Samara 2P Flutuantes Vidro Reflecta Off White.jpg",
@@ -1722,7 +1584,6 @@ const produtos = [
   },
 
   {
-    sku: "0139",
     nome: "Roupeiro Samara 2 Portas Flutuantes Vidro Reflecta Peroba",
     categoria: "Roupeiros",
     imagem: "imagens/roupeiros/Roupeiro Samara 2P Flutuantes Vidros Reflecta Peroba.jpg",
@@ -1739,7 +1600,6 @@ const produtos = [
 
   
   {
-    sku: "0140",
     nome: "Roupeiro Santiago Plus com Espelho, 2 Portas 2 Gavetas Branco",
     categoria: "Roupeiros",
     imagem: "imagens/roupeiros/Roupeiro Santiago Plus 2P2G com 1 Espelho Branco.jpg",
@@ -1749,7 +1609,6 @@ const produtos = [
   },
 
    {
-    sku: "0141",
     nome: "Roupeiro Santiago Plus com Espelho, 2 Portas 2 Gavetas Cinamomo",
     categoria: "Roupeiros",
     imagem: "imagens/roupeiros/Roupeiro Santiago Plus 2P2G com 1 Espelho Cinamomo.jpg",
@@ -1759,7 +1618,6 @@ const produtos = [
    },
 
   {
-    sku: "0142",
     nome: "Roupeiro Santiago Plus com Espelho, 2 Portas 2 Gavetas Cinamomo Off White",
     categoria: "Roupeiros",
     imagem: "imagens/roupeiros/Roupeiro Santiago Plus 2P2G com 1 Espelho Cinamomo.Off White.jpg",
@@ -1776,7 +1634,6 @@ const produtos = [
 
   
   {
-    sku: "0143",
     nome: "Comoda Mary 5 Gavetas 1 Porta Branco/ Brilho",
     categoria: "Cômodas",
     imagem: "imagens/comodas/ComodaMary-Branco.jpg",
@@ -1788,7 +1645,6 @@ const produtos = [
   },
 
   {
-    sku: "0144",
     nome: "Comoda Mary 5 Gavetas 1 Porta Cedro",
     categoria: "Cômodas",
     imagem: "imagens/comodas/Comoda Mary 5G1P Cedro.jpg",
@@ -1800,7 +1656,6 @@ const produtos = [
   },
 
   {
-    sku: "0145",
     nome: "Comoda Mary 5 Gavetas 1 Porta Branco Cedro/ Areia",
     categoria: "Cômodas",
     imagem: "imagens/comodas/Comoda Mary 5G1P CedroAreia.jpg",
@@ -1817,7 +1672,6 @@ const produtos = [
 
   
   {
-    sku: "0146",
     nome: "Sofá Retrátil e Reclinável Royal 2.00 Veludo Grafite",
     categoria: "Sofás",
     imagem: "imagens/sofas/Estofado Retratil e Reclinavel Royal 200 2x100 Veludo Grafite.jpg",
@@ -1827,7 +1681,6 @@ const produtos = [
   },
 
   {
-    sku: "0147",
     nome: "Sofá Retrátil e Reclinável Royal 2.00 Veludo Pérola",
     categoria: "Sofás",
     imagem: "imagens/sofas/Estofado Retratil e Reclinavel Royal 200 2x100 Veludo Perola.jpg",
@@ -1837,7 +1690,6 @@ const produtos = [
   },
 
   {
-    sku: "0148",
     nome: "Sofá Retrátil e Reclinável Ouro Preto 2.50 Cappuccino",
     categoria: "Sofás",
     imagem: "imagens/sofas/Estofado Retr Recl Ouro Preto 250 2x100 Capuccino.jpeg",
@@ -1847,7 +1699,6 @@ const produtos = [
   },
 
   {
-    sku: "0149",
     nome: "Sofá Retrátil e Reclinável Ouro Preto 2.50 Grafite",
     categoria: "Sofás",
     imagem: "imagens/sofas/Estofado Retratil e Reclinavel Royal 200 2x100 Veludo Grafite.jpg",
@@ -1857,7 +1708,6 @@ const produtos = [
   },
 
   {
-    sku: "0150",
     nome: "Sofá Retrátil e Reclinável Ouro Preto 2.50 Preto",
     categoria: "Sofás",
     imagem: "imagens/sofas/Retr Recl Ouro Preto 250 2x100 Preto.jpeg",
@@ -1877,7 +1727,6 @@ const produtos = [
   }, */
 
   {
-    sku: "0151",
     nome: "Sofá Retrátil e Reclinável Atlas 2.30 Linho Bege",
     categoria: "Sofás",
     imagem: "imagens/sofas/Estofado Retratil Reclinavel Atlas 230 2x90 + Braco 25cm Linho Bege 01 Idealle.jpg",
@@ -1887,7 +1736,6 @@ const produtos = [
   },
 
   {
-    sku: "0152",
     nome: "Sofá Retrátil e Reclinável Atlas 2.30 Linho Gelo",
     categoria: "Sofás",
     imagem: "imagens/sofas/Estofado Retratil Reclinavel Atlas 230 2x90 + Braco 25cm Linho Gelo Idealle.jpg",
@@ -1897,7 +1745,6 @@ const produtos = [
   },
 
   {
-    sku: "0153",
     nome: "Sofá Retrátil e Reclinável Atlas 2.30 Veludo Bege Claro",
     categoria: "Sofás",
     imagem: "imagens/sofas/Estofado Retratil Reclinavel Atlas 230 2x90 + Braco 25cm Veludo Inca Bege Claro 02.jpg",
@@ -1907,7 +1754,6 @@ const produtos = [
   },
 
   {
-    sku: "0154",
     nome: "Sofá Retrátil e Reclinável Atlas 2.30 Veludo Inca Marrom",
     categoria: "Sofás",
     imagem: "imagens/sofas/Estofado Retratil Reclinavel Atlas 230 2x90 + Braco 25cm Veludo Inca Marrom 17 Idealle.jpg",
@@ -1917,7 +1763,6 @@ const produtos = [
   },
 
   {
-    sku: "0155",
     nome: "Sofá Retrátil e Reclinável Atlas 2.90 Linho Bege",
     categoria: "Sofás",
     imagem: "imagens/sofas/Estofado Retratil Reclinavel Atlas 290 2x120 + Braço 25cm Linho Bege 01 Idealle.jpg",
@@ -1928,7 +1773,6 @@ const produtos = [
   },
 
   {
-    sku: "0156",
     nome: "Sofá Retrátil e Reclinável Atlas 2.90 Veludo Inca Grafite",
     categoria: "Sofás",
     imagem: "imagens/sofas/Estofado Retratil Reclinavel Atlas 290 2x120 + Braço 25cm Veludo Inca Grafite 10 Idealle.jpg",
@@ -1938,7 +1782,6 @@ const produtos = [
   },
 
   {
-    sku: "0157",
     nome: "Sofá Retrátil e Reclinável Atlas 2.90 Veludo Inca Marrom",
     categoria: "Sofás",
     imagem: "imagens/sofas/Estofado Retratil Reclinavel Atlas 230 2x90 + Braco 25cm Veludo Inca Marrom 17 Idealle.jpg",
@@ -1948,7 +1791,6 @@ const produtos = [
   },
 
   {
-    sku: "0158",
     nome: "Sofá Retrátil e Reclinável Atlas 2.90 Linho Bege Claro",
     categoria: "Sofás",
     imagem: "imagens/sofas/Estofado Retratil Reclinavel Atlas 290 2x120 + Braco 25cm Velulo Inca Bege Claro 02 Idealle.jpg",
@@ -1958,7 +1800,6 @@ const produtos = [
   },
 
     {
-    sku: "0159",
     nome: "Sofá Retrátil e Reclinável Atlas 2.90 Linho Gelo",
     categoria: "Sofás",
     imagem: "imagens/sofas/Estofado-Atlas290-Linho-Gelo.jpg",
@@ -1968,7 +1809,6 @@ const produtos = [
   },
 
   {
-    sku: "0160",
     nome: "Sofá Retrátil e Reclinável Atlas 3 Lugares 320 Linho Bege",
     categoria: "Sofás",
     imagem: "imagens/sofas/Estofado Retratil Reclinavel Atlas 320 3x90 Linho Bege 01 Idealle.jpg",
@@ -1978,7 +1818,6 @@ const produtos = [
   },
 
   {
-    sku: "0161",
     nome: "Sofá Retrátil e Reclinável Atlas 3 Lugares 320 Linho Gelo",
     categoria: "Sofás",
     imagem: "imagens/sofas/Estofado Retratil Reclinavel Atlas 320 3x90 Linho Gelo.jpg",
@@ -1998,7 +1837,6 @@ const produtos = [
 */
 
   {
-    sku: "0162",
     nome: "Sofá Retrátil e Reclinável Atlas 3 Lugares 320 Veludo Inca Marrom",
     categoria: "Sofás",
     imagem: "imagens/sofas/Estofado Retratil Reclinavel Atlas 320 3x90 Veludo Inca Marrom 17 Idealle.jpg",
@@ -2008,7 +1846,6 @@ const produtos = [
   },
 
   {
-    sku: "0163",
     nome: "Sofá Retrátil Reclinável Buzios 250 Veludo Inca Grafite",
     categoria: "Sofás",
     imagem: "imagens/sofas/Estofado Retratil Reclinavel Buzios 250 2x100 Brc 25cm Veludo Inca Grafite 10 Idealle.jpg",
@@ -2018,7 +1855,6 @@ const produtos = [
   },
 
   {
-    sku: "0164",
     nome: "Sofá Retrátil Reclinável Buzios 250 Veludo Inca Marrom",
     categoria: "Sofás",
     imagem: "imagens/sofas/Estofado Retratil Reclinavel Buzios 250 2x100 Brc 25cm Veludo Inca Marrom 17 Idealle.jpg",
@@ -2028,7 +1864,6 @@ const produtos = [
   },
 
     {
-    sku: "0165",
     nome: "Sofá Retrátil Reclinável Buzios 250 Veludo Inca Azul",
     categoria: "Sofás",
     imagem: "imagens/sofas/Buzios-250-Azul-24 NOVO.jpg",
@@ -2041,7 +1876,6 @@ const produtos = [
 
   
   {
-    sku: "0166",
     nome: "Sofá Retrátil Reclinável Buzios 290 Veludo Inca Bege Claro",
     categoria: "Sofás",
     imagem: "imagens/sofas/Estofado Retratil Reclinavel Buzios 290 2x120 Brc 25cm Veludo Inca Bege Claro 02 Idealle.jpg",
@@ -2051,7 +1885,6 @@ const produtos = [
   },
 
   {
-    sku: "0167",
     nome: "Sofá Retrátil Reclinável Buzios 290 Veludo Inca Azul",
     categoria: "Sofás",
     imagem: "imagens/sofas/Estofado Retratil Reclinavel Buzios 290 2x120 Brc 25cm Veludo Inca Azul 24 Idealle.jpg",
@@ -2061,7 +1894,6 @@ const produtos = [
   },
 
   {
-    sku: "0168",
     nome: "Sofá Retrátil Reclinável Geriba 250 Veludo Inca Grafite",
     categoria: "Sofás",
     imagem: "imagens/sofas/Estofado Retratil Reclinavel Geriba 250 2x100 Brc 25cm Veludo Inca Grafite 10 Idealle.jpg",
@@ -2071,7 +1903,6 @@ const produtos = [
   },
 
   {
-    sku: "0169",
     nome: "Sofá Retrátil Reclinável Geriba 250 Linho Bege",
     categoria: "Sofás",
     imagem: "imagens/sofas/Estofado Retratil Reclinavel Geriba 250 2x100 Brc 25cm Linho Bege 01 Idealle.jpg",
@@ -2081,7 +1912,6 @@ const produtos = [
   },
 
   {
-    sku: "0170",
     nome: "Sofá Retrátil Reclinável Geriba 250 Veludo Inca Preto",
     categoria: "Sofás",
     imagem: "imagens/sofas/Estofado Retratil Reclinavel Geriba 250 2x100 Brc 25cm Veludo Inca Preto 13 Idealle.jpg",
@@ -2092,7 +1922,6 @@ const produtos = [
 
   
   {
-    sku: "0171",
     nome: "Sofá Retrátil Reclinável Geriba 290 Veludo Inca Bege Claro",
     categoria: "Sofás",
     imagem: "imagens/sofas/Estofado Retratil Reclinavel Geriba 290 2x120 + Braco 25cm Veludo Inca Bege Claro 02 Idealle.jpg",
@@ -2102,7 +1931,6 @@ const produtos = [
   },
 
   {
-    sku: "0172",
     nome: "Sofá Retrátil Reclinável Geriba 290 Veludo Inca Marrom",
     categoria: "Sofás",
     imagem: "imagens/sofas/Estofado Retratil Reclinavel Geriba 290 2x120 + Braco 25cm Veludo Inca Marrom 17 Idealle.jpg",
@@ -2112,7 +1940,6 @@ const produtos = [
   },
 
   {
-    sku: "0173",
     nome: "Sofá Retrátil Reclinável Geriba 290 Linho Cinza 2665",
     categoria: "Sofás",
     imagem: "imagens/sofas/Geriba-290-Linho-Cinza-2665.jpg",
@@ -2123,7 +1950,6 @@ const produtos = [
   },
 
   {
-    sku: "0174",
     nome: "Sofá Retrátil Reclinável Geriba 320 Linho Gelo",
     categoria: "Sofás",
     imagem: "imagens/sofas/Estofado Retratil Reclinavel Geriba 320 3x90 com Braco 25cm Linho Gelo Idealle.jpeg",
@@ -2133,7 +1959,6 @@ const produtos = [
   },
 
   {
-    sku: "0175",
     nome: "Sofá Retrátil Reclinável Geriba 320 Veludo Inca Azul",
     categoria: "Sofás",
     imagem: "imagens/sofas/Estofado Retratil Reclinavel Geriba 320 3x90 com Braco 25cm Veludo Inca Azul 24 Idealle.jpg",
@@ -2143,7 +1968,6 @@ const produtos = [
   },
 
   {
-    sku: "0176",
     nome: "Sofá Retrátil Reclinável Geriba 320 Veludo Inca Marrom",
     categoria: "Sofás",
     imagem: "imagens/sofas/Estofado Retratil Reclinavel Geriba 320 3x90 com Braco 25cm Veludo Inca Marrom 17 Idealle.jpeg",
@@ -2153,7 +1977,6 @@ const produtos = [
   },
 
   {
-    sku: "0177",
     nome: "Sofá Retrátil Reclinável Barcelona 250 Linho Gelo",
     categoria: "Sofás",
     imagem: "imagens/sofas/Estorado Retratil Reclinavel Barcelona 250 2x100 com Braco 25cm Linho Gelo.jpg",
@@ -2163,7 +1986,6 @@ const produtos = [
   },
 
   {
-    sku: "0178",
     nome: "Sofá Retrátil Reclinável Barcelona 250 Linho Bege",
     categoria: "Sofás",
     imagem: "imagens/sofas/Estofado Retratil Reclinavel Barcelona 250 2x100 mais Braco 25cm Linho Bege 01 Idealle.jpg",
@@ -2173,7 +1995,6 @@ const produtos = [
   },
 
   {
-    sku: "0179",
     nome: "Sofá Retrátil Reclinável Barcelona 250 Veludo Inca Azul",
     categoria: "Sofás",
     imagem: "imagens/sofas/Estofado Retratil Reclinavel Barcelona 250 2x100 mais Braco 25cm Veludo Inca Azul 24 Idealle.jpg",
@@ -2183,7 +2004,6 @@ const produtos = [
   },
 
   {
-    sku: "0180",
     nome: "Sofá Retrátil Reclinável Barcelona 250 Veludo Inca Grafite",
     categoria: "Sofás",
     imagem: "imagens/sofas/Estofado Retratil Reclinavel Barcelona 250 2x100 mais Braco 25cm Veludo Inca Grafite 10 Idealle.jpg",
@@ -2193,7 +2013,6 @@ const produtos = [
   },
 
   {
-    sku: "0181",
     nome: "Sofá Canto M-146 5 Lugares Tecido Acqua Block Caqui",
     categoria: "Sofás",
     imagem: "imagens/sofas/Sofá Canto M-146 5 Lugares 300x210 - Tecido Acqua Block Cor B-484 Caqui Martins Estofados.jpg",
@@ -2203,7 +2022,6 @@ const produtos = [
   },
 
   {
-    sku: "0182",
     nome: "Sofa Living Organic M-204 3 Lugares Tecido Boucle Bege Claro",
     categoria: "Sofás",
     imagem: "imagens/sofas/Sofa Living Organic M204 3 Lugares 2,00m Tecido Boucle Bege Claro B473.jpg",
@@ -2213,7 +2031,6 @@ const produtos = [
   },
 
   {
-    sku: "0183",
     nome: "Sofa Living Organic M-204 3 Lugares Tecido Boucle Cinza",
     categoria: "Sofás",
     imagem: "imagens/sofas/Sofa Living Organic M204 3 Lugares 2,00m Tecido Boucle Cinza.jpeg",
@@ -2223,7 +2040,6 @@ const produtos = [
   },
 
   {
-    sku: "0184",
     nome: "Sofa Living Organic M-204 3 Lugares Tecido Sarja Verde",
     categoria: "Sofás",
     imagem: "imagens/sofas/Sofa Living Organic M204 3 Lugares 2,00m Tecido Sarja Verde B485 Martins Estofados.jpg",
@@ -2233,7 +2049,6 @@ const produtos = [
   },
 
   {
-    sku: "0185",
     nome: "Sofa Living Organic M-204 3 Lugares Tecido Boucle Bege",
     categoria: "Sofás",
     imagem: "imagens/sofas/Sofa Living Organic M204 3 Lugares 2,00m Tecido Boucle Côr Bege B474 Martins Estofados.jpg",
@@ -2243,7 +2058,6 @@ const produtos = [
   },
 
   {
-    sku: "0186",
     nome: "Sofa Living M-203 3 Lugares Tecido Linho Cinza",
     categoria: "Sofás",
     imagem: "imagens/sofas/Sofa Living M203 3 Lugares 2,00m  Tecido Linho Cinza B463 Martins Estofados.jpg",
@@ -2253,7 +2067,6 @@ const produtos = [
   },
 
   {
-    sku: "0187",
     nome: "Sofa Living M-203 3 Lugares Tecido Linho Bege",
     categoria: "Sofás",
     imagem: "imagens/sofas/Sofa Living M203 3 Lugares 2,00m Tecido Linho Bege B452 Martins Estofado.jpg",
@@ -2263,7 +2076,6 @@ const produtos = [
   },
 
   {
-    sku: "0188",
     nome: "Conjunto Estofado 175 3x2 Lugares Veludo Bege",
     categoria: "Sofás",
     imagem: "imagens/sofas/Conj Estofado 175 2x3Lgs Veludo Joinvile Bege Rondomoveis.jpg",
@@ -2273,7 +2085,6 @@ const produtos = [
   },
 
   {
-    sku: "0189",
     nome: "Conjunto Estofado 175 3x2 Lugares Veludo Marrom",
     categoria: "Sofás",
     imagem: "imagens/sofas/Conj Estofado 175 2x3Lgs Veludo Jurere Marrom Rondomoveis.jpg",
@@ -2283,7 +2094,6 @@ const produtos = [
   },
   
    {
-    sku: "0190",
     nome: "Conjunto Estofado 175 3x2 Lugares Veludo Grafite",
     categoria: "Sofás",
     imagem: "imagens/sofas/Estofado175Cinza.jpeg",
@@ -2294,7 +2104,6 @@ const produtos = [
 
   
   {
-    sku: "0191",
     nome: "Colchao Casal Falcon Firme 138x188x18",
     categoria: "Camas/Colchões/Box",
     imagem: "imagens/colchao/Colchao Casal Falcon Firme 138x188x18",
@@ -2304,7 +2113,6 @@ const produtos = [
   },
 
   {
-    sku: "0192",
     nome: "Colchão Casal Light D33 138x188x14",
     categoria: "Camas/Colchões/Box",
     imagem: "imagens/colchao/Colchão Casal Light D33 138x188x14.jpg",
@@ -2313,7 +2121,6 @@ const produtos = [
   },
 
   {
-    sku: "0193",
     nome: "Colchao Casal Fit D45 138x188x25",
     categoria: "Camas/Colchões/Box",
     imagem: "imagens/colchao/Colchao Casal Fit D45 138x188x25.jpg",
@@ -2323,7 +2130,6 @@ const produtos = [
   },
 
   {
-    sku: "0194",
 
     nome: "Colchao Solteiro Inova Plus D45 88x188x26",
     categoria: "Camas/Colchões/Box",
@@ -2334,7 +2140,6 @@ const produtos = [
   },
 
   {
-    sku: "0195",
     nome: "Colchao Casal Montreal Molas Ensacadas 138x188x32",
     categoria: "Camas/Colchões/Box",
     imagem: "imagens/colchao/Colchao Casal Montreal Molas Ensacadas 138x188x32 Vian Colchoes.jpg",
@@ -2344,7 +2149,6 @@ const produtos = [
   },
 
   {
-    sku: "0196",
     nome: "Colchão Casal Smart Classic Molas Ensacadas 138x188x22 Azul Plumatex",
     categoria: "Camas/Colchões/Box",
     imagem: "imagens/colchao/Colchão Casal Smart Classic Molas Ensacadas 138x188x22 Azul Plumatex.jpeg",
@@ -2354,7 +2158,6 @@ const produtos = [
   },
 
   {
-    sku: "0197",
     nome: "Colchao Casal Resistance Sealy Molas LFK 138x188x32",
     categoria: "Camas/Colchões/Box",
     imagem: "imagens/colchao/Colchao Casal Resistance Sealy Molas LFK 138x188x32 Plumatex.jpg",
