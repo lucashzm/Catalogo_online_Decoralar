@@ -1701,7 +1701,7 @@ const produtos = [
   {
     nome: "Sofá Retrátil e Reclinável Ouro Preto 2.50 Grafite",
     categoria: "Sofás",
-    imagem: "imagens/sofas/Estofado Retratil e Reclinavel Royal 200 2x100 Veludo Grafite.jpg",
+    imagem: "imagens/sofas/ouro preto grafite.jpg",
     descricao: "Sofá Retrátil e Reclinável Ouro Preto, 2 Módulos, 2.50, Grafite",
     detalhes: "Estofado Retrátil e Reclinável Ouro Preto – Idealle. Tecido Veludo Jolie Grafite. 2 módulos. Estrutura em madeira com blindagem nos rodapés, caixa traseira e parte superior. Assento com percintas elásticas e molas, estofamento em espuma selada de 18 cm. Encosto, pillow dos braços e rineiras em fibra siliconada 100%. Medidas: Altura 1,20 m | Largura 1,00 m por módulo | Profundidade fechado 1,20 m | Aberto 1,80 m | Braço 0,25 m.",
     preco: "R$ 2.599,99"
