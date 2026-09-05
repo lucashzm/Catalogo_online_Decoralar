@@ -378,12 +378,12 @@ h1 span:last-child {
   }
 
 .logo {
-  right: -70px;
+  right: -90px;
   top: 20px;
 }
 
 .logo img {
-  width: 140px; !important;
+  width: 120px; !important;
 }
   
   .catalogo {
