@@ -130,7 +130,7 @@ const produtos = [
   }, */
 
  
-  /* VERIFICAR QUANTIDADE DE GAVETASA
+  /*
   {
     nome: "Roupeiro Itapema 8 Portas 4 Gavetas c/ Espelho - Nogueira Off White",
     categoria: "Roupeiros",
@@ -757,10 +757,6 @@ const produtos = [
     detalhes: "Kit Cozinha Modena 7P3G, da Fellicci, cor Cinamomo/Off White. Medidas: Alt. 1,93 m, Larg. 2,18 m, Prof. 0,40 m. Peso: 92,10 kg. Estrutura 100% em MDP, com caixas em 12 mm e portas e frentes de gavetas em MDF 15 mm. 7 portas de bater com dobradiças metálicas e 3 gavetas com corrediças telescópicas. 1 nicho superior para potes e utensílios, 1 garrafeiro para 4 garrafas e 4 prateleiras internas. 2 nichos laterais para fornos e micro-ondas (47 x 78 x 39 cm cada) e 1 nicho central para eletrodomésticos (47 x 93 x 39 cm). Puxadores de perfil em MDF, pés reguláveis de PVC e acabamento em pintura UV brilho.",
     preco: "R$ 1.299"
   },
-
-/* SITE FUNCIONANDO ATÉ AQUI */
-
-
 
 
 
