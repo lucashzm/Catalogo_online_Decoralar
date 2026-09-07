@@ -97,7 +97,7 @@ h1 span:last-child {
 
 .logo {
   position: absolute;
-  right: -50px;
+  right: -20px;
   top: 20px;
 }
 
@@ -319,9 +319,9 @@ h1 span:last-child {
   }
 
   .logo {
-  flex: 0 0 130px;
-  right: 10px;
-}
+    flex: 0 0 130px;
+    right: 0;
+  }
 
   .logo img {
     width: 100px;
@@ -377,14 +377,14 @@ h1 span:last-child {
     flex-wrap: wrap;
   }
 
-.logo {
-  right: -70px;
-  top: 20px;
-}
+  .logo {
+    right: -35px;
+    top: 20px;
+  }
 
-.logo img {
-  width: 75px; !important;
-}
+  .logo img {
+    width: 75px !important;
+  }
   
   .catalogo {
     margin-top: 25px;
@@ -664,52 +664,58 @@ h1 span:last-child {
 }
 
 .modal-conteudo #modal-preco {
-  display: block;
-  width: fit-content;
-
-  margin: 20px auto 0;
-  padding: 8px 18px;
-
+  font-size: 22px;
+  font-weight: bold;
   color: green;
-  background-color: #fff4e8;
+}
 
-  border-radius: 20px;
+.botao-whatsapp {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
 
-  font-size: 26px;
+  padding: 12px 22px;
+
+  background-color: #25D366;
+  color: white;
+
+  border-radius: 25px;
+
+  text-decoration: none;
   font-weight: bold;
 
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  transition: 0.2s;
+}
+
+.botao-whatsapp:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 12px rgba(37, 211, 102, 0.3);
 }
 
 .fechar-modal {
   position: absolute;
-  top: 12px;
-  right: 15px;
+  top: 10px;
+  right: 14px;
 
-  width: 38px;
-  height: 38px;
+  width: 36px;
+  height: 36px;
 
   border: none;
   border-radius: 50%;
 
-  background-color: #f5f5f5;
-  color: #555;
+  background-color: #f0f0f0;
+  color: #333;
 
-  font-size: 25px;
+  font-size: 24px;
   line-height: 1;
 
   cursor: pointer;
 }
 
 .fechar-modal:hover {
-  background-color: #a65f1b;
-  color: white;
+  background-color: #e5e5e5;
 }
-
-
-/* =========================
-   MODAL NO CELULAR
-   ========================= */
 
 @media (max-width: 600px) {
 
@@ -718,7 +724,6 @@ h1 span:last-child {
   }
 
   .modal-conteudo {
-    max-height: 92vh;
     padding: 22px 16px;
     border-radius: 12px;
   }
@@ -727,16 +732,6 @@ h1 span:last-child {
     font-size: 22px;
     margin-left: 30px;
     margin-right: 30px;
-  
-  }
-
-  .modal-conteudo img {
-    max-height: 300px;
-  }
-
-  .modal-miniaturas img {
-    width: 58px;
-    height: 46px;
   }
 
   .modal-conteudo p {
@@ -747,42 +742,13 @@ h1 span:last-child {
     font-size: 20px;
   }
 
-}
+  .modal-miniaturas img {
+    width: 60px;
+    height: 48px;
+  }
 
-.botao-whatsapp {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-
-  margin-top: 8px;
-  padding: 12px 22px;
-
-  background-color: #a65f1b;
-  color: white;
-
-  border: none;
-  border-radius: 25px;
-
-  font-family: Arial, sans-serif;
-  font-size: 15px;
-  font-weight: bold;
-
-  text-decoration: none;
-  cursor: pointer;
-
-  transition: 0.2s;
-}
-
-.botao-whatsapp:hover {
-  background-color: #8f5017;
-  transform: translateY(-1px);
-}
-
-.botao-whatsapp i {
-  color: #25D366;
-  font-size: 19px;
-}
-
-
+  .botao-whatsapp {
+    width: 100%;
+    box-sizing: border-box;
+  }
 }
