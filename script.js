@@ -283,7 +283,7 @@ destaqueWhatsapp.addEventListener("click", function(event) {
     VENDEDORES[Math.floor(Math.random() * VENDEDORES.length)];
 
   const mensagem =
-    "Olá! Gostaria de mais informações sobre os produtos.";
+    "Olá! Gostaria de mais informações sobre os produtos do catálogo.";
 
   destaqueWhatsapp.href =
     `https://wa.me/${vendedor.numero}?text=${encodeURIComponent(mensagem)}`;
