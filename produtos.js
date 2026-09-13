@@ -2160,14 +2160,21 @@ const produtos = [
     descricao: "Colchao Casal Resistance Sealy Molas LFK 138x188x32 Plumatex",
     detalhes: "Colchão Casal Resistance Sealy Molas LFK, cor Bege Claro, da Plumatex. Medidas: Alt. 0,32 m, Larg. 1,38 m, Prof. 1,88 m. Possui molas LFK, espuma D33, fibras siliconadas e Pillow Top Americano com revestimento em malha Cashmere. Laterais em linho, sistema Polyframe, tecido inferior antiderrapante e tecnologia No Turn. Tratamento antiácaro e antifungos. Suporte de até 300 kg, sendo 150 kg por pessoa.",
     preco: "R$ 2.199,99"
-  }
+  },
     
     
     
     /*                                              */
 
 
- 
+   {
+    nome: "Colchao Queen Smart Lis Molas Ensacadas 158x198x26",
+    categoria: "Camas/Colchões/Box",
+    imagem: "imagens/colchao/",
+    descricao: "Colchão Queen Smart Lis com molas ensacadas 158x195x26",
+    detalhes: "Colchão Queen Smart Lis Plumatex, com molas ensacadas Master Pocket, espuma D26 e sistema Polyframe. Revestimento em malha de poliéster, laterais em Jacquard e fundo antiderrapante. Sistema One Side. Suporte de até 100 kg por pessoa.", 
+    preco: "R$ 1.399,99"
+  }
 
 
 
