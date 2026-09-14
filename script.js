@@ -13,9 +13,9 @@ const modalWhatsapp = document.getElementById("modal-whatsapp");
 const modalMiniaturas = document.getElementById("modal-miniaturas");
 
 const VENDEDORES = [
-  { nome: "Lucas", numero: "5521983531564" },
-  { nome: "Hazelmam", numero: "5521974690154" },
-  { nome: "Teste", numero: "5521984525497" }
+  { nome: "Mauricio", numero: "5521982814052" }
+  /*{ nome: "Hazelmam", numero: "5521974690154" },
+  { nome: "Teste", numero: "5521984525497" } */
 ];
 
 const destaqueWhatsapp = document.getElementById("destaque-whatsapp");
