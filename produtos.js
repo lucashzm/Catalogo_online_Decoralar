@@ -2170,7 +2170,7 @@ const produtos = [
    {
     nome: "Colchao Queen Smart Lis Molas Ensacadas 158x198x26",
     categoria: "Camas/Colchões/Box",
-    imagem: "imagens/colchao/",
+    imagem: "imagens/colchao/Colchão Casal Smart Classic Molas Ensacadas 138x188x22 Azul Plumatex.jpeg",
     descricao: "Colchão Queen Smart Lis com molas ensacadas 158x195x26",
     detalhes: "Colchão Queen Smart Lis Plumatex, com molas ensacadas Master Pocket, espuma D26 e sistema Polyframe. Revestimento em malha de poliéster, laterais em Jacquard e fundo antiderrapante. Sistema One Side. Suporte de até 100 kg por pessoa.", 
     preco: "R$ 1.399,99"
