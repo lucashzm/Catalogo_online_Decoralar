@@ -21,10 +21,49 @@ const VENDEDORES = [
 const destaqueWhatsapp = document.getElementById("destaque-whatsapp");
 
 const PRODUTOS_POR_PAGINA = 30;
+const DESCONTO_PIX = 0.04;
 
 let categoriaAtual = "Todos";
 let paginaAtual = 1;
 
+function obterPrecoNumerico(preco) {
+  if (typeof preco === "number") {
+    return preco;
+  }
+
+  return Number(
+    String(preco)
+      .replace(/R\$\s*/g, "")
+      .replace(/\./g, "")
+      .replace(",", ".")
+      .trim()
+  );
+}
+
+function formatarPreco(valor) {
+  return valor.toLocaleString("pt-BR", {
+    style: "currency",
+    currency: "BRL"
+  });
+}
+
+function obterPrecoPix(preco) {
+  return obterPrecoNumerico(preco) * (1 - DESCONTO_PIX);
+}
+
+function renderizarPrecos(preco) {
+  return `
+    <div class="precos-produto">
+      <span class="preco-normal">${preco}</span>
+      <span class="preco-pix">${formatarPreco(obterPrecoPix(preco))}</span>
+      <span class="condicao-pix">4% de desconto no PIX ou à vista</span>
+    </div>
+  `;
+}
+
+function obterTextoPrecoPix(preco) {
+  return formatarPreco(obterPrecoPix(preco));
+}
 
 function mostrarProdutos(categoria, pagina = 1) {
 
@@ -77,9 +116,7 @@ function mostrarProdutos(categoria, pagina = 1) {
 
       <p>${produto.descricao}</p>
 
-      <p>
-        <strong>${produto.preco}</strong>
-      </p>
+      ${renderizarPrecos(produto.preco)}
     `;
 
     card.addEventListener("click", function() {
@@ -209,10 +246,10 @@ function abrirModal(produto) {
     modalDescricao.textContent = produto.detalhes;
   }
 
-  modalPreco.textContent = produto.preco;
+  modalPreco.innerHTML = renderizarPrecos(produto.preco);
 
   const mensagem =
-    `Olá! Tenho interesse no produto "${produto.nome}", no valor de ${produto.preco}.`;
+    `Olá! Tenho interesse no produto "${produto.nome}", no valor de ${obterTextoPrecoPix(produto.preco)} à vista/PIX.`;
 
   const vendedor =
     VENDEDORES[Math.floor(Math.random() * VENDEDORES.length)];
