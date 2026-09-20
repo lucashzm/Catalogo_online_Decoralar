@@ -256,7 +256,7 @@ function abrirModal(produto) {
   modalPreco.innerHTML = renderizarPrecos(produto.preco);
 
   const mensagem =
-    `Olá! Tenho interesse no produto "${produto.nome}", no valor de ${obterTextoPrecoPix(produto.preco)} à vista/PIX.`;
+    `Olá! Tenho interesse no produto "${produto.nome}". Poderia me passar mais informações?`;
 
   const vendedor =
     VENDEDORES[Math.floor(Math.random() * VENDEDORES.length)];
