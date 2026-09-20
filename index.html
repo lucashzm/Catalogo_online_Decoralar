@@ -20,6 +20,135 @@
     
     <link rel="stylesheet" href="style.css">
 
+    <style>
+      /* =========================
+         NOVA APRESENTAÇÃO DOS PREÇOS
+         O segundo valor é uma condição de pagamento, não uma promoção.
+         ========================= */
+
+      .precos-produto {
+        width: 100%;
+        margin-top: 14px;
+        gap: 10px;
+      }
+
+      .preco-base {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2px;
+      }
+
+      .preco-base-label {
+        color: #666;
+        font-size: 0.78em;
+        font-weight: 600;
+      }
+
+      .preco-base-valor {
+        color: #2f2f2f;
+        font-size: 1.05em;
+        font-weight: 600;
+      }
+
+      .preco-pix-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 3px;
+        padding: 10px 14px;
+        background-color: #f0f9f2;
+        border: 1px solid #d7eddc;
+        border-radius: 12px;
+      }
+
+      .preco-pix-label {
+        color: #1f7a35;
+        font-size: 0.86em;
+        font-weight: 700;
+      }
+
+      .precos-produto .preco-pix {
+        padding: 0;
+        background: transparent;
+        color: #1f7a35;
+        font-size: 1.3em;
+        line-height: 1.15;
+      }
+
+      .precos-produto .condicao-pix {
+        color: #5d6d61;
+        font-size: 0.72em;
+        font-weight: 600;
+        line-height: 1.25;
+      }
+
+      /* Modal: duas condições de pagamento lado a lado. */
+      .modal-conteudo #modal-preco .precos-produto {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: stretch;
+        gap: 18px;
+        margin-top: 0;
+      }
+
+      .modal-conteudo #modal-preco .preco-base {
+        justify-content: center;
+        padding: 18px 14px;
+        background-color: #fafafa;
+        border: 1px solid #e8e8e8;
+        border-radius: 12px;
+      }
+
+      .modal-conteudo #modal-preco .preco-base-label {
+        color: #333;
+        font-family: "Playfair Display", Georgia, serif;
+        font-size: 18px;
+        font-weight: 700;
+      }
+
+      .modal-conteudo #modal-preco .preco-base-valor {
+        color: #222;
+        font-size: 28px;
+        font-weight: 700;
+      }
+
+      .modal-conteudo #modal-preco .preco-pix-box {
+        justify-content: center;
+        padding: 18px 14px;
+      }
+
+      .modal-conteudo #modal-preco .preco-pix-label {
+        font-family: "Playfair Display", Georgia, serif;
+        font-size: 18px;
+      }
+
+      .modal-conteudo #modal-preco .preco-pix {
+        font-size: 28px;
+      }
+
+      .modal-conteudo #modal-preco .condicao-pix {
+        font-size: 13px;
+      }
+
+      @media (max-width: 600px) {
+        .modal-conteudo #modal-preco .precos-produto {
+          grid-template-columns: 1fr;
+          gap: 10px;
+        }
+
+        .modal-conteudo #modal-preco .preco-base-valor,
+        .modal-conteudo #modal-preco .preco-pix {
+          font-size: 24px;
+        }
+
+        .modal-conteudo #modal-preco .preco-base-label,
+        .modal-conteudo #modal-preco .preco-pix-label {
+          font-size: 16px;
+        }
+      }
+    </style>
+
     <link
       rel="icon"
       type="image/png"
