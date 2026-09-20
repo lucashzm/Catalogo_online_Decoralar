@@ -54,9 +54,16 @@ function obterPrecoPix(preco) {
 function renderizarPrecos(preco) {
   return `
     <div class="precos-produto">
-      <span class="preco-normal">${preco}</span>
-      <span class="preco-pix">${formatarPreco(obterPrecoPix(preco))}</span>
-      <span class="condicao-pix">4% de desconto no PIX ou à vista</span>
+      <div class="preco-base">
+        <span class="preco-base-label">Preço do produto</span>
+        <span class="preco-base-valor">${preco}</span>
+      </div>
+
+      <div class="preco-pix-box">
+        <span class="preco-pix-label">À vista no PIX</span>
+        <span class="preco-pix">${formatarPreco(obterPrecoPix(preco))}</span>
+        <span class="condicao-pix">4% de desconto para pagamento à vista</span>
+      </div>
     </div>
   `;
 }
