@@ -1,3 +1,7 @@
+const SUPABASE_URL = "https://hpjiwmmslyvuqrkllmvb.supabase.co";
+const SUPABASE_KEY = "sb_publishable_bx1NzXS3nlgFK-te-Nuk9g_6n0j4htx";
+const db = supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
+
 const listaProdutos = document.getElementById("lista-produtos");
 const botoes = document.querySelectorAll(".filtro");
 const paginacao = document.getElementById("paginacao");
@@ -297,13 +301,153 @@ modalAcompanhamento.addEventListener("click", function(event) {
   }
 });
 
-formAcompanhamento.addEventListener("submit", function(event) {
+function escaparHtml(valor) {
+  return String(valor ?? "").replace(/[&<>"']/g, function(caractere) {
+    return {
+      "&": "&amp;",
+      "<": "&lt;",
+      ">": "&gt;",
+      '"': "&quot;",
+      "'": "&#39;"
+    }[caractere];
+  });
+}
+
+function formatarData(data) {
+  if (!data) return "";
+  const partes = String(data).split("-");
+  if (partes.length !== 3) return data;
+  return partes[2] + "/" + partes[1] + "/" + partes[0];
+}
+
+function obterPrimeiroNome(nome) {
+  return String(nome || "").trim().split(/\\s+/)[0] || "";
+}
+
+function classeEtapa(etapaAtual, indice, total) {
+  if (indice < etapaAtual) return "concluida";
+  if (indice === etapaAtual) return "atual";
+  return "";
+}
+
+function renderizarAcompanhamento(pedido) {
+  const status = pedido.status_entrega;
+
+  if (status === "Cancelado" || status === "Devolvido") {
+    const devolvido = status === "Devolvido";
+    mensagemAcompanhamento.className = "mensagem-acompanhamento resultado-acompanhamento";
+    mensagemAcompanhamento.innerHTML =
+      '<div class="acompanhamento-resultado">' +
+        '<div class="resultado-alerta ' + (devolvido ? "devolvido" : "cancelado") + '">' +
+          '<i class="fa-solid ' + (devolvido ? "fa-rotate-left" : "fa-circle-xmark") + '"></i>' +
+          '<div><strong>' + (devolvido ? "Pedido devolvido" : "Pedido cancelado") + '</strong>' +
+          '<span>Entre em contato conosco pelo WhatsApp caso tenha dúvidas.</span></div>' +
+        '</div>' +
+      '</div>';
+    mensagemAcompanhamento.style.display = "block";
+    return;
+  }
+
+  const etapas = [
+    "Pedido recebido",
+    "Pedido confirmado",
+    "Em preparação",
+    "Em trânsito",
+    "Entrega realizada"
+  ];
+
+  const mapaStatus = {
+    "Pendente": 0,
+    "Reservado": 1,
+    "Aguardando recolhimento": 2,
+    "Em trânsito": 3,
+    "Concluído": 4
+  };
+
+  const etapaAtual = mapaStatus[status] ?? 0;
+
+  const timeline = etapas.map(function(etapa, indice) {
+    const classe = classeEtapa(etapaAtual, indice, etapas.length);
+    const icone = indice < etapaAtual ? "fa-check" : indice === etapaAtual ? "fa-circle" : "fa-circle";
+    return '<div class="acompanhamento-etapa ' + classe + '">' +
+      '<div class="etapa-marcador"><i class="fa-solid ' + icone + '"></i></div>' +
+      '<div class="etapa-texto">' + escaparHtml(etapa) + '</div>' +
+    '</div>';
+  }).join("");
+
+  const produtos = Array.isArray(pedido.itens) && pedido.itens.length
+    ? pedido.itens.map(function(item) {
+        return '<li><span>' + escaparHtml(item.produto) + '</span><strong>Qtd. ' + escaparHtml(item.quantidade) + '</strong></li>';
+      }).join("")
+    : '<li><span>Itens do pedido</span></li>';
+
+  const nomeCliente = escaparHtml(pedido.cliente_nome || "cliente");
+  const nomeRecebido = obterPrimeiroNome(pedido.recebido_por);
+
+  mensagemAcompanhamento.className = "mensagem-acompanhamento resultado-acompanhamento";
+  mensagemAcompanhamento.innerHTML =
+    '<div class="acompanhamento-resultado">' +
+      '<div class="resultado-cabecalho">' +
+        '<div><span>Pedido</span><strong>#' + escaparHtml(pedido.numero_pedido) + '</strong></div>' +
+        '<div><span>Cliente</span><strong>' + nomeCliente + '</strong></div>' +
+      '</div>' +
+      '<div class="resultado-datas">' +
+        '<p>Pedido realizado em <strong>' + formatarData(pedido.data_pedido) + '</strong></p>' +
+        (pedido.previsao_entrega ? '<p>Previsão de entrega: <strong>' + formatarData(pedido.previsao_entrega) + '</strong></p>' : '') +
+      '</div>' +
+      '<div class="acompanhamento-timeline">' + timeline + '</div>' +
+      (status === "Concluído" ? '<div class="entrega-realizada-box"><strong>Entrega realizada</strong><span>Entregue em ' + formatarData(pedido.data_entrega) + '</span>' + (nomeRecebido ? '<span>Recebido por <strong>' + escaparHtml(nomeRecebido) + '</strong></span>' : '') + '</div>' : '') +
+      '<div class="itens-acompanhamento"><h3>Produtos do pedido</h3><ul>' + produtos + '</ul></div>' +
+    '</div>';
+  mensagemAcompanhamento.style.display = "block";
+}
+
+formAcompanhamento.addEventListener("submit", async function(event) {
   event.preventDefault();
 
-  mensagemAcompanhamento.textContent =
-    "A consulta será conectada ao sistema de pedidos nesta próxima etapa.";
+  const numero = document.getElementById("numero-pedido-acompanhamento").value.trim();
+  const documento = document.getElementById("documento-acompanhamento").value.trim();
 
-  mensagemAcompanhamento.style.display = "block";
+  mensagemAcompanhamento.className = "mensagem-acompanhamento";
+  mensagemAcompanhamento.textContent = "";
+  mensagemAcompanhamento.style.display = "none";
+
+  if (!/^\\d+$/.test(numero) || !documento) {
+    mensagemAcompanhamento.textContent = "Informe o número do pedido e o CPF ou CNPJ.";
+    mensagemAcompanhamento.style.display = "block";
+    return;
+  }
+
+  const botao = formAcompanhamento.querySelector(".botao-consultar-pedido");
+  const textoOriginal = botao.innerHTML;
+  botao.disabled = true;
+  botao.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> Consultando...';
+
+  try {
+    const { data, error } = await db.rpc("consultar_pedido_publico", {
+      p_numero_pedido: Number(numero),
+      p_documento: documento
+    });
+
+    if (error) throw error;
+
+    const pedido = Array.isArray(data) ? data[0] : data;
+
+    if (!pedido) {
+      mensagemAcompanhamento.textContent = "Não encontramos um pedido com esses dados.";
+      mensagemAcompanhamento.style.display = "block";
+      return;
+    }
+
+    renderizarAcompanhamento(pedido);
+  } catch (erro) {
+    console.error("Erro ao consultar pedido:", erro);
+    mensagemAcompanhamento.textContent = "Não foi possível consultar o pedido agora. Tente novamente em instantes.";
+    mensagemAcompanhamento.style.display = "block";
+  } finally {
+    botao.disabled = false;
+    botao.innerHTML = textoOriginal;
+  }
 });
 
 
