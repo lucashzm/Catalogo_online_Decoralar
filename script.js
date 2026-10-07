@@ -20,6 +20,12 @@ const VENDEDORES = [
 
 const destaqueWhatsapp = document.getElementById("destaque-whatsapp");
 
+const abrirAcompanhamento = document.getElementById("abrir-acompanhamento");
+const modalAcompanhamento = document.getElementById("modal-acompanhamento");
+const fecharAcompanhamento = document.getElementById("fechar-acompanhamento");
+const formAcompanhamento = document.getElementById("form-acompanhamento");
+const mensagemAcompanhamento = document.getElementById("mensagem-acompanhamento");
+
 const PRODUTOS_POR_PAGINA = 30;
 const DESCONTO_PIX = 0.04;
 
@@ -277,6 +283,29 @@ fecharModal.addEventListener("click", function() {
   fecharModalProduto();
 });
 
+abrirAcompanhamento.addEventListener("click", function() {
+  modalAcompanhamento.classList.add("aberto");
+});
+
+fecharAcompanhamento.addEventListener("click", function() {
+  modalAcompanhamento.classList.remove("aberto");
+});
+
+modalAcompanhamento.addEventListener("click", function(event) {
+  if (event.target === modalAcompanhamento) {
+    modalAcompanhamento.classList.remove("aberto");
+  }
+});
+
+formAcompanhamento.addEventListener("submit", function(event) {
+  event.preventDefault();
+
+  mensagemAcompanhamento.textContent =
+    "A consulta será conectada ao sistema de pedidos nesta próxima etapa.";
+
+  mensagemAcompanhamento.style.display = "block";
+});
+
 
 modal.addEventListener("click", function(event) {
 
@@ -291,6 +320,7 @@ document.addEventListener("keydown", function(event) {
 
   if (event.key === "Escape") {
     fecharModalProduto();
+    modalAcompanhamento.classList.remove("aberto");
   }
 
 });
