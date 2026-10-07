@@ -412,7 +412,7 @@ formAcompanhamento.addEventListener("submit", async function(event) {
   mensagemAcompanhamento.textContent = "";
   mensagemAcompanhamento.style.display = "none";
 
-  if (!/^\\d+$/.test(numero) || !documento) {
+  if (!/^\d+$/.test(numero) || !documento) {
     mensagemAcompanhamento.textContent = "Informe o número do pedido e o CPF ou CNPJ.";
     mensagemAcompanhamento.style.display = "block";
     return;
