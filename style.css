@@ -778,3 +778,180 @@ h1 span:last-child {
     line-height: 1.2;
   }
 }
+
+
+/* =========================
+   ACOMPANHAR PEDIDO
+   ========================= */
+
+.botao-acompanhamento {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+
+  padding: 9px 17px;
+
+  background: #fff;
+  color: #8f5218;
+
+  border: 1px solid #d9c4ad;
+  border-radius: 20px;
+
+  font: inherit;
+  font-size: 18px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    background-color 0.2s ease;
+}
+
+.botao-acompanhamento:hover {
+  background: #faf6f0;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.botao-acompanhamento i {
+  font-size: 17px;
+}
+
+.modal-acompanhamento {
+  z-index: 1100;
+}
+
+.acompanhamento-conteudo {
+  max-width: 470px;
+  padding: 32px;
+}
+
+.acompanhamento-icone {
+  width: 58px;
+  height: 58px;
+  margin: 0 auto 12px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+  background: #f5eee5;
+  color: #a65f1b;
+
+  font-size: 24px;
+}
+
+.acompanhamento-conteudo h2 {
+  margin-bottom: 10px;
+}
+
+.acompanhamento-intro {
+  margin: 0 auto 24px !important;
+  color: #666 !important;
+  font-size: 15px !important;
+  line-height: 1.5 !important;
+}
+
+.form-acompanhamento {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  text-align: left;
+}
+
+.form-acompanhamento label {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.form-acompanhamento label span {
+  color: #444;
+  font-family: "Lora", Georgia, serif;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.form-acompanhamento input {
+  width: 100%;
+  box-sizing: border-box;
+
+  padding: 12px 14px;
+
+  border: 1px solid #d8d8d8;
+  border-radius: 9px;
+
+  outline: none;
+
+  font-family: "Lora", Georgia, serif;
+  font-size: 15px;
+  color: #333;
+
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.form-acompanhamento input:focus {
+  border-color: #a65f1b;
+  box-shadow: 0 0 0 3px rgba(166, 95, 27, 0.08);
+}
+
+.botao-consultar-pedido {
+  margin-top: 5px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
+  width: 100%;
+  padding: 12px 18px;
+
+  border: none;
+  border-radius: 24px;
+
+  background: #a65f1b;
+  color: white;
+
+  font-size: 15px;
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.botao-consultar-pedido:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 12px rgba(166, 95, 27, 0.25);
+}
+
+.mensagem-acompanhamento {
+  display: none;
+  margin: 15px auto 0 !important;
+  color: #a65f1b !important;
+  font-size: 13px !important;
+}
+
+@media (max-width: 600px) {
+  .botao-acompanhamento {
+    font-size: 15px;
+    padding: 8px 14px;
+  }
+
+  .acompanhamento-conteudo {
+    max-width: 100%;
+    padding: 26px 20px;
+  }
+
+  .acompanhamento-conteudo h2 {
+    font-size: 24px;
+  }
+}
