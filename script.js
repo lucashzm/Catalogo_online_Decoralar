@@ -320,6 +320,19 @@ function formatarData(data) {
   return partes[2] + "/" + partes[1] + "/" + partes[0];
 }
 
+function formatarDataHora(data) {
+  if (!data) return "";
+  const dataObj = new Date(String(data).replace(" ", "T"));
+  if (Number.isNaN(dataObj.getTime())) return String(data);
+  return dataObj.toLocaleString("pt-BR", {
+    day: "2-digit",
+    month: "2-digit",
+    year: "numeric",
+    hour: "2-digit",
+    minute: "2-digit"
+  }).replace(",", " às");
+}
+
 function obterPrimeiroNome(nome) {
   return String(nome || "").trim().split(/\\s+/)[0] || "";
 }
@@ -392,7 +405,7 @@ function renderizarAcompanhamento(pedido) {
         '<div><span>Cliente</span><strong>' + nomeCliente + '</strong></div>' +
       '</div>' +
       '<div class="resultado-datas">' +
-        '<p>Pedido realizado em <strong>' + formatarData(pedido.data_pedido) + '</strong></p>' +
+        '<p>Pedido realizado em <strong>' + formatarDataHora(pedido.data_pedido) + '</strong></p>' +
         (pedido.previsao_entrega ? '<p>Previsão de entrega: <strong>' + formatarData(pedido.previsao_entrega) + '</strong></p>' : '') +
       '</div>' +
       '<div class="acompanhamento-timeline">' + timeline + '</div>' +
