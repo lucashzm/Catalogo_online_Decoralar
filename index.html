@@ -199,6 +199,11 @@
             <span class="texto-destaque">Atendimento via WhatsApp</span>
           </a>
 
+          <button id="abrir-acompanhamento" class="botao-acompanhamento" type="button">
+            <i class="fa-solid fa-box"></i>
+            <span>Acompanhar meu pedido</span>
+          </button>
+
         </div>
 
       </div>
@@ -263,6 +268,50 @@
 
     </section>
 
+
+
+    <!-- JANELA DE ACOMPANHAMENTO DO PEDIDO -->
+
+    <div id="modal-acompanhamento" class="modal-produto modal-acompanhamento">
+
+      <div class="modal-conteudo acompanhamento-conteudo">
+
+        <button id="fechar-acompanhamento" class="fechar-modal" type="button">&times;</button>
+
+        <div class="acompanhamento-icone">
+          <i class="fa-solid fa-box"></i>
+        </div>
+
+        <h2>Acompanhar meu pedido</h2>
+
+        <p class="acompanhamento-intro">
+          Consulte o andamento da sua compra de forma rápida e segura.
+        </p>
+
+        <form id="form-acompanhamento" class="form-acompanhamento">
+
+          <label>
+            <span>Número do pedido</span>
+            <input id="numero-pedido-acompanhamento" type="text" inputmode="numeric" placeholder="Ex.: 10245">
+          </label>
+
+          <label>
+            <span>CPF ou CNPJ</span>
+            <input id="documento-acompanhamento" type="text" inputmode="numeric" placeholder="Digite seu CPF ou CNPJ">
+          </label>
+
+          <button type="submit" class="botao-consultar-pedido">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            Consultar pedido
+          </button>
+
+        </form>
+
+        <p id="mensagem-acompanhamento" class="mensagem-acompanhamento"></p>
+
+      </div>
+
+    </div>
 
 
     <!-- JANELA DE DETALHES DO PRODUTO -->
