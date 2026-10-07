@@ -955,3 +955,45 @@ h1 span:last-child {
     font-size: 24px;
   }
 }
+
+.botao-consultar-pedido:disabled{opacity:.65;cursor:wait;transform:none}
+.resultado-acompanhamento{max-width:100%!important}
+.acompanhamento-resultado{text-align:left}
+.resultado-cabecalho{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:10px}
+.resultado-cabecalho>div{padding:12px 14px;background:#faf8f5;border:1px solid #eee3d7;border-radius:10px}
+.resultado-cabecalho span,.resultado-cabecalho strong{display:block}
+.resultado-cabecalho span{font-size:11px;color:#888;text-transform:uppercase;letter-spacing:.06em}
+.resultado-cabecalho strong{margin-top:4px;color:#2d2d2d;font-size:15px}
+.resultado-datas{padding:8px 2px 18px}
+.resultado-datas p{margin:5px 0!important;font-size:13px!important;line-height:1.4!important}
+.acompanhamento-timeline{position:relative;margin:8px 0 20px;padding-left:7px}
+.acompanhamento-etapa{display:flex;align-items:center;gap:12px;min-height:42px;position:relative;color:#aaa}
+.acompanhamento-etapa:not(:last-child)::after{content:"";position:absolute;left:8px;top:25px;width:2px;height:28px;background:#e4e4e4}
+.acompanhamento-etapa.concluida,.acompanhamento-etapa.atual{color:#a65f1b}
+.etapa-marcador{width:18px;height:18px;display:flex;align-items:center;justify-content:center;position:relative;z-index:1;background:white}
+.etapa-marcador i{font-size:10px}
+.concluida .etapa-marcador i{font-size:14px}
+.atual .etapa-marcador{width:20px;height:20px;border:3px solid #a65f1b;border-radius:50%}
+.atual .etapa-marcador i{font-size:7px}
+.etapa-texto{font-family:"Lora",Georgia,serif;font-size:14px;font-weight:600}
+.entrega-realizada-box{display:flex;flex-direction:column;gap:4px;padding:14px 16px;margin:0 0 18px;background:#f0f9f2;border:1px solid #d7eddc;border-radius:11px;color:#276437}
+.entrega-realizada-box>strong{font-size:15px}
+.entrega-realizada-box>span{font-size:13px}
+.itens-acompanhamento{padding-top:15px;border-top:1px solid #eee}
+.itens-acompanhamento h3{margin:0 0 8px;font-family:"Playfair Display",Georgia,serif;font-size:17px;color:#333}
+.itens-acompanhamento ul{list-style:none;padding:0;margin:0}
+.itens-acompanhamento li{display:flex;justify-content:space-between;gap:15px;padding:9px 0;border-bottom:1px solid #f0f0f0;font-size:13px;color:#555}
+.itens-acompanhamento li:last-child{border-bottom:0}
+.itens-acompanhamento strong{font-size:12px;color:#777;white-space:nowrap}
+.resultado-alerta{display:flex;align-items:flex-start;gap:12px;padding:16px;border-radius:11px;text-align:left}
+.resultado-alerta i{font-size:21px;margin-top:2px}
+.resultado-alerta strong,.resultado-alerta span{display:block}
+.resultado-alerta span{margin-top:5px;font-size:13px;line-height:1.4}
+.resultado-alerta.cancelado{background:#fff0f0;color:#9b2b2b}
+.resultado-alerta.devolvido{background:#fff5f5;color:#842029}
+@media(max-width:600px){
+  .resultado-cabecalho{grid-template-columns:1fr}
+  .resultado-cabecalho>div{padding:10px 12px}
+  .etapa-texto{font-size:13px}
+  .itens-acompanhamento li{align-items:flex-start;flex-direction:column;gap:3px}
+}
