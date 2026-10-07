@@ -992,6 +992,16 @@ h1 span:last-child {
 .resultado-alerta.cancelado{background:#fff0f0;color:#9b2b2b}
 .resultado-alerta.devolvido{background:#fff5f5;color:#842029}
 @media(max-width:600px){
+  .acompanhamento-conteudo{
+    width:calc(100vw - 24px);
+    max-width:560px;
+    padding:24px 20px;
+  }
+  .acompanhamento-conteudo h2{
+    font-size:24px;
+    margin-left:20px;
+    margin-right:20px;
+  }
   .resultado-cabecalho{grid-template-columns:1fr}
   .resultado-cabecalho>div{padding:10px 12px}
   .etapa-texto{font-size:13px}
