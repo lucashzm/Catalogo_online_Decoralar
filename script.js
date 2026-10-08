@@ -409,7 +409,7 @@ function renderizarAcompanhamento(pedido) {
         (pedido.previsao_entrega ? '<p>Previsão de entrega: <strong>' + formatarData(pedido.previsao_entrega) + '</strong></p>' : '') +
       '</div>' +
       '<div class="acompanhamento-timeline">' + timeline + '</div>' +
-      (status === "Concluído" ? '<div class="entrega-realizada-box"><strong>Entrega realizada</strong><span>Entregue em ' + formatarData(pedido.data_entrega) + '</span>' + (nomeRecebido ? '<span>Recebido por <strong>' + escaparHtml(nomeRecebido) + '</strong></span>' : '') + '</div>' : '') +
+      (status === "Concluído" ? '<div class="entrega-realizada-box"><strong>Entrega realizada</strong>' + (pedido.data_entrega ? '<span>Entregue em <strong>' + formatarData(pedido.data_entrega) + '</strong></span>' : '') + (nomeRecebido ? '<span>Recebido por <strong>' + escaparHtml(nomeRecebido) + '</strong></span>' : '<span>Recebimento não registrado</span>') + '</div>' : '') +
       '<div class="itens-acompanhamento"><h3>Produtos do pedido</h3><ul>' + produtos + '</ul></div>' +
     '</div>';
   mensagemAcompanhamento.style.display = "block";
