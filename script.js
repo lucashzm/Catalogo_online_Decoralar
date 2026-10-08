@@ -334,7 +334,7 @@ function formatarDataHora(data) {
 }
 
 function obterPrimeiroNome(nome) {
-  return String(nome || "").trim().split(/\\s+/)[0] || "";
+  return String(nome || "").trim().split(/\s+/)[0] || "";
 }
 
 function classeEtapa(etapaAtual, indice, total) {
@@ -394,7 +394,7 @@ function renderizarAcompanhamento(pedido) {
       }).join("")
     : '<li><span>Itens do pedido</span></li>';
 
-  const nomeCliente = escaparHtml(pedido.cliente_nome || "cliente");
+  const nomeCliente = escaparHtml(obterPrimeiroNome(pedido.cliente_nome) || "cliente");
   const nomeRecebido = obterPrimeiroNome(pedido.recebido_por);
 
   mensagemAcompanhamento.className = "mensagem-acompanhamento resultado-acompanhamento";
@@ -409,7 +409,7 @@ function renderizarAcompanhamento(pedido) {
         (pedido.previsao_entrega ? '<p>Previsão de entrega: <strong>' + formatarData(pedido.previsao_entrega) + '</strong></p>' : '') +
       '</div>' +
       '<div class="acompanhamento-timeline">' + timeline + '</div>' +
-      (status === "Concluído" ? '<div class="entrega-realizada-box"><strong>Entrega realizada</strong>' + (pedido.data_entrega ? '<span>Entregue em <strong>' + formatarData(pedido.data_entrega) + '</strong></span>' : '') + (nomeRecebido ? '<span>Recebido por <strong>' + escaparHtml(nomeRecebido) + '</strong></span>' : '<span>Recebimento não registrado</span>') + '</div>' : '') +
+      (status === "Concluído" ? '<div class="entrega-realizada-box"><strong>Entrega realizada</strong>' + (nomeRecebido ? '<span>Recebido por <strong>' + escaparHtml(nomeRecebido) + '</strong></span>' : '<span>Recebimento não registrado</span>') + (pedido.data_entrega ? '<span>Entregue em <strong>' + formatarData(pedido.data_entrega) + '</strong></span>' : '') + '</div>' : '') +
       '<div class="itens-acompanhamento"><h3>Produtos do pedido</h3><ul>' + produtos + '</ul></div>' +
     '</div>';
   mensagemAcompanhamento.style.display = "block";
