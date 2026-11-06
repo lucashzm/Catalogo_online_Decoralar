@@ -4,11 +4,28 @@
  if(!root||!window.supabase?.createClient)return;
  const db=window.supabase.createClient('https://hpjiwmmslyvuqrkllmvb.supabase.co','sb_publishable_bx1NzXS3nlgFK-te-Nuk9g_6n0j4htx');
  const $=id=>document.getElementById(id);
- let conversationId=null,phoneDigits='',pendingImage=null,polling=null;
+ const SESSION_KEY='bm_chat_session_v1';
+ let conversationId=null,phoneDigits='',pendingImage=null,polling=null,sessionExpiresAt=0;
  const imageTypes=['image/jpeg','image/png','image/webp','image/heic','image/heif'];
  const digits=v=>(v||'').replace(/\D/g,'');
  function notice(text,error=false){const n=$('bm-chat-notice');n.textContent=text;n.classList.toggle('error',error);n.hidden=false;}
- function toggle(open){$('bm-chat-panel').hidden=!open;$('bm-chat-launcher').setAttribute('aria-expanded',String(open));}
+ function saveSession(){
+  try{sessionStorage.setItem(SESSION_KEY,JSON.stringify({conversationId,phoneDigits,sessionExpiresAt}));}catch(_){}
+ }
+ function clearSession(){
+  conversationId=null;phoneDigits='';sessionExpiresAt=0;
+  try{sessionStorage.removeItem(SESSION_KEY);}catch(_){}
+  stopPolling();
+ }
+ function sessionIsOpen(){return !!conversationId&&!!phoneDigits&&sessionExpiresAt>Date.now();}
+ function toggle(open){
+  if(open){
+   if(sessionIsOpen())showScreen('chat');
+   else if(conversationId){clearSession();showScreen('home');}
+  }
+  $('bm-chat-panel').hidden=!open;
+  $('bm-chat-launcher').setAttribute('aria-expanded',String(open));
+ }
  function showScreen(screen){
   $('bm-chat-home').hidden=screen!=='home';
   $('bm-chat-start').hidden=screen!=='start';
@@ -32,12 +49,20 @@
   const thread=$('bm-chat-thread');thread.replaceChildren();(data||[]).forEach(renderMessage);thread.scrollTop=thread.scrollHeight;
  }
  async function refreshHistory(){
+  if(!sessionIsOpen()){
+   clearSession();showScreen('home');
+   if(!$('bm-chat-panel').hidden)notice('Sua sessão ficou inativa. Você pode continuar o atendimento e recuperar o histórico.');
+   return;
+  }
   try{await history();}
-  catch(err){stopPolling();conversationId=null;showScreen('home');notice('O prazo de 15 minutos sem mensagem sua terminou. Inicie um novo atendimento para continuar.',true);}
+  catch(err){clearSession();showScreen('home');notice('Não foi possível manter esta sessão. Use “Continuar atendimento” para recuperar a última conversa.',true);}
  }
  function startPolling(){stopPolling();polling=setInterval(refreshHistory,5000);}
  async function connect(row,phone){
   conversationId=row.conversa_id;phoneDigits=digits(phone);
+  sessionExpiresAt=new Date(row.expira_em||new Date(Date.now()+15*60*1000)).getTime();
+  if(!Number.isFinite(sessionExpiresAt)||sessionExpiresAt<=Date.now())sessionExpiresAt=Date.now()+15*60*1000;
+  saveSession();
   showScreen('chat');
   await history();
   startPolling();
@@ -50,6 +75,7 @@
   try{
    const {data,error}=await db.rpc('chat_cliente_iniciar',{p_nome:name,p_telefone:phone});if(error)throw error;
    const row=Array.isArray(data)?data[0]:data;if(!row?.conversa_id)throw new Error('Não foi possível iniciar a conversa.');
+   row.expira_em=row.criado_em?new Date(new Date(row.criado_em).getTime()+15*60*1000).toISOString():new Date(Date.now()+15*60*1000).toISOString();
    await connect(row,phone);notice('Conversa iniciada. Nossa equipe receberá sua mensagem.');
   }catch(err){notice(err.message||'Não foi possível iniciar o atendimento.',true);}
   finally{btn.disabled=false;btn.textContent='Iniciar atendimento';}
@@ -60,25 +86,32 @@
   const btn=$('bm-chat-continue').querySelector('button[type=submit]');btn.disabled=true;btn.textContent='Procurando...';
   try{
    const {data,error}=await db.rpc('chat_cliente_continuar',{p_telefone:phone});if(error)throw error;
-   const row=Array.isArray(data)?data[0]:data;if(!row?.conversa_id)throw new Error('Não encontramos um atendimento ativo para esse telefone.');
+   const row=Array.isArray(data)?data[0]:data;if(!row?.conversa_id)throw new Error('Não encontramos uma conversa disponível para esse telefone.');
    await connect(row,phone);
   }catch(err){notice(err.message||'Não foi possível recuperar o atendimento.',true);}
   finally{btn.disabled=false;btn.textContent='Continuar atendimento';}
  }
  async function send(e){
   e.preventDefault();const message=$('bm-chat-message').value.trim();if(!message&&!pendingImage)return;
+  if(!sessionIsOpen()){clearSession();showScreen('home');notice('Sua sessão ficou inativa. Clique em “Continuar atendimento” para recuperar a conversa.');return;}
   const btn=$('bm-chat-compose').querySelector('button[type=submit]');btn.disabled=true;
   try{
+   let result;
    if(pendingImage){
     const f=pendingImage;const ext={'image/jpeg':'jpg','image/png':'png','image/webp':'webp','image/heic':'heic','image/heif':'heif'}[f.type]||'img';
     const path=conversationId+'/'+crypto.randomUUID()+'.'+ext;
     const {error:up}=await db.storage.from('chat-midias').upload(path,f,{contentType:f.type,upsert:false});if(up)throw up;
-    const {error}=await db.rpc('chat_cliente_enviar',{p_conversa_id:conversationId,p_mensagem:message||null,p_tipo:'imagem',p_arquivo_path:path,p_mime_type:f.type,p_tamanho_bytes:f.size,p_duracao_segundos:null});
-    if(error){await db.storage.from('chat-midias').remove([path]);throw error;}
+    const response=await db.rpc('chat_cliente_enviar',{p_conversa_id:conversationId,p_mensagem:message||null,p_tipo:'imagem',p_arquivo_path:path,p_mime_type:f.type,p_tamanho_bytes:f.size,p_duracao_segundos:null});
+    if(response.error){await db.storage.from('chat-midias').remove([path]);throw response.error;}
+    result=response.data;
     pendingImage=null;$('bm-chat-attachment-preview').hidden=true;$('bm-chat-attachment-preview').replaceChildren();
    }else{
-    const {error}=await db.rpc('chat_cliente_enviar',{p_conversa_id:conversationId,p_mensagem:message,p_tipo:'texto',p_arquivo_path:null,p_mime_type:null,p_tamanho_bytes:null,p_duracao_segundos:null});if(error)throw error;
+    const response=await db.rpc('chat_cliente_enviar',{p_conversa_id:conversationId,p_mensagem:message,p_tipo:'texto',p_arquivo_path:null,p_mime_type:null,p_tamanho_bytes:null,p_duracao_segundos:null});
+    if(response.error)throw response.error;
+    result=response.data;
    }
+   const sent=Array.isArray(result)?result[0]:result;
+   if(sent?.expira_em){sessionExpiresAt=new Date(sent.expira_em).getTime();saveSession();}
    $('bm-chat-message').value='';await history();$('bm-chat-notice').hidden=true;
   }catch(err){notice(err.message||'Não foi possível enviar a mensagem.',true);}
   finally{btn.disabled=false;}
@@ -91,6 +124,14 @@
   const label=document.createElement('span');label.textContent='Foto pronta: '+f.name;p.appendChild(label);
   const rm=document.createElement('button');rm.type='button';rm.textContent='Remover';rm.onclick=()=>{pendingImage=null;p.hidden=true;p.replaceChildren();};p.appendChild(rm);p.hidden=false;
  }
+ function restoreSession(){
+  try{
+   const saved=JSON.parse(sessionStorage.getItem(SESSION_KEY)||'null');
+   if(!saved?.conversationId||!saved?.phoneDigits||!saved?.sessionExpiresAt||saved.sessionExpiresAt<=Date.now()){sessionStorage.removeItem(SESSION_KEY);return;}
+   conversationId=saved.conversationId;phoneDigits=saved.phoneDigits;sessionExpiresAt=saved.sessionExpiresAt;
+   showScreen('chat');startPolling();history().catch(()=>{clearSession();showScreen('home');});
+  }catch(_){clearSession();}
+ }
  try{
   $('bm-chat-launcher').addEventListener('click',()=>toggle($('bm-chat-panel').hidden));
   $('bm-chat-close').addEventListener('click',()=>toggle(false));
@@ -102,5 +143,6 @@
   $('bm-chat-continue').addEventListener('submit',resume);
   $('bm-chat-compose').addEventListener('submit',send);
   $('bm-chat-image').addEventListener('change',chooseImage);
+  restoreSession();
  }catch(err){console.warn('[BM chat] Widget desativado; catálogo preservado.',err);root.hidden=true;}
 })();
