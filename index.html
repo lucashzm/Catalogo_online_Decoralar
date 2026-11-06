@@ -403,6 +403,30 @@
 
 
 
+
+    <!-- Widget de atendimento independente do catálogo -->
+    <link rel="stylesheet" href="chat-widget.css">
+    <div id="bm-chat-widget" data-state="closed">
+      <button id="bm-chat-launcher" type="button" aria-label="Abrir atendimento" aria-expanded="false"><span class="bm-chat-launcher-dot"></span><span>Fale conosco</span></button>
+      <section id="bm-chat-panel" role="dialog" aria-modal="false" aria-label="Atendimento BM Móveis" hidden>
+        <header class="bm-chat-header"><div class="bm-chat-brand"><span class="bm-chat-brand-mark">BM</span><div><strong>BM Móveis</strong><small>Atendimento online</small></div></div><button id="bm-chat-close" type="button" aria-label="Fechar atendimento">×</button></header>
+        <div id="bm-chat-thread" class="bm-chat-thread" aria-live="polite"><div class="bm-chat-welcome"><strong>Olá! Como podemos ajudar?</strong><p>Envie sua mensagem e nossa equipe responderá por aqui.</p></div></div>
+        <div id="bm-chat-notice" class="bm-chat-notice" role="status" hidden></div>
+        <form id="bm-chat-start" class="bm-chat-start">
+          <label>Seu nome<input id="bm-chat-name" maxlength="80" autocomplete="name" required placeholder="Como podemos chamar você?"></label>
+          <label>WhatsApp com DDD<input id="bm-chat-phone" maxlength="20" inputmode="tel" autocomplete="tel" required placeholder="(21) 99999-9999"></label>
+          <button type="submit">Iniciar conversa</button><small>Usaremos seu telefone para identificar seu atendimento.</small>
+        </form>
+        <form id="bm-chat-compose" class="bm-chat-compose" hidden>
+          <label class="bm-chat-file" title="Enviar foto" aria-label="Enviar foto">＋<input id="bm-chat-image" type="file" accept="image/jpeg,image/png,image/webp,image/heic,image/heif" hidden></label>
+          <textarea id="bm-chat-message" rows="1" maxlength="4000" placeholder="Digite sua mensagem..." aria-label="Digite sua mensagem"></textarea>
+          <button type="submit" aria-label="Enviar mensagem">➤</button>
+        </form>
+        <div id="bm-chat-attachment-preview" class="bm-chat-attachment-preview" hidden></div>
+      </section>
+    </div>
+    <script defer src="chat-widget.js"></script>
+
     <script src="produtos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.js"></script>
     <script src="script.js"></script>
