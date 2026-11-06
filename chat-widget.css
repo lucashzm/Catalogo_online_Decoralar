@@ -43,3 +43,7 @@
 #bm-chat-home button.secondary{background:#eaf5f3;color:#116c67}
 .bm-chat-back{height:34px;border:0;background:transparent;color:#66777d;font-size:12px;cursor:pointer}
 #bm-chat-widget [hidden]{display:none!important}
+
+/* Identidade visual do catálogo: botão de conversa em tom terracota. */
+#bm-chat-launcher{background:#a65f1b;color:#fff}
+#bm-chat-launcher:hover{background:#8f5218}
