@@ -47,3 +47,11 @@
 /* Identidade visual do catálogo: botão de conversa em tom terracota. */
 #bm-chat-launcher{background:#a65f1b;color:#fff}
 #bm-chat-launcher:hover{background:#8f5218}
+
+/* Painel um pouco maior para melhorar a leitura, sem alterar o layout do catálogo. */
+@media(min-width:601px){
+  #bm-chat-panel{width:min(420px,calc(100vw - 28px));height:min(620px,calc(100dvh - 100px))}
+}
+@media(max-width:600px){
+  #bm-chat-panel{right:8px;width:calc(100vw - 16px);height:calc(100vh - 92px);height:calc(100dvh - 92px)}
+}
