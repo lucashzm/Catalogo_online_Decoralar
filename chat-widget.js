@@ -8,7 +8,7 @@
  let conversationId=null,channel=null,pendingImage=null;
  const imageTypes=['image/jpeg','image/png','image/webp','image/heic','image/heif'];
  function notice(text,error=false){const n=$('bm-chat-notice');n.textContent=text;n.classList.toggle('error',error);n.hidden=false;}
- function toggle(open){$('bm-chat-panel').hidden=!open;$('bm-chat-launcher').setAttribute('aria-expanded',String(open));if(open)$('bm-chat-name').focus();}
+ function toggle(open){$('bm-chat-panel').hidden=!open;$('bm-chat-launcher').setAttribute('aria-expanded',String(open));}
  function disconnect(){if(channel){db.removeChannel(channel);channel=null;}}
  function renderMessage(m){
   const b=document.createElement('div');b.className='bm-chat-bubble '+(m.remetente_tipo==='cliente'?'client':'staff');
