@@ -414,10 +414,22 @@
         <header class="bm-chat-header"><div class="bm-chat-brand"><span class="bm-chat-brand-mark">BM</span><div><strong>BM Móveis</strong><small>Atendimento online</small></div></div><button id="bm-chat-close" type="button" aria-label="Fechar atendimento">×</button></header>
         <div id="bm-chat-thread" class="bm-chat-thread" aria-live="polite"><div class="bm-chat-welcome"><strong>Olá! Como podemos ajudar?</strong><p>Envie sua mensagem e nossa equipe responderá por aqui.</p></div></div>
         <div id="bm-chat-notice" class="bm-chat-notice" role="status" hidden></div>
-        <form id="bm-chat-start" class="bm-chat-start">
+        <div id="bm-chat-home" class="bm-chat-home">
+          <p>Como deseja falar com nossa equipe?</p>
+          <button id="bm-chat-new" type="button">Iniciar atendimento</button>
+          <button id="bm-chat-resume" type="button" class="secondary">Continuar atendimento</button>
+        </div>
+        <form id="bm-chat-start" class="bm-chat-start" hidden>
           <label>Seu nome<input id="bm-chat-name" maxlength="80" autocomplete="name" required placeholder="Como podemos chamar você?"></label>
           <label>WhatsApp com DDD<input id="bm-chat-phone" maxlength="20" inputmode="tel" autocomplete="tel" required placeholder="(21) 99999-9999"></label>
-          <button type="submit">Iniciar conversa</button><small>Usaremos seu telefone para identificar seu atendimento.</small>
+          <button type="submit">Iniciar atendimento</button>
+          <button id="bm-chat-back-start" type="button" class="bm-chat-back">Voltar</button>
+        </form>
+        <form id="bm-chat-continue" class="bm-chat-start" hidden>
+          <label>WhatsApp com DDD<input id="bm-chat-resume-phone" maxlength="20" inputmode="tel" autocomplete="tel" required placeholder="(21) 99999-9999"></label>
+          <button type="submit">Continuar atendimento</button>
+          <button id="bm-chat-back-continue" type="button" class="bm-chat-back">Voltar</button>
+          <small>Você pode recuperar seu atendimento por até 15 minutos após sua última mensagem.</small>
         </form>
         <form id="bm-chat-compose" class="bm-chat-compose" hidden>
           <label class="bm-chat-file" title="Enviar foto" aria-label="Enviar foto">＋<input id="bm-chat-image" type="file" accept="image/jpeg,image/png,image/webp,image/heic,image/heif" hidden></label>
