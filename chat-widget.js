@@ -22,7 +22,7 @@
  function renderMessage(m){
   const b=document.createElement('div');b.className='bm-chat-bubble '+(m.remetente_tipo==='cliente'?'client':'staff');
   if(m.tipo==='texto'){const p=document.createElement('div');p.textContent=m.mensagem||'';b.appendChild(p);}
-  else if(m.arquivo_path){const media=document.createElement(m.tipo==='imagem'?'img':'audio');if(m.tipo==='imagem'){media.alt='Imagem enviada';media.loading='lazy';}else media.controls=true;b.appendChild(media);}
+  else if(m.arquivo_path){const media=document.createElement(m.tipo==='imagem'?'img':'audio');db.storage.from('chat-midias').createSignedUrl(m.arquivo_path,1800).then(({data,error})=>{if(!error&&data?.signedUrl)media.src=data.signedUrl;});if(m.tipo==='imagem'){media.alt='Imagem enviada';media.loading='lazy';}else media.controls=true;b.appendChild(media);}
   const t=document.createElement('time');t.textContent=new Date(m.criado_em).toLocaleTimeString('pt-BR',{hour:'2-digit',minute:'2-digit'});b.appendChild(t);$('bm-chat-thread').appendChild(b);
  }
  async function history(){
