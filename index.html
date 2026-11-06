@@ -19,6 +19,7 @@
     >
     
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="chat-widget.css">
 
     <style>
       /* =========================
@@ -405,7 +406,7 @@
 
 
     <!-- Widget de atendimento independente do catálogo -->
-    <link rel="stylesheet" href="chat-widget.css">
+
     <div id="bm-chat-widget" data-state="closed">
       <button id="bm-chat-launcher" type="button" aria-label="Abrir atendimento" aria-expanded="false"><span class="bm-chat-launcher-dot"></span><span>Fale conosco</span></button>
       <section id="bm-chat-panel" role="dialog" aria-modal="false" aria-label="Atendimento BM Móveis" hidden>
@@ -425,10 +426,11 @@
         <div id="bm-chat-attachment-preview" class="bm-chat-attachment-preview" hidden></div>
       </section>
     </div>
-    <script defer src="chat-widget.js"></script>
+
 
     <script src="produtos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.js"></script>
+    <script defer src="chat-widget.js"></script>
     <script src="script.js"></script>
 
   </body>
