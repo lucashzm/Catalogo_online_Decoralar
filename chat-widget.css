@@ -18,3 +18,21 @@
 
 /* Preserva o comportamento nativo de hidden mesmo com os layouts flex/grid. */
 #bm-chat-widget [hidden]{display:none!important}
+
+/* Ajustes de usabilidade do botão e do painel em telas pequenas. */
+#bm-chat-launcher{width:58px;height:58px;padding:0;justify-content:center;gap:0}
+#bm-chat-launcher .bm-chat-launcher-dot{display:none}
+#bm-chat-launcher .bm-chat-launcher-icon{display:block;width:27px;height:27px;flex:none}
+#bm-chat-panel{min-height:0}
+#bm-chat-start input,#bm-chat-compose textarea{font-size:16px}
+@media(max-width:600px){
+  #bm-chat-widget{right:12px;bottom:12px}
+  #bm-chat-launcher{width:58px;height:58px;padding:0}
+  #bm-chat-panel{position:fixed;right:10px;bottom:82px;width:calc(100vw - 20px);height:calc(100vh - 102px);height:calc(100dvh - 102px);min-height:0;max-height:680px;border-radius:16px}
+  .bm-chat-header{padding:13px 15px}
+  .bm-chat-thread{min-height:0;padding:12px}
+  .bm-chat-start{gap:12px;padding:12px}
+  .bm-chat-start input{height:44px;font-size:16px}
+  .bm-chat-compose{padding:10px}
+  .bm-chat-compose textarea{font-size:16px;min-height:42px}
+}
