@@ -15,3 +15,6 @@
 .bm-chat-compose{display:flex;align-items:flex-end;gap:8px;padding:11px 12px;border-top:1px solid var(--line);background:#fff}.bm-chat-file,.bm-chat-compose>button{flex:0 0 36px;width:36px;height:36px;display:grid;place-items:center;border:0;border-radius:50%;background:#eaf5f3;color:#116c67;font-size:22px;cursor:pointer}.bm-chat-compose textarea{flex:1;min-width:0;max-height:95px;resize:none;padding:10px 11px;border:1px solid var(--line);border-radius:12px;font:13px Arial,sans-serif;outline:none}.bm-chat-compose>button{background:var(--accent);color:#fff;font-size:17px}
 .bm-chat-notice{padding:8px 12px;background:#fff8e8;color:#805b18;font-size:11px}.bm-chat-notice.error{background:#fff0f0;color:#9b3333}.bm-chat-attachment-preview{padding:8px 12px;border-top:1px solid var(--line);font-size:11px;display:flex;align-items:center;justify-content:space-between}.bm-chat-attachment-preview button{border:0;background:none;color:#a33;cursor:pointer}
 @media(max-width:600px){#bm-chat-widget{right:12px;bottom:12px}#bm-chat-panel{position:fixed;right:12px;bottom:70px;width:calc(100vw - 24px);height:min(620px,calc(100dvh - 92px));min-height:380px;border-radius:16px}#bm-chat-launcher{padding:12px 16px}}
+
+/* Preserva o comportamento nativo de hidden mesmo com os layouts flex/grid. */
+#bm-chat-widget [hidden]{display:none!important}
