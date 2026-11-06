@@ -36,3 +36,10 @@
   .bm-chat-compose{padding:10px}
   .bm-chat-compose textarea{font-size:16px;min-height:42px}
 }
+
+#bm-chat-home{padding:16px;display:grid;gap:10px;background:#fff}
+#bm-chat-home p{margin:0 0 4px;color:#52656d;font-size:13px;text-align:center}
+#bm-chat-home button{height:44px;border:0;border-radius:10px;background:var(--accent);color:#fff;font-weight:700;cursor:pointer}
+#bm-chat-home button.secondary{background:#eaf5f3;color:#116c67}
+.bm-chat-back{height:34px;border:0;background:transparent;color:#66777d;font-size:12px;cursor:pointer}
+#bm-chat-widget [hidden]{display:none!important}
