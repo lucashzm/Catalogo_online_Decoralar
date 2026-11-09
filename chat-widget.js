@@ -5,15 +5,26 @@
  const db=window.supabase.createClient('https://hpjiwmmslyvuqrkllmvb.supabase.co','sb_publishable_bx1NzXS3nlgFK-te-Nuk9g_6n0j4htx');
  const $=id=>document.getElementById(id);
  const SESSION_KEY='bm_chat_session_v1';
- let conversationId=null,phoneDigits='',pendingImage=null,polling=null,sessionExpiresAt=0;
+ let conversationId=null,phoneDigits='',pendingImage=null,polling=null,sessionExpiresAt=0,presenceChannel=null;
+ const presenceKey='cliente-'+(crypto.randomUUID?.()||Math.random().toString(36).slice(2));
  const imageTypes=['image/jpeg','image/png','image/webp','image/heic','image/heif'];
  const digits=v=>(v||'').replace(/\D/g,'');
  function notice(text,error=false){const n=$('bm-chat-notice');n.textContent=text;n.classList.toggle('error',error);n.hidden=false;}
  function saveSession(){
   try{sessionStorage.setItem(SESSION_KEY,JSON.stringify({conversationId,phoneDigits,sessionExpiresAt}));}catch(_){}
  }
+ function stopPresence(){if(presenceChannel){db.removeChannel(presenceChannel);presenceChannel=null;}}
+ function startPresence(){
+  stopPresence();if(!conversationId)return;
+  presenceChannel=db.channel('bm-chat-client-presence',{config:{presence:{key:presenceKey}}});
+  presenceChannel.subscribe(status=>{
+   if(status==='SUBSCRIBED'&&conversationId){
+    presenceChannel.track({role:'cliente',conversation_id:conversationId,online:true});
+   }
+  });
+ }
  function clearSession(){
-  conversationId=null;phoneDigits='';sessionExpiresAt=0;
+  stopPresence();conversationId=null;phoneDigits='';sessionExpiresAt=0;
   try{sessionStorage.removeItem(SESSION_KEY);}catch(_){}
   stopPolling();
  }
@@ -63,6 +74,7 @@
   sessionExpiresAt=new Date(row.expira_em||new Date(Date.now()+15*60*1000)).getTime();
   if(!Number.isFinite(sessionExpiresAt)||sessionExpiresAt<=Date.now())sessionExpiresAt=Date.now()+15*60*1000;
   saveSession();
+  startPresence();
   showScreen('chat');
   await history();
   startPolling();
@@ -129,7 +141,7 @@
    const saved=JSON.parse(sessionStorage.getItem(SESSION_KEY)||'null');
    if(!saved?.conversationId||!saved?.phoneDigits||!saved?.sessionExpiresAt||saved.sessionExpiresAt<=Date.now()){sessionStorage.removeItem(SESSION_KEY);return;}
    conversationId=saved.conversationId;phoneDigits=saved.phoneDigits;sessionExpiresAt=saved.sessionExpiresAt;
-   showScreen('chat');startPolling();history().catch(()=>{clearSession();showScreen('home');});
+   startPresence();showScreen('chat');startPolling();history().catch(()=>{clearSession();showScreen('home');});
   }catch(_){clearSession();}
  }
  try{
