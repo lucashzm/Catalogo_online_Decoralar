@@ -26,12 +26,14 @@
   });
  }
  function clearSession(){
+  if(mediaRecorder?.state==='recording')stopAudioRecording(true);
   stopPresence();conversationId=null;phoneDigits='';sessionExpiresAt=0;
   try{sessionStorage.removeItem(SESSION_KEY);}catch(_){}
   stopPolling();
  }
  function sessionIsOpen(){return !!conversationId&&!!phoneDigits&&sessionExpiresAt>Date.now();}
  function toggle(open){
+  if(!open&&mediaRecorder?.state==='recording')stopAudioRecording(true);
   if(open){
    if(sessionIsOpen())showScreen('chat');
    else if(conversationId){clearSession();showScreen('home');}
@@ -126,7 +128,7 @@
     const {error:up}=await db.storage.from('chat-midias').upload(path,f,{contentType:audio.mimeType,upsert:false});if(up)throw up;
     const response=await db.rpc('chat_cliente_enviar',{p_conversa_id:conversationId,p_mensagem:message||null,p_tipo:'audio',p_arquivo_path:path,p_mime_type:audio.mimeType,p_tamanho_bytes:f.size,p_duracao_segundos:audio.durationSeconds});
     if(response.error){await db.storage.from('chat-midias').remove([path]);throw response.error;}
-    result=response.data;pendingAudio=null;$('bm-chat-attachment-preview').hidden=true;$('bm-chat-attachment-preview').replaceChildren();
+    result=response.data;if(pendingAudio?.previewUrl)URL.revokeObjectURL(pendingAudio.previewUrl);pendingAudio=null;$('bm-chat-attachment-preview').hidden=true;$('bm-chat-attachment-preview').replaceChildren();
    }else{
     const response=await db.rpc('chat_cliente_enviar',{p_conversa_id:conversationId,p_mensagem:message,p_tipo:'texto',p_arquivo_path:null,p_mime_type:null,p_tamanho_bytes:null,p_duracao_segundos:null});
     if(response.error)throw response.error;
@@ -139,6 +141,7 @@
   finally{btn.disabled=false;}
  }
  function chooseImage(e){
+  if(mediaRecorder?.state==='recording'){notice('Finalize ou cancele a gravação antes de anexar uma foto.',true);e.target.value='';return;}
   const f=e.target.files?.[0];e.target.value='';if(!f)return;
   if(!imageTypes.includes(f.type)){notice('Formato não permitido. Use JPG, PNG, WebP ou HEIC.',true);return;}
   if(f.size>MAX_MEDIA_BYTES){notice('A imagem deve ter até 25 MB.',true);return;}
@@ -198,7 +201,7 @@
     const label=document.createElement('span');label.textContent='Prévia do áudio · '+formatAudioTime(durationSeconds);preview.appendChild(label);
     const player=document.createElement('audio');player.controls=true;player.preload='metadata';player.src=URL.createObjectURL(file);preview.appendChild(player);
     const remove=document.createElement('button');remove.type='button';remove.textContent='Remover';remove.onclick=()=>{pendingAudio=null;URL.revokeObjectURL(player.src);preview.hidden=true;preview.replaceChildren();};preview.appendChild(remove);
-    preview.hidden=false;
+    pendingAudio.previewUrl=player.src;preview.hidden=false;
    };
    recorder.start(250);
    $('bm-chat-mic').hidden=true;$('bm-chat-stop-audio').hidden=false;$('bm-chat-cancel-audio').hidden=false;
