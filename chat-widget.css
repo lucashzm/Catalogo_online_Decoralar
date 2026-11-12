@@ -55,3 +55,20 @@
 @media(max-width:600px){
   #bm-chat-panel{right:8px;width:calc(100vw - 16px);height:calc(100vh - 92px);height:calc(100dvh - 92px)}
 }
+
+
+/* Controles de mídia do chat: orientação discreta e gravação curta. */
+.bm-chat-compose{flex-wrap:wrap}
+.bm-chat-compose>.bm-chat-mic,
+.bm-chat-compose>.bm-chat-stop-audio,
+.bm-chat-compose>.bm-chat-cancel-audio{font-size:14px}
+.bm-chat-compose>.bm-chat-mic{background:#eaf5f3;color:#116c67}
+.bm-chat-compose>.bm-chat-stop-audio{background:#dff4ee;color:#116c67}
+.bm-chat-compose>.bm-chat-cancel-audio{background:#f8eeee;color:#9b4545}
+.bm-chat-media-hint,
+.bm-chat-recording-status{display:block;flex:0 0 100%;margin-left:44px;font-size:10px;line-height:1.35;text-align:left}
+.bm-chat-media-hint{color:#89969a}
+.bm-chat-recording-status{color:#9b4545;font-weight:700}
+.bm-chat-attachment-preview{flex-wrap:wrap;gap:8px}
+.bm-chat-attachment-preview audio{width:min(220px,100%);max-width:100%;height:36px}
+.bm-chat-attachment-preview span{color:#52656d}
