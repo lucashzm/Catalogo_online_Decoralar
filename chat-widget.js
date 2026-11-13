@@ -53,7 +53,7 @@
  function renderMessage(m){
   const b=document.createElement('div');b.className='bm-chat-bubble '+(m.remetente_tipo==='cliente'?'client':'staff');
   if(m.tipo==='texto'){const p=document.createElement('div');p.textContent=m.mensagem||'';b.appendChild(p);}
-  else if(m.arquivo_path&&m.tipo==='imagem'){const media=document.createElement('img');db.storage.from('chat-midias').createSignedUrl(m.arquivo_path,1800).then(({data,error})=>{if(!error&&data?.signedUrl)media.src=data.signedUrl;});media.alt='Imagem enviada';media.loading='lazy';b.appendChild(media);}
+  else if(m.arquivo_path&&m.tipo==='imagem'){const media=document.createElement('img');db.functions.invoke('chat-media-upload',{body:{action:'read',conversationId,path:m.arquivo_path,phone:phoneDigits}}).then(({data,error})=>{if(!error&&data?.signedUrl)media.src=data.signedUrl;});media.alt='Imagem enviada';media.loading='lazy';b.appendChild(media);}
   else if(m.tipo==='audio'){const p=document.createElement('div');p.textContent='Mensagem de áudio não disponível nesta versão.';b.appendChild(p);}
   const t=document.createElement('time');t.textContent=new Date(m.criado_em).toLocaleTimeString('pt-BR',{hour:'2-digit',minute:'2-digit'});b.appendChild(t);$('bm-chat-thread').appendChild(b);
  }
@@ -114,7 +114,7 @@
   try{
    let result;
    if(pendingImage){
-    const f=pendingImage;const ext={'image/jpeg':'jpg','image/png':'png','image/webp':'webp','image/heic':'heic','image/heif':'heif'}[f.type]||'img';
+    const f=pendingImage;
     // Autoriza o envio no servidor com o telefone validado e recebe um token
     // temporário. O bucket continua privado e não recebe INSERT anônimo.
     const {data:grant,error:grantError}=await db.functions.invoke('chat-media-upload',{
