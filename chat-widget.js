@@ -115,10 +115,17 @@
    let result;
    if(pendingImage){
     const f=pendingImage;const ext={'image/jpeg':'jpg','image/png':'png','image/webp':'webp','image/heic':'heic','image/heif':'heif'}[f.type]||'img';
-    const path=conversationId+'/'+crypto.randomUUID()+'.'+ext;
-    const {error:up}=await db.storage.from('chat-midias').upload(path,f,{contentType:f.type,upsert:false});if(up)throw up;
+    // Autoriza o envio no servidor com o telefone validado e recebe um token
+    // temporário. O bucket continua privado e não recebe INSERT anônimo.
+    const {data:grant,error:grantError}=await db.functions.invoke('chat-media-upload',{
+     body:{conversationId,phone:phoneDigits,filename:f.name,contentType:f.type,size:f.size}
+    });
+    if(grantError||!grant?.path||!grant?.token)throw new Error(grantError?.message||grant?.error||'Não foi possível autorizar o envio da foto.');
+    const path=grant.path;
+    const {error:up}=await db.storage.from('chat-midias').uploadToSignedUrl(path,grant.token,f,{contentType:f.type});
+    if(up)throw up;
     const response=await db.rpc('chat_cliente_enviar',{p_conversa_id:conversationId,p_mensagem:message||null,p_tipo:'imagem',p_arquivo_path:path,p_mime_type:f.type,p_tamanho_bytes:f.size,p_duracao_segundos:null});
-    if(response.error){await db.storage.from('chat-midias').remove([path]);throw response.error;}
+    if(response.error)throw response.error;
     result=response.data;
     pendingImage=null;$('bm-chat-attachment-preview').hidden=true;$('bm-chat-attachment-preview').replaceChildren();
    }else{
